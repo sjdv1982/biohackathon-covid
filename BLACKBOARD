@@ -2,3 +2,9 @@ To see the Markdown representation of README.md, press Ctrl-Shift-V
 https://github.com/sjdv1982/biohackathon-covid
 http://files.rcsb.org/download/6W4B.pdb (unbound form SARS-Cov 2)
 https://files.rcsb.org/download/1UW7.pdb # Sars 1
+
+https://files.rcsb.org/download/6WXD.pdb (Same seq as of 6W4B)
+https://files.rcsb.org/download/6W9Q.pdb (Same seq as of 6W4B)
+
+
+https://raw.githubusercontent.com/sjdv1982/biohackathon-covid/master/trinucleotide.pdb

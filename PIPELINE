@@ -1,0 +1,7 @@
+ docker pull rbps/attract
+ docker run -it -v /home/biohackathon/project:/cwd rpbs/attract bash
+
+
+cd cwd/
+python $ATTRACTTOOLS/../allatom/aareduce.py trinucleotide.pdb --rna --heavy
+python $ATTRACTTOOLS/reduce.py trinucleotide-aa.pdb trinucleotide-reduced.pdb
