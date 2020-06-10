@@ -1,7 +1,14 @@
- docker pull rbps/attract
- docker run -it -v /home/biohackathon/project:/cwd rpbs/attract bash
+docker pull rbps/attract
+docker run -it -v /home/biohackathon/project:/cwd --user $(id -u):$(id -g) rpbs/attract bash
+# -it => run in terminal mode
+# -v /home/biohackathon/project:/cwd => mount our project directory as /cwd
+# --user $(id -u):$(id -g) => run as user "biohackathon"
+# rpbs/attract => name of docker image
+# bash => command to run
 
 
 cd cwd/
 python $ATTRACTTOOLS/../allatom/aareduce.py trinucleotide.pdb --rna --heavy
 python $ATTRACTTOOLS/reduce.py trinucleotide-aa.pdb trinucleotide-reduced.pdb
+python $ATTRACTTOOLS/../allatom/aareduce.py 6W4B.pdb --pdb2pqr --heavy
+python $ATTRACTTOOLS/reduce.py 6W4B-aa.pdb 6W4B-reduced.pdb
