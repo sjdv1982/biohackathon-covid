@@ -1,4 +1,4 @@
-docker pull rbps/attract
+docker pull rpbs/attract
 docker run -it -v /home/biohackathon/project:/cwd --user $(id -u):$(id -g) rpbs/attract bash
 
 # Explanation:
@@ -10,7 +10,16 @@ docker run -it -v /home/biohackathon/project:/cwd --user $(id -u):$(id -g) rpbs/
 
 
 cd cwd/
-python $ATTRACTTOOLS/../allatom/aareduce.py trinucleotide.pdb --rna --heavy
-python $ATTRACTTOOLS/reduce.py trinucleotide-aa.pdb trinucleotide-reduced.pdb
-python $ATTRACTTOOLS/../allatom/aareduce.py 6W4B.pdb --pdb2pqr --heavy
-python $ATTRACTTOOLS/reduce.py 6W4B-aa.pdb 6W4B-reduced.pdb
+$ATTRACTDIR/center trinucleotide.pdb > trinucleotide-centered.pdb
+python $ATTRACTTOOLS/../allatom/aareduce.py trinucleotide-centered.pdb --rna --heavy
+python $ATTRACTTOOLS/reduce.py trinucleotide-centered-aa.pdb trinucleotide-reduced.pdb
+$ATTRACTDIR/trans trinucleotide-centered-aa.pdb -12.179  -23  4.238 > trinucleotide-phe152-aa.pdb
+$ATTRACTDIR/trans trinucleotide-reduced.pdb -12.179  -23  4.238 > trinucleotide-phe152-reduced.pdb
+
+$ATTRACTDIR/center 6W4B.pdb > 6W4B-centered.pdb
+python $ATTRACTTOOLS/../allatom/aareduce.py 6W4B-centered.pdb --pdb2pqr --heavy
+python $ATTRACTTOOLS/reduce.py 6W4B-centered-aa.pdb 6W4B-reduced.pdb
+
+#$ATTRACTDIR/attract $ATTRACTDIR/../structure-single.dat $ATTRACTDIR/../attract.par 6W4B-reduced.pdb trinucleotide-phe152-reduced.pdb --score
+$ATTRACTDIR/attract $ATTRACTDIR/../structure-single.dat $ATTRACTDIR/../attract.par 6W4B-reduced.pdb trinucleotide-phe152-reduced.pdb --traj > trinucleotide-phe152-traj.dat
+$ATTRACTDIR/collect trinucleotide-phe152-traj.dat  /dev/null trinucleotide-phe152-aa.pdb > trinucleotide-phe152-traj.pdb

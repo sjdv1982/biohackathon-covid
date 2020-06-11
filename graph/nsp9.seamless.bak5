@@ -1,0 +1,105 @@
+{
+  "connections": [
+    {
+      "source": [
+        "trinucleotide"
+      ],
+      "target": [
+        "center_trinucleotide",
+        "trinucleotide.pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "center_trinucleotide"
+      ],
+      "target": [
+        "trinucleotide_centered"
+      ],
+      "type": "connection"
+    }
+  ],
+  "lib": [],
+  "nodes": [
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "7dbc5bb6c6ba43cbf246dea3ec3b6700cc36d418a7b0ac44c39495c315d72fd5",
+        "input": "aedc9c5d04156911875ee2c19518dd2bc463a44dd3f341f302e69e38fa470164",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "aedc9c5d04156911875ee2c19518dd2bc463a44dd3f341f302e69e38fa470164",
+        "result": "49760b41376f37c8229e0ede37c71b384ab0f532d7e614d015998e862df63985"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "path": [
+        "center_trinucleotide"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "trinucleotide.pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "f8c8cf12cebffe540da0d3d35dcc0260d77aaec41f804f73ae096a56afbbcc9e"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "6W4B.pdb",
+        "persistent": true
+      },
+      "path": [
+        "protein"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "5a1a6f01b70172a8aa2962488fa51d9e92f594c5b27d8cddd5a2522b9e5f2bfb"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "trinucleotide.pdb",
+        "persistent": true
+      },
+      "path": [
+        "trinucleotide"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "2f1b7ae2e94672663e7b616d85d0fe84025d423bf3ef32c7322dc9d94c8d185d"
+      },
+      "datatype": "mixed",
+      "path": [
+        "trinucleotide_centered"
+      ],
+      "type": "cell"
+    }
+  ],
+  "params": {
+    "share_namespace": "ctx"
+  }
+}

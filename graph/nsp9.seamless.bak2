@@ -1,0 +1,43 @@
+{
+  "connections": [],
+  "lib": [],
+  "nodes": [
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "f8c8cf12cebffe540da0d3d35dcc0260d77aaec41f804f73ae096a56afbbcc9e"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "6W4B.pdb",
+        "persistent": true
+      },
+      "path": [
+        "protein"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "32926bdb7b8db325505a6a987a5af0b58dc10bf42fdc12ff4f4d4500d52e5a6d"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "trinucleotide.pdb",
+        "persistent": true
+      },
+      "path": [
+        "trinucleotide"
+      ],
+      "type": "cell"
+    }
+  ],
+  "params": {
+    "share_namespace": "ctx"
+  }
+}
