@@ -12,7 +12,7 @@ https://raw.githubusercontent.com/sjdv1982/biohackathon-covid/master/trinucleoti
 
 CLick on Live share arrow on the left => Shared servers => localhost:8888 => http://127.0.0.1:8888/tree?
 
-http://localhost:5813/ctx/index.html
+http://localhost:5813/ctx/index.html  (empty for now)
 
 http://nglviewer.org/ngl/api/manual/usage/selection-language.html
 http://nglviewer.org/ngl/api/class/src/component/component.js~Component.html#instance-method-addRepresentation
@@ -24,3 +24,11 @@ http://localhost:5813/status/index.html
 
 
 http://127.0.0.1:8888/notebooks/cwd/nsp9-pipeline.ipynb
+http://localhost:8888/edit/cwd/trinucl-offset-x
+
+
+We will use this:
+https://github.com/arose/ngl
+
+but we will not use this:
+https://github.com/arose/nglview

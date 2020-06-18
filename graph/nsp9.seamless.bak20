@@ -305,24 +305,6 @@
         "rna"
       ],
       "type": "connection"
-    },
-    {
-      "source": [
-        "dock"
-      ],
-      "target": [
-        "docked"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "docked"
-      ],
-      "target": [
-        "docked2"
-      ],
-      "type": "connection"
     }
   ],
   "lib": [],
@@ -464,11 +446,9 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "48ed10d30527c53d046e148854511f641fc7e96e899a1146cd020cd728202f6b",
         "input": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e",
-        "result": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308"
+        "input_buffer": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e"
       },
       "compiled": false,
       "debug": false,
@@ -500,30 +480,6 @@
         }
       },
       "type": "transformer"
-    },
-    {
-      "celltype": "float",
-      "checksum": {
-        "value": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308"
-      },
-      "datatype": "mixed",
-      "path": [
-        "docked"
-      ],
-      "type": "cell"
-    },
-    {
-      "celltype": "structured",
-      "checksum": {
-        "buffer": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308",
-        "value": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308"
-      },
-      "datatype": "mixed",
-      "hash_pattern": null,
-      "path": [
-        "docked2"
-      ],
-      "type": "cell"
     },
     {
       "celltype": "text",

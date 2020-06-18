@@ -189,140 +189,6 @@
         "scored2"
       ],
       "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset_x"
-      ],
-      "target": [
-        "trinucl_offset",
-        "x"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset_y"
-      ],
-      "target": [
-        "trinucl_offset",
-        "y"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset_z"
-      ],
-      "target": [
-        "trinucl_offset",
-        "z"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset",
-        "x"
-      ],
-      "target": [
-        "trans_trinucl1",
-        "x"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset",
-        "y"
-      ],
-      "target": [
-        "trans_trinucl1",
-        "y"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset",
-        "z"
-      ],
-      "target": [
-        "trans_trinucl1",
-        "z"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset",
-        "x"
-      ],
-      "target": [
-        "trans_trinucl2",
-        "x"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset",
-        "z"
-      ],
-      "target": [
-        "trans_trinucl2",
-        "z"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucl_offset",
-        "y"
-      ],
-      "target": [
-        "trans_trinucl2",
-        "y"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "protein_reduced"
-      ],
-      "target": [
-        "dock",
-        "protein"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucleotide_reduced_trans"
-      ],
-      "target": [
-        "dock",
-        "rna"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "dock"
-      ],
-      "target": [
-        "docked"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "docked"
-      ],
-      "target": [
-        "docked2"
-      ],
-      "type": "connection"
     }
   ],
   "lib": [],
@@ -460,72 +326,6 @@
       "type": "transformer"
     },
     {
-      "INPUT": "inp",
-      "RESULT": "result",
-      "SCHEMA": null,
-      "checksum": {
-        "code": "48ed10d30527c53d046e148854511f641fc7e96e899a1146cd020cd728202f6b",
-        "input": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e",
-        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e",
-        "result": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308"
-      },
-      "compiled": false,
-      "debug": false,
-      "file_extension": "sh",
-      "language": "docker",
-      "mount": {
-        "code": {
-          "authority": "cell",
-          "mode": "rw",
-          "path": "dock.sh",
-          "persistent": true
-        }
-      },
-      "path": [
-        "dock"
-      ],
-      "pins": {
-        "docker_image": {
-          "celltype": "mixed"
-        },
-        "docker_options": {
-          "celltype": "mixed"
-        },
-        "protein": {
-          "celltype": "mixed"
-        },
-        "rna": {
-          "celltype": "mixed"
-        }
-      },
-      "type": "transformer"
-    },
-    {
-      "celltype": "float",
-      "checksum": {
-        "value": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308"
-      },
-      "datatype": "mixed",
-      "path": [
-        "docked"
-      ],
-      "type": "cell"
-    },
-    {
-      "celltype": "structured",
-      "checksum": {
-        "buffer": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308",
-        "value": "b190e1a6315971a7ecac8dbf24ad88b0fdc00997b8bfe47cdbeb615fbe315308"
-      },
-      "datatype": "mixed",
-      "hash_pattern": null,
-      "path": [
-        "docked2"
-      ],
-      "type": "cell"
-    },
-    {
       "celltype": "text",
       "checksum": {
         "value": "7e195d3260ce4c1aa0df6cfceef60099c34f827f3c841030fe5da938a31bf202"
@@ -653,10 +453,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "a5e12e4698fba2cb3298c6f8561538a75b24806a0b0b7dc716ba13cd01985e50",
-        "input": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e",
+        "input": "378aa71af1721d6363a286f0c9c8a135c66f5f47a8ce1e84fc4a1d32330ead77",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "0abd6da15949c7001dc378b8ca1ddd8b1008e647e33fa2c4591604d0a6d5249e",
-        "result": "5907941cb6c856d8c7a46feb8d8bf3148b06c5d30697308fcfbf14d241e09653"
+        "input_buffer": "378aa71af1721d6363a286f0c9c8a135c66f5f47a8ce1e84fc4a1d32330ead77",
+        "result": "cbd0dbdc8676b791bbe85c9f50ded7d256812d5e000be7525a12b8319687387f"
       },
       "compiled": false,
       "debug": false,
@@ -692,7 +492,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "5907941cb6c856d8c7a46feb8d8bf3148b06c5d30697308fcfbf14d241e09653"
+        "value": "cbd0dbdc8676b791bbe85c9f50ded7d256812d5e000be7525a12b8319687387f"
       },
       "datatype": "mixed",
       "path": [
@@ -703,8 +503,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "5907941cb6c856d8c7a46feb8d8bf3148b06c5d30697308fcfbf14d241e09653",
-        "value": "5907941cb6c856d8c7a46feb8d8bf3148b06c5d30697308fcfbf14d241e09653"
+        "buffer": "cbd0dbdc8676b791bbe85c9f50ded7d256812d5e000be7525a12b8319687387f",
+        "value": "cbd0dbdc8676b791bbe85c9f50ded7d256812d5e000be7525a12b8319687387f"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -718,11 +518,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "a7fd955d5cb75d5379c3850e4ea45cec581bba6cf2467e17b1aed09e6dbce363",
-        "input": "32d85f6c84d600ecfdefacfb124b23eb4f295874f11ee43c93beb8bf4834bf5d",
+        "code": "4fc0e4fa7c47f3dd5aa02d122aaf8249dfb7e7e3dacc97ac3d5fcb2c3ca71921",
+        "input": "e121cd751904186fee1e972bc79c5e55368f78545c68a85c91d2b2d78bebe382",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "32d85f6c84d600ecfdefacfb124b23eb4f295874f11ee43c93beb8bf4834bf5d",
-        "result": "fd1dc01a7053c3a3515376788e5d11acea9222c88e5f12b1c418881f4bc68b4e"
+        "input_buffer": "e121cd751904186fee1e972bc79c5e55368f78545c68a85c91d2b2d78bebe382",
+        "result": "8806eb49b21c811766e5858b4335fb18bc939401c7cf40f018bb656cd57bf28c"
       },
       "compiled": false,
       "debug": false,
@@ -740,15 +540,6 @@
         },
         "pdb": {
           "celltype": "mixed"
-        },
-        "x": {
-          "celltype": "mixed"
-        },
-        "y": {
-          "celltype": "mixed"
-        },
-        "z": {
-          "celltype": "mixed"
         }
       },
       "type": "transformer"
@@ -758,11 +549,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "a7fd955d5cb75d5379c3850e4ea45cec581bba6cf2467e17b1aed09e6dbce363",
-        "input": "879b1377a8ba0456c01ed00eb69384c6aa86d09f4c24800d37f38cce4eae5546",
+        "code": "4fc0e4fa7c47f3dd5aa02d122aaf8249dfb7e7e3dacc97ac3d5fcb2c3ca71921",
+        "input": "6e25d9e915a50f2d1f99235d62e9d0d7de8c584ab9905c590f048885280d20f1",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "879b1377a8ba0456c01ed00eb69384c6aa86d09f4c24800d37f38cce4eae5546",
-        "result": "633379799ee42c61c2b1a179bc369fe705fdce4a1348194b32632fe92c717614"
+        "input_buffer": "6e25d9e915a50f2d1f99235d62e9d0d7de8c584ab9905c590f048885280d20f1",
+        "result": "57ad312e164206669b175ff6054496e6b3886514c8c7c63f24ad36a83f5d01b8"
       },
       "compiled": false,
       "debug": false,
@@ -780,36 +571,14 @@
         },
         "pdb": {
           "celltype": "mixed"
-        },
-        "x": {
-          "celltype": "mixed"
-        },
-        "y": {
-          "celltype": "mixed"
-        },
-        "z": {
-          "celltype": "mixed"
         }
       },
       "type": "transformer"
     },
     {
-      "celltype": "structured",
-      "checksum": {
-        "buffer": "7ad89d1e63ef9ae08644519f21ab0b5f3db353c8ac7d95cda1a234266319c400",
-        "value": "7ad89d1e63ef9ae08644519f21ab0b5f3db353c8ac7d95cda1a234266319c400"
-      },
-      "datatype": "mixed",
-      "hash_pattern": null,
-      "path": [
-        "trinucl_offset"
-      ],
-      "type": "cell"
-    },
-    {
       "celltype": "float",
       "checksum": {
-        "value": "a280db51cb350ed72acf4d1f00d5f1355587a702bfc0a558cd604068ba105005"
+        "value": "08ae6557cac3179ae3f98b55825a6281b74452aaa20cc57476d8fa4d0d547ef7"
       },
       "datatype": "mixed",
       "mount": {
@@ -826,15 +595,9 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "69bdca0e2d5a673f6252a007f31b003fa647a0201e1ccba26101ae7d150a5d00"
+        "value": "a02d17bdd39e71f9fee74903e15ee7a6fba8614718e41dce603aea44a6e8caea"
       },
       "datatype": "mixed",
-      "mount": {
-        "authority": "cell",
-        "mode": "rw",
-        "path": "trinucl-offset-y",
-        "persistent": true
-      },
       "path": [
         "trinucl_offset_y"
       ],
@@ -843,15 +606,9 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "9c2d12c707e01191fa7eb4c2aaf61efbdabdc3a78f72fcc018ad8f60314e8466"
+        "value": "e729fb9debe6d87dab3cdc4b0e932762da43dc10da4263b3ed57b3d82e8094da"
       },
       "datatype": "mixed",
-      "mount": {
-        "authority": "cell",
-        "mode": "rw",
-        "path": "trinucl-offset-z",
-        "persistent": true
-      },
       "path": [
         "trinucl_offset_z"
       ],
@@ -877,7 +634,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "b1615ccb1a14e9a93fa1178c0e3ace75f3c3062d0c8c7c6fbb421ab29ec6abfd"
+        "value": "54ca60c4395fdc11572611dd5aa6d2b200a98e9fc5ea74f41347ba1eb12f88e8"
       },
       "datatype": "mixed",
       "mount": {
@@ -935,7 +692,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "67e477b46422c3439f28988f45ae8d29dc8f6a70fcf4a2846f179a11860068fa"
+        "value": "749d1af587a91fa191bcf5e9aa9b6a0887776e1e620ca125b5d5d65e4cd34493"
       },
       "datatype": "mixed",
       "mount": {
