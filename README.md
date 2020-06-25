@@ -10,3 +10,7 @@
 ### Progress
 - Protein and 3 nucleotides --> scored with attract and minimized
 - The preliminary pipeline is ready.
+
+
+### Current Status
+![alt text](https://github.com/sjdv1982/biohackathon-covid/blob/master/Current_Status.png?raw=true)
