@@ -1,5 +1,12 @@
 To see the Markdown representation of README.md, press Ctrl-Shift-V
 https://github.com/sjdv1982/biohackathon-covid
+
+
+http://localhost:5813/ctx/index.html  (No longer empty!)
+http://localhost:5813/ctx/pdb1
+http://localhost:5813/ctx/pdb2
+
+
 http://files.rcsb.org/download/6W4B.pdb (unbound form SARS-Cov 2)
 https://files.rcsb.org/download/1UW7.pdb # Sars 1
 
@@ -7,15 +14,9 @@ https://files.rcsb.org/download/6WXD.pdb (Same seq as of 6W4B)
 https://files.rcsb.org/download/6W9Q.pdb (Same seq as of 6W4B)
 
 
-https://raw.githubusercontent.com/sjdv1982/biohackathon-covid/master/trinucleotide.pdb
-
-
 CLick on Live share arrow on the left => Shared servers => localhost:8888 => http://127.0.0.1:8888/tree?
 
-http://localhost:5813/ctx/index.html  (empty for now)
 
-http://nglviewer.org/ngl/api/manual/usage/selection-language.html
-http://nglviewer.org/ngl/api/class/src/component/component.js~Component.html#instance-method-addRepresentation
 
 # Seamless new project guide
 http://sjdv1982.github.io/seamless/sphinx/html/new-project.html
@@ -24,8 +25,14 @@ http://localhost:5813/status/index.html
 
 
 http://127.0.0.1:8888/notebooks/cwd/nsp9-pipeline.ipynb
-http://localhost:8888/edit/cwd/trinucl-offset-x
 
+
+
+NGL/NGLView
+===========
+
+http://nglviewer.org/ngl/api/manual/usage/selection-language.html
+http://nglviewer.org/ngl/api/class/src/component/component.js~Component.html#instance-method-addRepresentation
 
 We will use this:
 https://github.com/arose/ngl

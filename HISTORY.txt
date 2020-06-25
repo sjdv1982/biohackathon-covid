@@ -1,44 +1,42 @@
 %run -i init-project.py
 await load()
-from ipywidgets import FloatSlider
-x = FloatSlider(description="RNA X", min=-200, max=200, value=0)
-x
-y = FloatSlider(description="RNA Y", min=-200, max=200, value=0)
-y
-z = FloatSlider(description="RNA Z", min=-200, max=200, value=0)
-z
-ctx.trinucl_offset_x.traitlet().link(x) 
-ctx.trinucl_offset_y.traitlet().link(y) 
-ctx.trinucl_offset_z.traitlet().link(z)
-ctx.scored2.output()
-ctx.protein.output()
-ctx.trinucleotide.output()
-ctx.trinucleotide_centered.output()
-ctx.trinucl_offset_x.value
-ctx.trinucl_offset_y.mount("trinucl-offset-y")
-ctx.trinucl_offset_z.mount("trinucl-offset-z")
+await ctx.computation()
+ctx.trinucl_offset_x.share(readonly=False)
+ctx.trinucl_offset_y.share(readonly=False)
+ctx.trinucl_offset_z.share(readonly=False)
 await ctx.translation()
-ctx.trinucl_offset = Cell("plain")
-ctx.trinucl_offset.x = ctx.trinucl_offset_x
+ctx.web = Context()
+ctx.web.index = Cell("text")
 await ctx.translation()
-ctx.trinucl_offset.x = ctx.trinucl_offset_x
-ctx.trinucl_offset = Cell()
+ctx.web.index.mimetype = "html"
+ctx.web.index.mount("index.html")
+ctx.web.index.share("index.html")
 await ctx.translation()
-ctx.trinucl_offset.x = ctx.trinucl_offset_x
-ctx.trinucl_offset.y = ctx.trinucl_offset_y
-ctx.trinucl_offset.z = ctx.trinucl_offset_z
-ctx.trinucl_offset.value
+!touch index.html
+seamless_dir = os.path.dirname(seamless.__file__)
+import os
+seamless_dir = os.path.dirname(seamless.__file__)
+import seamless
+seamless_dir = os.path.dirname(seamless.__file__)
+c = ctx.web.seamless_js = Cell("text")
+c.mimetype = "js"
+c.set(open(seamless_dir + "/js/seamless-client.js").read())
+c.share("seamless-client.js")
+c = ctx.web.index_js = Cell("text")
+c.mimetype = "js"
+c.mount("index.js")
+c.share("index.js")
+!touch index.js
 await ctx.translation()
-ctx.trinucl_offset.value
-ctx.trans_trinucl1.code
-ctx.trans_trinucl1.code.value
-ctx.trans_trinucl1.code = "$ATTRACTDIR/trans pdb $x  $y  $z > RESULT"
-ctx.trans_trinucl1.x = ctx.trinucl_offset.x
-ctx.trans_trinucl1.y = ctx.trinucl_offset.y
-ctx.trans_trinucl1.z = ctx.trinucl_offset.z
+ctx.pdb1 = ctx.trinucleotide_centered
+ctx.pdb2 = ctx.pdb_centered
 await ctx.translation()
-ctx.trans_trinucl2.code = "$ATTRACTDIR/trans pdb $x  $y  $z > RESULT"
-ctx.trans_trinucl2.x = ctx.trinucl_offset.x
-ctx.trans_trinucl2.z = ctx.trinucl_offset.z
-ctx.trans_trinucl2.y = ctx.trinucl_offset.y
+ctx.pdb1.mimetype = "text"
+ctx.pdb1.share()
+ctx.pdb2.share()
+ctx.pdb2.mimetype = "text"
 await ctx.translation()
+ctx.pdb1.celltype = "text"
+ctx.pdb2.celltype = "text"
+await ctx.translation()
+%history -f HISTORY
