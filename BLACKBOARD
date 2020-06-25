@@ -21,6 +21,15 @@ CLick on Live share arrow on the left => Shared servers => localhost:8888 => htt
 # Seamless new project guide
 http://sjdv1982.github.io/seamless/sphinx/html/new-project.html
 
+docker pull rpbs/seamless
+conda install -c rpbs seamless-cli
+Terminal 1:
+    seamless-jupyter-trusted
+    Open nsp9-pipeline.ipynb, run 1st cell
+Terminal 2: seamless-jupyter-console-existing
+    type "ctx" should give "<seamless.highlevel.Context.Context at 0x7f1f6c523470>"
+
+
 http://localhost:5813/status/index.html
 
 
