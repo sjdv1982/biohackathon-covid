@@ -9,4 +9,4 @@
 
 ### Progress
 - Protein and 3 nucleotides --> scored with attract and minimized
--
+- The preliminary pipeline is ready.
