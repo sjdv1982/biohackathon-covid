@@ -372,6 +372,15 @@
     },
     {
       "source": [
+        "gen_restraints"
+      ],
+      "target": [
+        "restraints"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
         "protein_active_residues"
       ],
       "target": [
@@ -466,15 +475,6 @@
       "target": [
         "dock",
         "rna"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "gen_restraints"
-      ],
-      "target": [
-        "restraints"
       ],
       "type": "connection"
     }
@@ -667,11 +667,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "b761a5fdbda649dc464e8317e1149e3e04340d02f9c04488668d78d760ebe1a6",
+        "code": "d599df63cea58eb4233f7f9fe2aa2c44725f25a1fc7e63022b4f40b1a1db93e1",
         "input": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
         "input_buffer": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
-        "result": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
+        "result": "0b206576de57431bd60432894e2170a33bd1237de4b1feee9deb7a308407795a"
       },
       "compiled": false,
       "debug": false,
@@ -709,9 +709,6 @@
     },
     {
       "celltype": "float",
-      "checksum": {
-        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
-      },
       "datatype": "mixed",
       "path": [
         "docked"
@@ -725,8 +722,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a",
-        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
+        "buffer": "c69777d072353890c08cc5a6e7050a40bbfd8db036f4f5365eb5522db7cd4fbb",
+        "value": "c69777d072353890c08cc5a6e7050a40bbfd8db036f4f5365eb5522db7cd4fbb"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1066,7 +1063,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
+        "value": "325d79409b1de75d6f73947b4175337514c00b3d1506df42df94f81b2a174811"
       },
       "datatype": "mixed",
       "path": [

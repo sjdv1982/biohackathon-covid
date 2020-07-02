@@ -154,6 +154,26 @@
     },
     {
       "source": [
+        "protein_reduced"
+      ],
+      "target": [
+        "score",
+        "protein"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_reduced_trans"
+      ],
+      "target": [
+        "score",
+        "rna"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
         "score"
       ],
       "target": [
@@ -278,6 +298,16 @@
     },
     {
       "source": [
+        "trinucleotide_reduced_trans"
+      ],
+      "target": [
+        "dock",
+        "rna"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
         "dock"
       ],
       "target": [
@@ -372,6 +402,15 @@
     },
     {
       "source": [
+        "gen_restraints"
+      ],
+      "target": [
+        "restraints"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
         "protein_active_residues"
       ],
       "target": [
@@ -436,45 +475,6 @@
       ],
       "target": [
         "test"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "protein_reduced"
-      ],
-      "target": [
-        "score",
-        "protein"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucleotide_reduced_trans"
-      ],
-      "target": [
-        "score",
-        "rna"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucleotide_reduced_trans"
-      ],
-      "target": [
-        "dock",
-        "rna"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "gen_restraints"
-      ],
-      "target": [
-        "restraints"
       ],
       "type": "connection"
     }
@@ -667,11 +667,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "b761a5fdbda649dc464e8317e1149e3e04340d02f9c04488668d78d760ebe1a6",
-        "input": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
+        "code": "ace117f32fd2553a526c6a9900ee5fb13e190e1c1dfd42fba82d5c93791e5c38",
+        "input": "267f0254d8f4bddf3ec8e643c6a8ccbe84a01712032cedceffeb119b10f91a30",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
-        "result": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
+        "input_buffer": "267f0254d8f4bddf3ec8e643c6a8ccbe84a01712032cedceffeb119b10f91a30",
+        "result": "85b80cb4075a879a38e4d857aa59a2287f8f20c9c1db64ec85ece0203388a6cc"
       },
       "compiled": false,
       "debug": false,
@@ -709,9 +709,6 @@
     },
     {
       "celltype": "float",
-      "checksum": {
-        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
-      },
       "datatype": "mixed",
       "path": [
         "docked"
@@ -725,8 +722,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a",
-        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
+        "buffer": "c69777d072353890c08cc5a6e7050a40bbfd8db036f4f5365eb5522db7cd4fbb",
+        "value": "c69777d072353890c08cc5a6e7050a40bbfd8db036f4f5365eb5522db7cd4fbb"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -740,11 +737,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "cde3af6bedc89e18883b7ecb323fa69e5bdf7e261b320dc3af375e0bb0718020",
+        "code": "cedf339b77b9c1ec3f87cdd0e0e008d03e337434839585d29cba61677aa64692",
         "input": "a1dab579101cebbe0478ad13845810ccd57e1d669e270fe1174432c9355e113e",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
         "input_buffer": "a1dab579101cebbe0478ad13845810ccd57e1d669e270fe1174432c9355e113e",
-        "result": "f09b91d3f6ac2c7713c582b6e723d0576d6c1fe5e63bd497cb9d1fb853a28857"
+        "result": "54fadc02a39a9edfc2eb739f9abcfb4a778d9b71a0fcc4ad87e9c5cb4d4f1ff5"
       },
       "compiled": false,
       "debug": false,
@@ -976,15 +973,9 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "e0ec1a44ee594e24076ada8c73553b652379fd86f819e47f24a2f19677e7de00"
+        "value": "0e60a290d6176b3978b03b3cf6d6f78d5ccbff3649af92ecababd58637b52b9d"
       },
       "datatype": "mixed",
-      "mount": {
-        "authority": "cell",
-        "mode": "w",
-        "path": "restraints.rest",
-        "persistent": true
-      },
       "path": [
         "restraints"
       ],
@@ -995,11 +986,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "6d866a9acb6afd62f11764e6b78847844662bfd6fe59760dac3df2785c419ca6",
-        "input": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
+        "code": "cab41a3de508f95caca27b3b880593edf5c6ee2bcb184aa1900040044dada441",
+        "input": "267f0254d8f4bddf3ec8e643c6a8ccbe84a01712032cedceffeb119b10f91a30",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
-        "result": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf"
+        "input_buffer": "267f0254d8f4bddf3ec8e643c6a8ccbe84a01712032cedceffeb119b10f91a30",
+        "result": "ecac432351995914b8d450214ea328629099c0efca2bf8aaa888f9d2a5aca73a"
       },
       "compiled": false,
       "debug": false,
@@ -1038,7 +1029,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf"
+        "value": "ecac432351995914b8d450214ea328629099c0efca2bf8aaa888f9d2a5aca73a"
       },
       "datatype": "mixed",
       "path": [
@@ -1053,8 +1044,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf",
-        "value": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf"
+        "buffer": "ecac432351995914b8d450214ea328629099c0efca2bf8aaa888f9d2a5aca73a",
+        "value": "ecac432351995914b8d450214ea328629099c0efca2bf8aaa888f9d2a5aca73a"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1066,7 +1057,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
+        "value": "cfc794ad5fa98584ebf76e27b2a3308250e233d0a5093c056c20e6e70bb80018"
       },
       "datatype": "mixed",
       "path": [
