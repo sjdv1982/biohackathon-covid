@@ -41,6 +41,18 @@ FATCAT ([http://fatcat.godziklab.org](http://fatcat.godziklab.org/)) analysis of
 All structurally close structures are also sequence-close, so no useful information
 All structures containing RNA or DNA are structurally distant -\&gt; no useful information
 
+## Conserved Residues
+Multiple alignment of nsp9 sequences from SARS-CoV National Center for Biotechnology Information (NCBI) accession no. AY291315, and several related CoVs: HCoV 229E, human CoV 229E, NCBI accession no. NP_073550; TGEV, transmissible gastroenteritis virus, NCBI accession no. NP_058423; PEDV, porcine epidemic diarrhea virus CV777, NCBI accession no. NP_598309, BCoV, bovine CoV, NCBI accession no. NP_150074; MHV, mouse hepatitis virus MHV-A59, NCBI accession no. NP_045298; and IBV, avian infectious bronchitis virus, NCBI accession no. NP_040829). 
+![alt text](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/conserved_residues2.jpg?raw=true)
+
+Following residues are conserved in all CoV nsp9 sequences:
+Arg-10, Lys-52, Trp-53, Arg-55, Arg-74, Phe-75, Lys-86, Tyr-87, Phe-90, Lys-92, Arg-99, and Arg-111
+
+Secondary structure elements and multiple sequence alignments of IBV, HCoV‐229E, and SARS‐CoV.
+![alt text](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/conserved_residues1.png?raw=true)
+
+
+
 ## Bibliography
 [1] [https://www.cell.com/structure/pdf/S0969-2126(04)00026-7.pdf](https://www.cell.com/structure/pdf/S0969-2126(04)00026-7.pdf)
 ...
