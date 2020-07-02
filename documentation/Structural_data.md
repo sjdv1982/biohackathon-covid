@@ -54,11 +54,14 @@ Secondary structure elements and multiple sequence alignments of IBV, HCoV‐229
 ![alt text](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/conserved_residues1.png?raw=true)
 
 
+## ssRNA
+ssRNA is normally disordered. We will use the NAFragDB ssRNA library from the CAPSID lab.
+If there is any experimental data available to narrow down that library for Nsp9 interaction, that should be listed here.
+
+
+## From PDB
+[https://www.rcsb.org/pdb/rest/sequenceCluster?cluster=40&structureId=6w4b.A](This will give all the sequence cluster at 40% sequence ID for a particular chain ID.)  
 
 ## Bibliography
 [1] [https://www.cell.com/structure/pdf/S0969-2126(04)00026-7.pdf](https://www.cell.com/structure/pdf/S0969-2126(04)00026-7.pdf)
 ...
-
-# ssRNA
-ssRNA is normally disordered. We will use the NAFragDB ssRNA library from the CAPSID lab.
-If there is any experimental data available to narrow down that library for Nsp9 interaction, that should be listed here.
