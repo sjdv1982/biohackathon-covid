@@ -78,3 +78,26 @@ function loadNGL() {
     })
 }
 loadNGL()
+
+function onResetOrientation() {
+    var pa = pdb2.structure.getPrincipalAxes();
+    stage.animationControls.rotate( pa.getRotationQuaternion(), 1500 );
+}
+$("body").on("click", "#btn_reset_orientation", onResetOrientation)
+
+function onSaveOrientation() {
+    var orientation = stage.viewerControls.getOrientation().toArray();
+    var orientation_json = JSON.stringify(orientation,
+        function (k, v) {
+          return v.toFixed ? Number(v.toFixed(2)) : v
+        }
+    )
+    localStorage.setItem('savedOrientation', orientation_json);
+}
+$("body").on("click", "#btn_save_orientation", onSaveOrientation)
+
+function onLoadSavedOrientation() {
+    savedOrientation = JSON.parse(localStorage.getItem('savedOrientation'));
+    stage.viewerControls.orient(savedOrientation);
+}
+$("body").on("click", "#btn_load_saved_orientation", onLoadSavedOrientation)
