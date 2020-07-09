@@ -90,14 +90,15 @@ function onSaveOrientation() {
     var orientationStr = JSON.stringify(orientation,
         function (k, v) {
           return v.toFixed ? Number(v.toFixed(2)) : v
-        }
-    )
+	});
+    // TODO ctx.camera_position.set(orientationStr);
     localStorage.setItem('savedOrientation', orientationStr);
 }
 $("body").on("click", "#btn_save_orientation", onSaveOrientation)
 
 function onLoadSavedOrientation() {
-    savedOrientationStr = localStorage.getItem('savedOrientation');
+    // TODO const savedOrientation = JSON.parse(ctx.camera_position.value);
+    const savedOrientationStr = localStorage.getItem('savedOrientation');
     if (savedOrientationStr === null) {
 	window.alert("No saved orientation");
     } else {
