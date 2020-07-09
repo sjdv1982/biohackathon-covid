@@ -67,12 +67,20 @@ label {
 
 <p> Scored: <label id="scored"></label> </p>
 <p> Docked: <label id="docked"></label> </p>
-  
+
 <div id="viewport" style="width:1200px; height:500px;"></div>
 
 <button type="button" id="btn_reset_orientation">Reset orientation</button>
 <button type="button" id="btn_save_orientation">Save orientation</button>
 <button type="button" id="btn_load_saved_orientation">Load saved orientation</button>
+
+<p>
+<form>
+  <label for="selection">Residue selection:</label><br>
+  <input type="text" id="inp_selection" name="selection">
+  <button type="button" id="btn_submit">Show</button>
+
+</form>
 
 <script src="index.js"></script>
 

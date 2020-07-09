@@ -552,10 +552,7 @@
       "type": "transformer"
     },
     {
-      "celltype": "plain",
-      "checksum": {
-        "value": "a6958053f406c356835cb2655ad4d7c79e7fa7df4b2918166dba793a3756733c"
-      },
+      "celltype": "text",
       "datatype": "mixed",
       "file_extension": "text",
       "mimetype": "text/plain",
@@ -902,10 +899,6 @@
       "path": [
         "protein_active_residues"
       ],
-      "share": {
-        "path": null,
-        "readonly": false
-      },
       "type": "cell"
     },
     {
@@ -1380,7 +1373,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "5e50e9ef0a9661855143878bd39aba589f3eb2adf9907665ea4aea911cdc5966"
+        "value": "6597e317e0646526f0af94caffe237a7c20b1cdf017bea2d721b4b99c16dc585"
       },
       "datatype": "mixed",
       "file_extension": "html",
@@ -1404,7 +1397,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "70de4ca8dd09a695a4702da057a86c9a3213f0bf0ddc1d2182a9b081653ceaf1"
+        "value": "3b47ad0c37b59886851c7e931ebc0eea9ff272bba45100320f58610d779ddb3d"
       },
       "datatype": "mixed",
       "file_extension": "js",

@@ -552,19 +552,17 @@
       "type": "transformer"
     },
     {
-      "celltype": "plain",
-      "checksum": {
-        "value": "a6958053f406c356835cb2655ad4d7c79e7fa7df4b2918166dba793a3756733c"
-      },
+      "celltype": "structured",
       "datatype": "mixed",
       "file_extension": "text",
+      "hash_pattern": null,
       "mimetype": "text/plain",
       "path": [
         "camera_view"
       ],
       "share": {
         "path": null,
-        "readonly": false
+        "readonly": true
       },
       "type": "cell"
     },
@@ -902,10 +900,6 @@
       "path": [
         "protein_active_residues"
       ],
-      "share": {
-        "path": null,
-        "readonly": false
-      },
       "type": "cell"
     },
     {
@@ -1380,7 +1374,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "5e50e9ef0a9661855143878bd39aba589f3eb2adf9907665ea4aea911cdc5966"
+        "value": "769fcf75320e17baa948a4d3ceed247c44b106d2dddb76b65d0aa2223d726e44"
       },
       "datatype": "mixed",
       "file_extension": "html",
@@ -1404,7 +1398,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "70de4ca8dd09a695a4702da057a86c9a3213f0bf0ddc1d2182a9b081653ceaf1"
+        "value": "99189167e79cc85ea0f05679542db90ad6078f79688c78ba8a139b53c6ea6681"
       },
       "datatype": "mixed",
       "file_extension": "js",

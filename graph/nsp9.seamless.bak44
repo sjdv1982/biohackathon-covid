@@ -554,7 +554,7 @@
     {
       "celltype": "plain",
       "checksum": {
-        "value": "a6958053f406c356835cb2655ad4d7c79e7fa7df4b2918166dba793a3756733c"
+        "value": "624ccee4739c6dbbbd58844fd1f24e1caf6759e816858b3a4c5fd55af1421d9f"
       },
       "datatype": "mixed",
       "file_extension": "text",
@@ -902,10 +902,6 @@
       "path": [
         "protein_active_residues"
       ],
-      "share": {
-        "path": null,
-        "readonly": false
-      },
       "type": "cell"
     },
     {
@@ -1380,7 +1376,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "5e50e9ef0a9661855143878bd39aba589f3eb2adf9907665ea4aea911cdc5966"
+        "value": "769fcf75320e17baa948a4d3ceed247c44b106d2dddb76b65d0aa2223d726e44"
       },
       "datatype": "mixed",
       "file_extension": "html",
@@ -1404,7 +1400,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "70de4ca8dd09a695a4702da057a86c9a3213f0bf0ddc1d2182a9b081653ceaf1"
+        "value": "247a75cb82c3f851bcfb865c4e813690980182b0f6c061a1dbfd38ca461a2121"
       },
       "datatype": "mixed",
       "file_extension": "js",

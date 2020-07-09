@@ -9,16 +9,33 @@ window.addEventListener("resize", function (event) {
 ctx = connect_seamless()
 ctx.self.onsharelist = function(sharelist) {
     sharelist.forEach(element => {
+        if (element == "camera_view") {
+            ctx[element].onchange = onLoadSavedOrientation
+            return
+        }
+        if (element == "protein_active_residues") {
+            ctx[element].onchange = function() {
+                res = this.value
+                res = res.trim("\n").replace(/\n/g, ",")
+                console.log("RES", res)
+                inputElement = document.getElementById("inp_selection")
+                if (inputElement === null) return
+                inputElement.value = res
+                loadNGL()
+            }
+
+            return
+        }
         if (element.indexOf(".") != -1) {
             return
         }
+
         var inputElement = document.getElementById(element)
         if (inputElement === null) {
            inputElement = document.getElementsByName(element)
            inputElement = inputElement[0]
            if (inputElement === null) return
         }
-
 
         if (element == "pdb1" || element == "pdb2") {
             ctx[element].onchange = loadNGL
@@ -30,13 +47,8 @@ ctx.self.onsharelist = function(sharelist) {
             }
         }
         else {
-            ctx[element].onchange = function() {
-                const v = JSON.parse(this.value)
-                inputElement.value = v
-                const inputElement2 = document.getElementById(element+"_label")
-                if (inputElement2 === null) return
-                inputElement2.innerHTML = v
-            }
+            if (inputElement2 === null) return
+            inputElement2.innerHTML = v
             inputElement.onchange = function() {
                 v = this.value
                 ctx[element].set(v)
@@ -62,13 +74,14 @@ function loadNGL() {
         pdb2.addRepresentation("hyperball", {
             color: "green",
         })
+        res = ctx.protein_active_residues.value
+        res = res.trim("\n").replace(/\n/g, ", ")
         pdb2.addRepresentation("spacefill", {
-            color: "magenta",
-            sele: "not backbone",
-            opacity: 0.2,
+            color: "red",
+            sele: res,
         })
         pdb2.addRepresentation("cartoon", {
-            color: "red",
+            color: "blue",
             sele: "backbone",
         })
         pdb2.addRepresentation( "axes", { showAxes: true, showBox: true, radius: 0.2 })
@@ -91,18 +104,29 @@ function onSaveOrientation() {
         function (k, v) {
           return v.toFixed ? Number(v.toFixed(2)) : v
 	});
-    // TODO ctx.camera_position.set(orientationStr);
-    localStorage.setItem('savedOrientation', orientationStr);
+    ctx.camera_view.set(orientationStr);
+    // localStorage.setItem('savedOrientation', orientationStr);
 }
 $("body").on("click", "#btn_save_orientation", onSaveOrientation)
 
 function onLoadSavedOrientation() {
-    // TODO const savedOrientation = JSON.parse(ctx.camera_position.value);
-    const savedOrientationStr = localStorage.getItem('savedOrientation');
-    if (savedOrientationStr === null) {
-	window.alert("No saved orientation");
-    } else {
-	stage.viewerControls.orient(JSON.parse(savedOrientationStr));
-    }
+    const savedOrientation = JSON.parse(ctx.camera_view.value);
+    stage.viewerControls.orient(savedOrientation);
+    // const savedOrientationStr = localStorage.getItem('savedOrientation');
+    // if (savedOrientation === null) {
+	// window.alert("No saved orientation");
+    // } else {
+	// stage.viewerControls.orient(JSON.parse(savedOrientation));
+    // }
 }
 $("body").on("click", "#btn_load_saved_orientation", onLoadSavedOrientation)
+
+function updateResidues() {
+    inputElement = document.getElementById("inp_selection")
+    const value = inputElement.value
+    console.log("UPDATE", value)
+    value2 = value.replace(/,/g, "\n").replace(/ /g,"") + "\n"
+    ctx.protein_active_residues.set(value2)
+    loadNGL()
+}
+$("body").on("click", "#btn_submit",updateResidues)
