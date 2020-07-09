@@ -87,17 +87,21 @@ $("body").on("click", "#btn_reset_orientation", onResetOrientation)
 
 function onSaveOrientation() {
     var orientation = stage.viewerControls.getOrientation().toArray();
-    var orientation_json = JSON.stringify(orientation,
+    var orientationStr = JSON.stringify(orientation,
         function (k, v) {
           return v.toFixed ? Number(v.toFixed(2)) : v
         }
     )
-    localStorage.setItem('savedOrientation', orientation_json);
+    localStorage.setItem('savedOrientation', orientationStr);
 }
 $("body").on("click", "#btn_save_orientation", onSaveOrientation)
 
 function onLoadSavedOrientation() {
-    savedOrientation = JSON.parse(localStorage.getItem('savedOrientation'));
-    stage.viewerControls.orient(savedOrientation);
+    savedOrientationStr = localStorage.getItem('savedOrientation');
+    if (savedOrientationStr === null) {
+	window.alert("No saved orientation");
+    } else {
+	stage.viewerControls.orient(JSON.parse(savedOrientationStr));
+    }
 }
 $("body").on("click", "#btn_load_saved_orientation", onLoadSavedOrientation)
