@@ -78,3 +78,31 @@ function loadNGL() {
     })
 }
 loadNGL()
+
+function onResetOrientation() {
+    var pa = pdb2.structure.getPrincipalAxes();
+    stage.animationControls.rotate( pa.getRotationQuaternion(), 1500 );
+}
+$("body").on("click", "#btn_reset_orientation", onResetOrientation)
+
+function onSaveOrientation() {
+    var orientation = stage.viewerControls.getOrientation().toArray();
+    var orientationStr = JSON.stringify(orientation,
+        function (k, v) {
+          return v.toFixed ? Number(v.toFixed(2)) : v
+	});
+    // TODO ctx.camera_position.set(orientationStr);
+    localStorage.setItem('savedOrientation', orientationStr);
+}
+$("body").on("click", "#btn_save_orientation", onSaveOrientation)
+
+function onLoadSavedOrientation() {
+    // TODO const savedOrientation = JSON.parse(ctx.camera_position.value);
+    const savedOrientationStr = localStorage.getItem('savedOrientation');
+    if (savedOrientationStr === null) {
+	window.alert("No saved orientation");
+    } else {
+	stage.viewerControls.orient(JSON.parse(savedOrientationStr));
+    }
+}
+$("body").on("click", "#btn_load_saved_orientation", onLoadSavedOrientation)
