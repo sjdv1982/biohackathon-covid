@@ -48,3 +48,10 @@ https://github.com/arose/ngl
 
 but we will not use this:
 https://github.com/arose/nglview
+
+
+File permission issue:
+After creating a file, do `sudo chmod -R a+w .`
+
+
+http://localhost:5813/ctx/camera_view
