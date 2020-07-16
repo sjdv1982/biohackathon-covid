@@ -17,9 +17,8 @@ ctx.self.onsharelist = function(sharelist) {
             ctx[element].onchange = function() {
                 res = this.value
                 res = res.trim("\n").replace(/\n/g, ",")
-                console.log("RES", res)
                 inputElement = document.getElementById("inp_selection")
-                if (inputElement === null) return
+                if (!(inputElement)) return
                 inputElement.value = res
                 loadNGL()
             }
@@ -34,26 +33,34 @@ ctx.self.onsharelist = function(sharelist) {
         if (inputElement === null) {
            inputElement = document.getElementsByName(element)
            inputElement = inputElement[0]
-           if (inputElement === null) return
+           if (!(inputElement)) return
         }
 
         if (element == "pdb1" || element == "pdb2") {
             ctx[element].onchange = loadNGL
         }
-        else if ((element == "scored") || (element == "docked")) {
+        else if ((element == "scored") || (element == "docked_score")) {
             ctx[element].onchange = function() {
                 const v = JSON.parse(this.value)
                 inputElement.innerHTML = v
             }
         }
         else {
-            if (inputElement2 === null) return
-            inputElement2.innerHTML = v
+            ctx[element].onchange = function() {
+                const v = JSON.parse(this.value)
+                inputElement.value = v
+                const inputElement2 = document.getElementById(element+"_label")
+                if (!(inputElement2)) return
+                inputElement2.innerHTML = v
+            }
+            // if (inputElement2 === null) return
+            // inputElement2.innerHTML = v
+            if (!(inputElement)) return
             inputElement.onchange = function() {
                 v = this.value
                 ctx[element].set(v)
                 const inputElement2 = document.getElementById(element+"_label")
-                if (inputElement2 === null) return
+                if (!(inputElement2)) return
                 inputElement2.innerHTML = v
             }
         }
@@ -65,32 +72,46 @@ function loadNGL() {
     Promise.all([
       stage.loadFile("./pdb1",{ext:"pdb"}),
       stage.loadFile("./pdb2",{ext:"pdb"}),
+      stage.loadFile("./docked_pdb",{ext:"pdb"}),
     ]).then(function (l) {
-        pdb1 = l[0]
+        initial_pdb = l[0]
         pdb2 = l[1]
+        docked_pdb = l[2]
+        if (1) {
+            pdb1 = docked_pdb
+        }
+        else {
+            pdb1 = initial_pdb
+        }
         pdb1.addRepresentation("spacefill", {
             opacity: 0.2,
         })
         pdb2.addRepresentation("hyperball", {
-            color: "green",
+            sele: ":B",
+            color: "magenta"
         })
-        res = ctx.protein_active_residues.value
+        res = ctx.protein_active_residues
+        if (!res) return
+        res = res.value
         res = res.trim("\n").replace(/\n/g, ", ")
         pdb2.addRepresentation("spacefill", {
             color: "red",
             sele: res,
         })
-        pdb2.addRepresentation("cartoon", {
+        pdb2.addRepresentation("spacefill", {
             color: "blue",
-            sele: "backbone",
+            sele: ":A",
         })
-        pdb2.addRepresentation( "axes", { showAxes: true, showBox: true, radius: 0.2 })
+        //pdb2.addRepresentation( "axes", { showAxes: true, showBox: true, radius: 0.2 })
         stage.autoView()
         var pa = pdb2.structure.getPrincipalAxes();
         stage.animationControls.rotate( pa.getRotationQuaternion(), 1500 );
     })
 }
-loadNGL()
+// loadNGL()
+$(document).ready(function(){
+    loadNGL();
+})
 
 function onResetOrientation() {
     var pa = pdb2.structure.getPrincipalAxes();
@@ -122,11 +143,20 @@ function onLoadSavedOrientation() {
 $("body").on("click", "#btn_load_saved_orientation", onLoadSavedOrientation)
 
 function updateResidues() {
-    inputElement = document.getElementById("inp_selection")
+    inputElement = document.getElementById("inp_selection");
     const value = inputElement.value
-    console.log("UPDATE", value)
     value2 = value.replace(/,/g, "\n").replace(/ /g,"") + "\n"
     ctx.protein_active_residues.set(value2)
     loadNGL()
 }
-$("body").on("click", "#btn_submit",updateResidues)
+$("body").on("click", "#btn_submit", updateResidues)
+
+function uploadPDBFile() {
+    inputElement = document.getElementById("inp_upload_pdb");
+    const file = inputElement.files[0]
+    if (file === undefined) return
+    file.text().then(function(text){
+        ctx["protein"].set(text)
+    })
+}
+$("body").on("click", "#btn_upload_pdb", uploadPDBFile)

@@ -65,8 +65,8 @@ label {
 
 <label id="score_title"> <h3>Score</h3> </label>
 
-<p> Scored: <label id="scored"></label> </p>
-<p> Docked: <label id="docked"></label> </p>
+<p> - of the initial position: <label id="scored"></label> </p>
+<p> - of the pose after the docking: <label id="docked_score"></label> </p>
 
 <div id="viewport" style="width:1200px; height:500px;"></div>
 
@@ -76,10 +76,15 @@ label {
 
 <p>
 <form>
-  <label for="selection">Residue selection:</label><br>
+  <label for="selection">Active residue selection:</label><br>
   <input type="text" id="inp_selection" name="selection">
   <button type="button" id="btn_submit">Show</button>
+</form>
 
+<p>
+<form>
+  <input type="file" id="inp_upload_pdb" name="inp_upload_pdb">
+  <button type="button" id="btn_upload_pdb">Upload PDB file</button>
 </form>
 
 <script src="index.js"></script>

@@ -305,6 +305,15 @@
     },
     {
       "source": [
+        "trinucleotide_aa_trans"
+      ],
+      "target": [
+        "pdb1"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
         "protein"
       ],
       "target": [
@@ -468,63 +477,6 @@
         "restraints"
       ],
       "type": "connection"
-    },
-    {
-      "source": [
-        "docked"
-      ],
-      "target": [
-        "get_docked_score",
-        "datfile"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "get_docked_score"
-      ],
-      "target": [
-        "docked_score"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "docked"
-      ],
-      "target": [
-        "collect",
-        "datfile"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "collect"
-      ],
-      "target": [
-        "docked_pdb"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucleotide_aa_trans"
-      ],
-      "target": [
-        "pdb1"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucleotide_aa_trans"
-      ],
-      "target": [
-        "collect",
-        "ligand"
-      ],
-      "type": "connection"
     }
   ],
   "lib": [],
@@ -573,24 +525,16 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "d570a7843c1aa776f11e54e6c8486fcd7989b575b83c7f8332b14f50422dc37d",
+        "code": "4fba28df61283cfcbb45eafef89870e8ac3af35ba6bcdc24139634330eb2c9a5",
         "input": "fc8499b4d287500c3993b1507f5f467d98df2750e3a2f72f595e0623d30ff9a7",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
         "input_buffer": "fc8499b4d287500c3993b1507f5f467d98df2750e3a2f72f595e0623d30ff9a7",
-        "result": "b92bdfb1538827ed6761f18b5384bc9721abb2a3373b49cf1ee3487e23cd1f59"
+        "result": "b84a36d146d9217753e861bae5b8399f45dc3ce4e1fde4afe7fe5a5afa015a83"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "docker",
-      "mount": {
-        "code": {
-          "authority": "file",
-          "mode": "rw",
-          "path": "aareduce-protein.bash",
-          "persistent": true
-        }
-      },
       "path": [
         "aareduce_protein"
       ],
@@ -610,7 +554,7 @@
     {
       "celltype": "plain",
       "checksum": {
-        "value": "30e2fe218c948f3694a4fb6969f6afb28594f2f3156535d11a6986da84cc7964"
+        "value": "a6958053f406c356835cb2655ad4d7c79e7fa7df4b2918166dba793a3756733c"
       },
       "datatype": "mixed",
       "file_extension": "text",
@@ -691,48 +635,6 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "06eaafc5dfbed6cdbefbaeb6a3949ce631602c263cccbaccd80a93a66da74fba",
-        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "06eaafc5dfbed6cdbefbaeb6a3949ce631602c263cccbaccd80a93a66da74fba",
-        "result": "476de06e08d3c25e46c43b26e2d68051fd40a361c02d6bbcd9a16003d595bcc7"
-      },
-      "compiled": false,
-      "debug": false,
-      "file_extension": "sh",
-      "language": "docker",
-      "mount": {
-        "code": {
-          "authority": "file",
-          "mode": "rw",
-          "path": "collect.bash",
-          "persistent": true
-        }
-      },
-      "path": [
-        "collect"
-      ],
-      "pins": {
-        "datfile": {
-          "celltype": "mixed"
-        },
-        "docker_image": {
-          "celltype": "mixed"
-        },
-        "docker_options": {
-          "celltype": "mixed"
-        },
-        "ligand": {
-          "celltype": "mixed"
-        }
-      },
-      "type": "transformer"
-    },
-    {
-      "INPUT": "inp",
-      "RESULT": "result",
-      "SCHEMA": null,
-      "checksum": {
         "code": "f83ffdb302666090eae4f65cb6b074ffe7351b014e64d7585b240539f9456462",
         "input": "fea6887a7fc02bbee2731e7c093ae42fe0127e8c9b865a37ad5e2704a60b8a7d",
         "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
@@ -782,11 +684,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "d5bf7477e290998dae123763f3601d184a35d9af39e32e11bb748e19b560fe95",
-        "input": "3066b82679e30e4c9800bfa93bda82120cf38068173371b0c11993773f70ba9b",
+        "code": "b761a5fdbda649dc464e8317e1149e3e04340d02f9c04488668d78d760ebe1a6",
+        "input": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "3066b82679e30e4c9800bfa93bda82120cf38068173371b0c11993773f70ba9b",
-        "result": "d1a2e3e5c9ba580fd7b5c77655c018e15d47e1499d3275a75480a677c8c67628"
+        "input_buffer": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
+        "result": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
       },
       "compiled": false,
       "debug": false,
@@ -823,17 +725,11 @@
       "type": "transformer"
     },
     {
-      "celltype": "text",
+      "celltype": "float",
       "checksum": {
-        "value": "6ce0ce2477140a5cfb074329d8552aba04f86f3afc285f987e68d4027c419ad3"
+        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
       },
       "datatype": "mixed",
-      "mount": {
-        "authority": "cell",
-        "mode": "w",
-        "path": "docked.dat",
-        "persistent": true
-      },
       "path": [
         "docked"
       ],
@@ -846,8 +742,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "97e6928124d1f1c6e54a069953f4dbb5dc2e6b3a08c5293ef4b575a3bf5d9d5c",
-        "value": "97e6928124d1f1c6e54a069953f4dbb5dc2e6b3a08c5293ef4b575a3bf5d9d5c"
+        "buffer": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a",
+        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -857,51 +753,15 @@
       "type": "cell"
     },
     {
-      "celltype": "text",
-      "checksum": {
-        "value": "576695a9701708486c379d90e86ec65e5a8dbe955598b2024d24321a25175dc6"
-      },
-      "datatype": "mixed",
-      "mount": {
-        "authority": "cell",
-        "mode": "w",
-        "path": "docked.pdb",
-        "persistent": true
-      },
-      "path": [
-        "docked_pdb"
-      ],
-      "share": {
-        "path": null,
-        "readonly": true
-      },
-      "type": "cell"
-    },
-    {
-      "celltype": "float",
-      "checksum": {
-        "value": "2d41f107d48b20a57b99dc99ece205aecd514ce6f4497ae8959819c44e3bbe30"
-      },
-      "datatype": "mixed",
-      "path": [
-        "docked_score"
-      ],
-      "share": {
-        "path": "docked_score",
-        "readonly": true
-      },
-      "type": "cell"
-    },
-    {
       "INPUT": "inp",
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
         "code": "cde3af6bedc89e18883b7ecb323fa69e5bdf7e261b320dc3af375e0bb0718020",
-        "input": "8fc0cf670d67dbddc2b5ca3561734ff68831cd60391ef3244f8c64bf962b06cb",
+        "input": "a1dab579101cebbe0478ad13845810ccd57e1d669e270fe1174432c9355e113e",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "8fc0cf670d67dbddc2b5ca3561734ff68831cd60391ef3244f8c64bf962b06cb",
-        "result": "1737f9c92bcd03447d502c6ba0f7f64a85a8447621c248fdf5a3662a3c2e2560"
+        "input_buffer": "a1dab579101cebbe0478ad13845810ccd57e1d669e270fe1174432c9355e113e",
+        "result": "f09b91d3f6ac2c7713c582b6e723d0576d6c1fe5e63bd497cb9d1fb853a28857"
       },
       "compiled": false,
       "debug": false,
@@ -947,34 +807,9 @@
       "type": "transformer"
     },
     {
-      "INPUT": "inp",
-      "RESULT": "result",
-      "SCHEMA": null,
-      "checksum": {
-        "code": "ef89d5b7c6113f396093cf83da2a49c2cf8f7a63a9b60a6ff138554680ababda",
-        "input": "35efea90fc52bfeb79dedffdfca37f74fce5fd93fc343a4c3f56587c61f75ad9",
-        "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
-        "input_buffer": "35efea90fc52bfeb79dedffdfca37f74fce5fd93fc343a4c3f56587c61f75ad9",
-        "result": "2d41f107d48b20a57b99dc99ece205aecd514ce6f4497ae8959819c44e3bbe30"
-      },
-      "compiled": false,
-      "debug": false,
-      "file_extension": "sh",
-      "language": "bash",
-      "path": [
-        "get_docked_score"
-      ],
-      "pins": {
-        "datfile": {
-          "celltype": "mixed"
-        }
-      },
-      "type": "transformer"
-    },
-    {
       "celltype": "text",
       "checksum": {
-        "value": "191569500a7ae931edc8fb1efab61fa8c98544162e6d4643ed8ad076e170f08d"
+        "value": "54ca60c4395fdc11572611dd5aa6d2b200a98e9fc5ea74f41347ba1eb12f88e8"
       },
       "datatype": "mixed",
       "file_extension": "text",
@@ -1029,25 +864,21 @@
       },
       "datatype": "mixed",
       "mount": {
-        "authority": "file",
+        "authority": "cell",
         "mode": "rw",
-        "path": "protein.pdb",
+        "path": "6W4B.pdb",
         "persistent": true
       },
       "path": [
         "protein"
       ],
-      "share": {
-        "path": "protein",
-        "readonly": false
-      },
       "type": "cell"
     },
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "b92bdfb1538827ed6761f18b5384bc9721abb2a3373b49cf1ee3487e23cd1f59",
-        "value": "b92bdfb1538827ed6761f18b5384bc9721abb2a3373b49cf1ee3487e23cd1f59"
+        "buffer": "b84a36d146d9217753e861bae5b8399f45dc3ce4e1fde4afe7fe5a5afa015a83",
+        "value": "b84a36d146d9217753e861bae5b8399f45dc3ce4e1fde4afe7fe5a5afa015a83"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1059,7 +890,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "f112c880c63ddafdff98b9575bfce057d6e8f6ad6f4da8aeba0379ba20645a51"
+        "value": "299418eca5b191ed9439f4ecc63de89881028d5d8cdb1225154704af2b4a2648"
       },
       "datatype": "mixed",
       "mount": {
@@ -1091,8 +922,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "419064bdebcea9210391d17be864863f648876e587d2ffe913d9487b6ca46b02",
-        "value": "419064bdebcea9210391d17be864863f648876e587d2ffe913d9487b6ca46b02"
+        "buffer": "9bf18c75f1f0daf298cadc0cd6c4f09b70daf3c49488ce1b9e14a71c2d1cc68b",
+        "value": "9bf18c75f1f0daf298cadc0cd6c4f09b70daf3c49488ce1b9e14a71c2d1cc68b"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1107,10 +938,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "6c611cc7159c9b3a650fc442807e5150c2de161000fe129ca07f98513465789c",
-        "input": "981d63c0adaf5087e91f007413c5d588fceb28dc2daa304bf55a574dc84565f4",
+        "input": "68145c69094401283484add1446f08505f558a3fb5609be46bd4d595f82c6a57",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "981d63c0adaf5087e91f007413c5d588fceb28dc2daa304bf55a574dc84565f4",
-        "result": "419064bdebcea9210391d17be864863f648876e587d2ffe913d9487b6ca46b02"
+        "input_buffer": "68145c69094401283484add1446f08505f558a3fb5609be46bd4d595f82c6a57",
+        "result": "9bf18c75f1f0daf298cadc0cd6c4f09b70daf3c49488ce1b9e14a71c2d1cc68b"
       },
       "compiled": false,
       "debug": false,
@@ -1166,7 +997,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "be2910e35818683219e81a7d4c0f2b1dc6346f30f2c36302573204980e1017cd"
+        "value": "e0ec1a44ee594e24076ada8c73553b652379fd86f819e47f24a2f19677e7de00"
       },
       "datatype": "mixed",
       "mount": {
@@ -1186,10 +1017,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "6d866a9acb6afd62f11764e6b78847844662bfd6fe59760dac3df2785c419ca6",
-        "input": "3066b82679e30e4c9800bfa93bda82120cf38068173371b0c11993773f70ba9b",
+        "input": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "3066b82679e30e4c9800bfa93bda82120cf38068173371b0c11993773f70ba9b",
-        "result": "38c235b3e5ba07a83ba21abe1eb8a4eb5a58b84f8bccaac35bae6ec84bf6293e"
+        "input_buffer": "92427536071a29802c9862ddd6335a4b030766854a76e0fa5b81b01328c79062",
+        "result": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf"
       },
       "compiled": false,
       "debug": false,
@@ -1228,7 +1059,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "38c235b3e5ba07a83ba21abe1eb8a4eb5a58b84f8bccaac35bae6ec84bf6293e"
+        "value": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf"
       },
       "datatype": "mixed",
       "path": [
@@ -1243,8 +1074,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "38c235b3e5ba07a83ba21abe1eb8a4eb5a58b84f8bccaac35bae6ec84bf6293e",
-        "value": "38c235b3e5ba07a83ba21abe1eb8a4eb5a58b84f8bccaac35bae6ec84bf6293e"
+        "buffer": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf",
+        "value": "ea631982962b070354cb8c22ca396c5071c88ea55eba326a23839eefbb79cebf"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1256,7 +1087,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "6ce0ce2477140a5cfb074329d8552aba04f86f3afc285f987e68d4027c419ad3"
+        "value": "8a3837006f24da9528d4e093faac1e2ccdf46ffce8deec38868e9853508ebe9a"
       },
       "datatype": "mixed",
       "path": [
@@ -1270,10 +1101,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "a7fd955d5cb75d5379c3850e4ea45cec581bba6cf2467e17b1aed09e6dbce363",
-        "input": "3af035f5604962394f5e33b7bc7b68301169675f0fce91706ab28e33437c6f62",
+        "input": "484704e1acfe3e1191d49d6bf19cf5ca3db4ca1b220814f48c1871dc2891b1b7",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "3af035f5604962394f5e33b7bc7b68301169675f0fce91706ab28e33437c6f62",
-        "result": "e0c08f286c19bdee1faa8cf8273a6601ecd9b9450de64a96dfea64ebd3885456"
+        "input_buffer": "484704e1acfe3e1191d49d6bf19cf5ca3db4ca1b220814f48c1871dc2891b1b7",
+        "result": "8806eb49b21c811766e5858b4335fb18bc939401c7cf40f018bb656cd57bf28c"
       },
       "compiled": false,
       "debug": false,
@@ -1310,10 +1141,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "a7fd955d5cb75d5379c3850e4ea45cec581bba6cf2467e17b1aed09e6dbce363",
-        "input": "06d4a0c255d744ff2e347d1bf61ca848bbbc5004fdb2e08233253130d46f199d",
+        "input": "cb6cfa3f60e2f5a4412b40370293b29b65b3445d1eae5df98db602a232a007fc",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "06d4a0c255d744ff2e347d1bf61ca848bbbc5004fdb2e08233253130d46f199d",
-        "result": "098f19b84e0196dda3534cf6076b68fd575521788963567d8e23712bffdec603"
+        "input_buffer": "cb6cfa3f60e2f5a4412b40370293b29b65b3445d1eae5df98db602a232a007fc",
+        "result": "57ad312e164206669b175ff6054496e6b3886514c8c7c63f24ad36a83f5d01b8"
       },
       "compiled": false,
       "debug": false,
@@ -1347,8 +1178,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "fd0608f7bb49b54f31b14d5ec548f5a2e171463a07ef9a57fbe2a34cb0cd459c",
-        "value": "fd0608f7bb49b54f31b14d5ec548f5a2e171463a07ef9a57fbe2a34cb0cd459c"
+        "buffer": "4039c335b687eabb01f10b91c986eaffb2f858e5ef4f4b52fcb58082a17e5d66",
+        "value": "4039c335b687eabb01f10b91c986eaffb2f858e5ef4f4b52fcb58082a17e5d66"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1381,7 +1212,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "5be318a9d3b90b5e6c25ce1fb1229e82b21eeecc50aa05e2f41eb126355f1267"
+        "value": "89aa3edf465606028b930680b76c016e28677f420d8698becf0fb5667d603384"
       },
       "datatype": "mixed",
       "mount": {
@@ -1402,7 +1233,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "191fb5fc4a9bf2ded9a09a0a2c4eb3eb90f15ee96deb1eec1a970df0a79d09ba"
+        "value": "9c2d12c707e01191fa7eb4c2aaf61efbdabdc3a78f72fcc018ad8f60314e8466"
       },
       "datatype": "mixed",
       "mount": {
@@ -1440,7 +1271,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "191569500a7ae931edc8fb1efab61fa8c98544162e6d4643ed8ad076e170f08d"
+        "value": "54ca60c4395fdc11572611dd5aa6d2b200a98e9fc5ea74f41347ba1eb12f88e8"
       },
       "datatype": "mixed",
       "mount": {
@@ -1526,7 +1357,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "61209fb9f68dddce961d6063dc6a6fc79747eb090baedb2e7a515ea8cb75830e"
+        "value": "749d1af587a91fa191bcf5e9aa9b6a0887776e1e620ca125b5d5d65e4cd34493"
       },
       "datatype": "mixed",
       "mount": {
@@ -1549,13 +1380,13 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "ffb04ae7613d19bc1dc4b914099f26bdf3797221c34cc0f589119d7ad574cf6d"
+        "value": "5e50e9ef0a9661855143878bd39aba589f3eb2adf9907665ea4aea911cdc5966"
       },
       "datatype": "mixed",
       "file_extension": "html",
       "mimetype": "text/html",
       "mount": {
-        "authority": "file",
+        "authority": "cell",
         "mode": "rw",
         "path": "index.html",
         "persistent": true
@@ -1573,13 +1404,13 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "8187fec0509067d8fba0038d19be12b173db30b1d58a5dc040cb29116310ee10"
+        "value": "70de4ca8dd09a695a4702da057a86c9a3213f0bf0ddc1d2182a9b081653ceaf1"
       },
       "datatype": "mixed",
       "file_extension": "js",
       "mimetype": "application/javascript",
       "mount": {
-        "authority": "file",
+        "authority": "cell",
         "mode": "rw",
         "path": "index.js",
         "persistent": true
