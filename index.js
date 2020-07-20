@@ -13,7 +13,7 @@ ctx.self.onsharelist = function(sharelist) {
             ctx[element].onchange = onLoadSavedOrientation
             return
         }
-        if (element == "protein_active_residues") {
+        else if (element == "protein_active_residues") {
             ctx[element].onchange = function() {
                 res = this.value
                 res = res.trim("\n").replace(/\n/g, ",")
@@ -25,6 +25,18 @@ ctx.self.onsharelist = function(sharelist) {
 
             return
         }
+        else if (element == "representation") {
+            ctx[element].onchange = loadNGL
+            return
+        }
+        else if (element == "pdb1" || element == "pdb2" || element == "docked_pdb") {
+            //ctx[element].onchange = loadNGL
+            ctx[element].onchange = function(){
+                loadNGL()
+            }
+            return
+        }
+
         if (element.indexOf(".") != -1) {
             return
         }
@@ -36,33 +48,30 @@ ctx.self.onsharelist = function(sharelist) {
            if (!(inputElement)) return
         }
 
-        if (element == "pdb1" || element == "pdb2") {
-            ctx[element].onchange = loadNGL
-        }
-        else if ((element == "scored") || (element == "docked_score")) {
+        if ((element == "scored") || (element == "docked_score")) {
             ctx[element].onchange = function() {
                 const v = JSON.parse(this.value)
                 inputElement.innerHTML = v
             }
+            return
         }
-        else {
-            ctx[element].onchange = function() {
-                const v = JSON.parse(this.value)
-                inputElement.value = v
-                const inputElement2 = document.getElementById(element+"_label")
-                if (!(inputElement2)) return
-                inputElement2.innerHTML = v
-            }
-            // if (inputElement2 === null) return
-            // inputElement2.innerHTML = v
-            if (!(inputElement)) return
-            inputElement.onchange = function() {
-                v = this.value
-                ctx[element].set(v)
-                const inputElement2 = document.getElementById(element+"_label")
-                if (!(inputElement2)) return
-                inputElement2.innerHTML = v
-            }
+
+        ctx[element].onchange = function() {
+            const v = JSON.parse(this.value)
+            inputElement.value = v
+            const inputElement2 = document.getElementById(element+"_label")
+            if (!(inputElement2)) return
+            inputElement2.innerHTML = v
+        }
+        // if (inputElement2 === null) return
+        // inputElement2.innerHTML = v
+        if (!(inputElement)) return
+        inputElement.onchange = function() {
+            v = this.value
+            ctx[element].set(v)
+            const inputElement2 = document.getElementById(element+"_label")
+            if (!(inputElement2)) return
+            inputElement2.innerHTML = v
         }
     })
 }
@@ -83,26 +92,15 @@ function loadNGL() {
         else {
             pdb1 = initial_pdb
         }
-        pdb1.addRepresentation("spacefill", {
-            opacity: 0.2,
+        representation = JSON.parse(ctx.representation.value)
+        representation.forEach(element => {
+            const molecule = element.molecule
+            const representation = element.representation
+            const params = Object.assign({}, element)
+            delete params.molecule
+            delete params.representation
+            eval(molecule).addRepresentation(representation, params)
         })
-        pdb2.addRepresentation("hyperball", {
-            sele: ":B",
-            color: "magenta"
-        })
-        res = ctx.protein_active_residues
-        if (!res) return
-        res = res.value
-        res = res.trim("\n").replace(/\n/g, ", ")
-        pdb2.addRepresentation("spacefill", {
-            color: "red",
-            sele: res,
-        })
-        pdb2.addRepresentation("spacefill", {
-            color: "blue",
-            sele: ":A",
-        })
-        //pdb2.addRepresentation( "axes", { showAxes: true, showBox: true, radius: 0.2 })
         stage.autoView()
         var pa = pdb2.structure.getPrincipalAxes();
         stage.animationControls.rotate( pa.getRotationQuaternion(), 1500 );

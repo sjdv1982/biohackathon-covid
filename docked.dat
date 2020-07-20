@@ -1,11 +1,11 @@
-## Command line arguments: stage1.dat-fixre /attract/bin/../attract.par protein rna --rest restraints --fix-receptor
+## Command line arguments: stage1.dat-fixre /attract/bin/../attract.par protein rna --rest restraints --fix-receptor --rcut 9999999
 #pivot 1 12.018 2.833 6.191
 #pivot 2 -12.350 -5.106 1.654
 #centered receptor: false
 #centered ligands: false
 #1
-### SEED 752227
-## Energy: -21.485
-##   -21.915 0.000 0.430 0.000 0.000 0.000
+### SEED 85525
+## Energy: -21.490
+##   -21.915 0.000 0.425 0.000 0.000 0.000
    0.000000 0.000000 -0.000000 0.0000 0.0000 0.0000
-   0.245628 1.693214 -1.457495 38.5930 16.6633 16.5707
+   0.245197 1.694507 -1.456776 38.5847 16.6717 16.5604
