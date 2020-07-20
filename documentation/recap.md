@@ -2,7 +2,7 @@
 
 ### Session 7
 1. Sjoerd deployed the project on RPBS platform, now it is possible to open several independent session at once (it worked on 10.07, but not any more, so now it's more like a teaser for the next session). This is done with the help of Cloudless. It allowed to launch independent instances, work at your own, share your instance with other people;
-2. Came read some articles. Nothing with the increased binding upon residues mutation;
+2. Cami read some articles. Nothing with the increased binding upon residues mutation yet;
 3. We are in the middle making the function for loading a pdb file from the local machine to the pipeline work;
 4. Currently, docking is done for the chain A of a protein and for the one ligand structure;
 5. Now it's possible to see (only) the docked model in the web page.
@@ -13,7 +13,7 @@ Max added camera view (so we can share the camera orientation, camera view btwn 
 
 Buttons 'reset' 'save' 'load' were added in the down right corner of the field with the protein visualization (http://localhost:5813/ctx/index.html)
 
-A field for the active residues added, which is synchronized between all users. Selected by one user residues (by their numbers, separated by the comma, can be highlighted using show button and used as a target for the docking.
+A field for the active residues added, which is synchronized between all users. Selected by one user residues (by their numbers, separated by the comma, can be highlighted using show button and used as a target for the docking).
 
 ### Session 5
-Trying data-driven docking (docking with restraints)
+Trying data-driven docking (docking with restraints).
