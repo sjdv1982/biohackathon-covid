@@ -1,4 +1,16 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
+### Session 8
+##### Progress:
+- Max added option to switch from initial to the docked structure.
+##### During the session:
+- Work on the .js and displaying dock and undocked structures
+- Creation of the independent instances of the pipeline works
+- Some explanations about the translation-rotation, etc.
+- Unknown error in dock.sh (File starting_structures does not exist) to be fixed until next week
+##### Tasks:
+- For the initial model, the 'load save orientation' button doesn't work after resetting. Max will look into it.
+##### Suggestions:
+- to mark cells, which are the initial input, on the pipeline, make them light-blue for example
 
 ### Session 7
 1. Sjoerd deployed the project on RPBS platform, now it is possible to open several independent session at once (it worked on 10.07, but not any more, so now it's more like a teaser for the next session). This is done with the help of Cloudless. It allowed to launch independent instances, work at your own, share your instance with other people;

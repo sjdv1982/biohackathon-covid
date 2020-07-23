@@ -7,7 +7,7 @@ http://localhost:5813/ctx/pdb1
 http://localhost:5813/ctx/pdb2
 
 
-http://files.rcsb.org/download/6W4B.pdb (unbound form SARS-Cov 2)
+https://files.rcsb.org/download/6W4B.pdb (unbound form SARS-Cov 2)
 https://files.rcsb.org/download/1UW7.pdb # Sars 1
 
 https://files.rcsb.org/download/6WXD.pdb (Same seq as of 6W4B)
@@ -54,4 +54,16 @@ File permission issue:
 After creating a file, do `sudo chmod -R a+w .`
 
 
-http://localhost:5813/ctx/camera_view
+https://seamless.rpbs.univ-paris-diderot.fr/cloudless/instance/2606159/ctx/index.html
+https://seamless.rpbs.univ-paris-diderot.fr/cloudless/instance/2606159/status/index.html
+
+https://seamless.rpbs.univ-paris-diderot.fr/cloudless/index.html => Nsp9 with status monitor
+
+
+
+#pivot auto
+#centered receptor: false
+#centered ligands: false
+#1
+           0           0           0           0           0           0
+           0           0           0           0           0           0

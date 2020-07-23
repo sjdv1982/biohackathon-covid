@@ -321,6 +321,15 @@
     },
     {
       "source": [
+        "trinucleotide_centered"
+      ],
+      "target": [
+        "initial_rna"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
         "collect"
       ],
       "target": [
@@ -445,46 +454,6 @@
         "code"
       ],
       "type": "connection"
-    },
-    {
-      "source": [
-        "code",
-        "collect"
-      ],
-      "target": [
-        "collect_initial",
-        "code"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "starting_structures"
-      ],
-      "target": [
-        "collect_initial",
-        "datfile"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "trinucleotide_centered"
-      ],
-      "target": [
-        "collect_initial",
-        "ligand"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "collect_initial"
-      ],
-      "target": [
-        "initial_rna"
-      ],
-      "type": "connection"
     }
   ],
   "lib": [],
@@ -573,9 +542,9 @@
       "SCHEMA": null,
       "checksum": {
         "code": "994f463ec5bf56780f2e9c29d4740f5a6014f142d29a2a6455d50669f165e508",
-        "input": "c88a02766b4a60698b251c2386a904be78082e453631b6b7a3759bdd7d188f30",
-        "input_buffer": "c88a02766b4a60698b251c2386a904be78082e453631b6b7a3759bdd7d188f30",
-        "result": "be857d37400401b7d45aa67a7559ade7dc0c0bdf5686d1b60d517ca8bd706581"
+        "input": "4c03fca505f53e0675ab24619dbe3588a6b210bbb0fca5bf256b803c4d41ae99",
+        "input_buffer": "4c03fca505f53e0675ab24619dbe3588a6b210bbb0fca5bf256b803c4d41ae99",
+        "result": "2a7f45e4d2c3990737fd9e7d2060f0b5e9050e4068a275ad8d7cbfde775bfae7"
       },
       "compiled": false,
       "debug": false,
@@ -710,10 +679,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "12e0749f01e4404a771d2d28715bdf8ecdd32226b9d5809e70691240382ed1d8",
+        "input": "d6caacbbf20723cc5c85f77eff655a3538fef34dc3f92d9d1333d01ae42bd193",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "12e0749f01e4404a771d2d28715bdf8ecdd32226b9d5809e70691240382ed1d8",
-        "result": "38a334f5685213f7596568318ebde6fa36b67a3a356a38f2c377d1ac8c5fd538"
+        "input_buffer": "d6caacbbf20723cc5c85f77eff655a3538fef34dc3f92d9d1333d01ae42bd193",
+        "result": "7bdee61aabe040d1e9423bf59a54c7b96c101cf92438472c875ceaadb73db085"
       },
       "compiled": false,
       "debug": false,
@@ -743,34 +712,13 @@
       "INPUT": "inp",
       "RESULT": "result",
       "SCHEMA": null,
-      "checksum": {
-        "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "af9f837015754e648b0d79e636c575080569a5dab48ea53ad728b4cd23e84614",
-        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "af9f837015754e648b0d79e636c575080569a5dab48ea53ad728b4cd23e84614",
-        "result": "6a4d22b544344f487711649bd613007fcf9e9d0a4bea069b04fdbd04d4168b79"
-      },
       "compiled": false,
       "debug": false,
-      "file_extension": "sh",
-      "language": "docker",
+      "language": "python",
       "path": [
         "collect_initial"
       ],
-      "pins": {
-        "datfile": {
-          "celltype": "mixed"
-        },
-        "docker_image": {
-          "celltype": "mixed"
-        },
-        "docker_options": {
-          "celltype": "mixed"
-        },
-        "ligand": {
-          "celltype": "mixed"
-        }
-      },
+      "pins": {},
       "type": "transformer"
     },
     {
@@ -828,10 +776,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "2afc2d3542020b0409f90517dc03e2e5de1846b217f43efe35f7fbb206223373",
-        "input": "727fdd581052e3f2bb590b58691fe0babe552191ff0548aab2dc33dc442ae5b6",
+        "input": "d11aed102fd7c6ee5891eaef649b6b3b8efdee933b68f66a2a5eee948e241c5b",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "727fdd581052e3f2bb590b58691fe0babe552191ff0548aab2dc33dc442ae5b6",
-        "result": "313e4ce32ffd6721394de75d8f66a4165a8c4658593468004cae331a6a2b166f"
+        "input_buffer": "d11aed102fd7c6ee5891eaef649b6b3b8efdee933b68f66a2a5eee948e241c5b",
+        "result": "63558f52e61aa846885e6e52413f8b0190b636d05729d06e849c1333d9f7349f"
       },
       "compiled": false,
       "debug": false,
@@ -873,7 +821,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "7a2340534aafc5610cd0c3d0265a5febc31f02414b268f7dc4cf89a1097c7361"
+        "value": "990111069a490f6dd2a66ff735372c23811ed8848c8712e07702287a4c2371fb"
       },
       "datatype": "mixed",
       "mount": {
@@ -894,7 +842,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "b37cb5501d51f0ce090c5d268d343e7f880e81c853f0bab37dfb3d69c882bdb2"
+        "value": "3458d765e03d57c6f47c077598f4832239c8acde0ec8384bce54c88ff4765de8"
       },
       "datatype": "mixed",
       "mount": {
@@ -915,7 +863,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "c011394aa1dd607aed29853d0a8289650e824b9f895975eb5979192e99f4a25e"
+        "value": "e7ee17b40d3e524ab3d704786dc175374bb2e6339f069d8c9109c0b464079896"
       },
       "datatype": "mixed",
       "path": [
@@ -933,10 +881,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "cde3af6bedc89e18883b7ecb323fa69e5bdf7e261b320dc3af375e0bb0718020",
-        "input": "249596e661818c392608b0c98c02b59dc454016fdf846653d96bf274647d5ea2",
+        "input": "c83073dd2ef3fbcefd86a1e30cbcea8d735517a380c6ceef846b37fd9a1acae7",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "249596e661818c392608b0c98c02b59dc454016fdf846653d96bf274647d5ea2",
-        "result": "f69aaa24e5b142ee1e7c745d652410ef58f9fa78354a65967e349785510d68c4"
+        "input_buffer": "c83073dd2ef3fbcefd86a1e30cbcea8d735517a380c6ceef846b37fd9a1acae7",
+        "result": "7f89ae6753ea8adc0ab5ee25ce3dd43426ddb6ceae49254065e9adb7663ce11c"
       },
       "compiled": false,
       "debug": false,
@@ -987,9 +935,9 @@
       "SCHEMA": null,
       "checksum": {
         "code": "d0bb8cd605045f219a9701acd40cbb4d0c192298d84acee64663e425c79133df",
-        "input": "b4da9aafdcee9c325fa90d17b3426470b980887fbd28d69a7edae7b742e94528",
-        "input_buffer": "b4da9aafdcee9c325fa90d17b3426470b980887fbd28d69a7edae7b742e94528",
-        "result": "9876e37276242f2f5f5a1f2007d15f6ab750f8a3110824deddd6914198f7feb6"
+        "input": "39b3db263ba8f123031835cec3dfe44c96e4dc820c11721afc9c4a22c43351fb",
+        "input_buffer": "39b3db263ba8f123031835cec3dfe44c96e4dc820c11721afc9c4a22c43351fb",
+        "result": "898aee2333516fd9eac3ecdcec97ab38b7e5f9dcb8c3b41ca7b416e51df60acd"
       },
       "compiled": false,
       "debug": false,
@@ -1018,10 +966,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "ef89d5b7c6113f396093cf83da2a49c2cf8f7a63a9b60a6ff138554680ababda",
-        "input": "171dd0c0d1d515a685fc9857b5f8c676bdba9b19f53846a068d65bb8bd94b37b",
+        "input": "d7dda11f5aaafbd1f312b67e5bda9a7aec3ae0dd20433676b951238eb791c885",
         "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
-        "input_buffer": "171dd0c0d1d515a685fc9857b5f8c676bdba9b19f53846a068d65bb8bd94b37b",
-        "result": "c011394aa1dd607aed29853d0a8289650e824b9f895975eb5979192e99f4a25e"
+        "input_buffer": "d7dda11f5aaafbd1f312b67e5bda9a7aec3ae0dd20433676b951238eb791c885",
+        "result": "e7ee17b40d3e524ab3d704786dc175374bb2e6339f069d8c9109c0b464079896"
       },
       "compiled": false,
       "debug": false,
@@ -1040,7 +988,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "c02fe71a60951378793396e5333ba32527644aaaee7b30611948330c5ec41d8f"
+        "value": "b88f59daca48190b43acec61619256beb0a8e5c567ba935bbd419c8b9f4eb25e"
       },
       "datatype": "mixed",
       "path": [
@@ -1089,7 +1037,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "68d0def8595ecb5ca5e814431e243ae6f8234e46d9d04b447c8b33aed335d8de"
+        "value": "8372ba4e09bfaba069db0abda3143c5ab643caf537fe502e8d244293911c1ea2"
       },
       "datatype": "mixed",
       "mount": {
@@ -1211,7 +1159,7 @@
     {
       "celltype": "plain",
       "checksum": {
-        "value": "be857d37400401b7d45aa67a7559ade7dc0c0bdf5686d1b60d517ca8bd706581"
+        "value": "2a7f45e4d2c3990737fd9e7d2060f0b5e9050e4068a275ad8d7cbfde775bfae7"
       },
       "datatype": "mixed",
       "path": [
@@ -1243,7 +1191,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "a3729853a2434a7cef35e49983c5973d8f31cf9a5fb51fd823a82bed40d7a01c"
+        "value": "daf5b385f3877e70688c7c6c22a7eba86015e8d8db1903d725e2eb4fb1075f86"
       },
       "datatype": "mixed",
       "mount": {
@@ -1263,10 +1211,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "6d866a9acb6afd62f11764e6b78847844662bfd6fe59760dac3df2785c419ca6",
-        "input": "7436c0079e168d52ad1aad7fe33b43200dab59f3d57ccaf531afd625be9a5649",
+        "input": "4c0a996f0b7beb1d752caa716a8bb425e17353d9356cbb7d6745521c50ecee35",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "7436c0079e168d52ad1aad7fe33b43200dab59f3d57ccaf531afd625be9a5649",
-        "result": "baa8e497e8f08a170c873827f8c8e5ba82a209e15bc0d90c2be2970b8eae9154"
+        "input_buffer": "4c0a996f0b7beb1d752caa716a8bb425e17353d9356cbb7d6745521c50ecee35",
+        "result": "ae48d2022cf1923cad8c86a16b4df9e1c9ef86ca872c359f410407f6169ab297"
       },
       "compiled": false,
       "debug": false,
@@ -1305,7 +1253,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "baa8e497e8f08a170c873827f8c8e5ba82a209e15bc0d90c2be2970b8eae9154"
+        "value": "ae48d2022cf1923cad8c86a16b4df9e1c9ef86ca872c359f410407f6169ab297"
       },
       "datatype": "mixed",
       "path": [
@@ -1320,7 +1268,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "e355fdb3726ddf0f007cec40f5d77b5dd39c596986137a067dcedb73afdb6de3"
+        "value": "dcb8e5c5b7b6592022a1d17a78022a36f22884c739ff36a58a343dcd2077906d"
       },
       "datatype": "mixed",
       "mount": {
@@ -1352,8 +1300,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "e4df251feeb0d7148707fabdab50ebab0005a4c8a65db844bce9ee758b6b047f",
-        "value": "e4df251feeb0d7148707fabdab50ebab0005a4c8a65db844bce9ee758b6b047f"
+        "buffer": "fd0608f7bb49b54f31b14d5ec548f5a2e171463a07ef9a57fbe2a34cb0cd459c",
+        "value": "fd0608f7bb49b54f31b14d5ec548f5a2e171463a07ef9a57fbe2a34cb0cd459c"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1365,7 +1313,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "5d5a3c73da8e376d31a96613e450d0cad333ebcf496acbc0eb9fa6c1ab8c42fa"
+        "value": "a280db51cb350ed72acf4d1f00d5f1355587a702bfc0a558cd604068ba105005"
       },
       "datatype": "mixed",
       "mount": {
@@ -1407,7 +1355,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "383522100b74b41862312f5866c9bd5ba8aabd67bd48e1c3ba4147fe403b9951"
+        "value": "191fb5fc4a9bf2ded9a09a0a2c4eb3eb90f15ee96deb1eec1a970df0a79d09ba"
       },
       "datatype": "mixed",
       "mount": {
