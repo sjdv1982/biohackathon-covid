@@ -508,7 +508,7 @@
         "code": {
           "authority": "file",
           "mode": "rw",
-          "path": "aareduce.bash",
+          "path": "code/aareduce.bash",
           "persistent": true
         }
       },
@@ -547,7 +547,7 @@
         "code": {
           "authority": "file",
           "mode": "rw",
-          "path": "aareduce-protein.bash",
+          "path": "code/aareduce-protein.bash",
           "persistent": true
         }
       },
@@ -584,7 +584,7 @@
         "code": {
           "authority": "file",
           "mode": "rw",
-          "path": "build-representation.py",
+          "path": "code/build-representation.py",
           "persistent": true
         }
       },
@@ -695,7 +695,7 @@
       "mount": {
         "authority": "file",
         "mode": "rw",
-        "path": "collect.bash",
+        "path": "code/collect.bash",
         "persistent": true
       },
       "path": [
@@ -839,9 +839,9 @@
       "language": "docker",
       "mount": {
         "code": {
-          "authority": "cell",
+          "authority": "file",
           "mode": "rw",
-          "path": "dock.sh",
+          "path": "code/dock.sh",
           "persistent": true
         }
       },
@@ -879,7 +879,7 @@
       "mount": {
         "authority": "cell",
         "mode": "w",
-        "path": "docked.dat",
+        "path": "results/docked.dat",
         "persistent": true
       },
       "path": [
@@ -900,7 +900,7 @@
       "mount": {
         "authority": "cell",
         "mode": "w",
-        "path": "docked_rna.pdb",
+        "path": "results/docked_rna.pdb",
         "persistent": true
       },
       "path": [
@@ -946,7 +946,7 @@
         "code": {
           "authority": "cell",
           "mode": "rw",
-          "path": "gen-restraints.sh",
+          "path": "code/gen-restraints.sh",
           "persistent": true
         }
       },
@@ -998,7 +998,7 @@
         "code": {
           "authority": "file",
           "mode": "rw",
-          "path": "gen_starting_structures.py",
+          "path": "code/gen_starting_structures.py",
           "persistent": true
         }
       },
@@ -1061,7 +1061,7 @@
       "mount": {
         "authority": "file",
         "mode": "rw",
-        "path": "protein.pdb",
+        "path": "input/protein.pdb",
         "persistent": true
       },
       "path": [
@@ -1095,7 +1095,7 @@
       "mount": {
         "authority": "cell",
         "mode": "rw",
-        "path": "protein-active-residues.list",
+        "path": "input/protein-active-residues.list",
         "persistent": true
       },
       "path": [
@@ -1232,7 +1232,7 @@
       "mount": {
         "authority": "file",
         "mode": "rw",
-        "path": "representation.cson",
+        "path": "input/representation.cson",
         "persistent": true
       },
       "path": [
@@ -1249,7 +1249,7 @@
       "mount": {
         "authority": "cell",
         "mode": "w",
-        "path": "restraints.rest",
+        "path": "input/restraints.rest",
         "persistent": true
       },
       "path": [
@@ -1276,7 +1276,7 @@
         "code": {
           "authority": "file",
           "mode": "rw",
-          "path": "score.sh",
+          "path": "code/score.sh",
           "persistent": true
         }
       },
@@ -1326,7 +1326,7 @@
       "mount": {
         "authority": "cell",
         "mode": "w",
-        "path": "starting_structures.dat",
+        "path": "intermediate/starting_structures.dat",
         "persistent": true
       },
       "path": [
@@ -1371,7 +1371,7 @@
       "mount": {
         "authority": "cell",
         "mode": "rw",
-        "path": "trinucl-offset-x",
+        "path": "input/trinucl-offset-x",
         "persistent": true
       },
       "path": [
@@ -1392,7 +1392,7 @@
       "mount": {
         "authority": "cell",
         "mode": "rw",
-        "path": "trinucl-offset-y",
+        "path": "input/trinucl-offset-y",
         "persistent": true
       },
       "path": [
@@ -1413,7 +1413,7 @@
       "mount": {
         "authority": "cell",
         "mode": "rw",
-        "path": "trinucl-offset-z",
+        "path": "input/trinucl-offset-z",
         "persistent": true
       },
       "path": [
@@ -1432,9 +1432,9 @@
       },
       "datatype": "mixed",
       "mount": {
-        "authority": "cell",
+        "authority": "file",
         "mode": "rw",
-        "path": "trinucleotide.pdb",
+        "path": "input/trinucleotide.pdb",
         "persistent": true
       },
       "path": [
@@ -1462,7 +1462,7 @@
       "mount": {
         "authority": "cell",
         "mode": "w",
-        "path": "trinucleotide-centered-aa.pdb",
+        "path": "intermediate/trinucleotide-centered-aa.pdb",
         "persistent": true
       },
       "path": [
@@ -1503,7 +1503,7 @@
       "mount": {
         "authority": "cell",
         "mode": "rw",
-        "path": "trinucleotide-passive-residues.list",
+        "path": "input/trinucleotide-passive-residues.list",
         "persistent": true
       },
       "path": [
