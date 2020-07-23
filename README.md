@@ -3,7 +3,7 @@
 ![alt_text](images/image1.gif "image_tooltip")
 
 
-A crucial function of coronaviruses is their interaction with RNA. Computational methods can build 3D models of this interaction. But they are static workflows that require all relevant scientific data to be specified up-front. For COVID-19, however, new scientific results come in every day. This requires a new kind of workflow: one that can be modified with new scientific data, and where new computations and visualizations can be added and adapted, interactively.
+***A crucial function of coronaviruses is their interaction with RNA. Computational methods can build 3D models of this interaction. But they are static workflows that require all relevant scientific data to be specified up-front. For COVID-19, however, new scientific results come in every day. This requires a new kind of workflow: one that can be modified with new scientific data, and where new computations and visualizations can be added and adapted, interactively.***
 
 # Project description
 
