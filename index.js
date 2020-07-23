@@ -76,7 +76,7 @@ ctx.self.onsharelist = function(sharelist) {
     })
 }
 
-function loadNGL() {
+function loadNGL(initialOrDocked = "docked") {
     stage.removeAllComponents()
     Promise.all([
       stage.loadFile("./pdb1",{ext:"pdb"}),
@@ -86,11 +86,11 @@ function loadNGL() {
         initial_pdb = l[0]
         pdb2 = l[1]
         docked_pdb = l[2]
-        if (1) {
-            pdb1 = docked_pdb
+        if (initialOrDocked == "docked") {
+            pdb1 = docked_pdb;
         }
-        else {
-            pdb1 = initial_pdb
+        else if (initialOrDocked == "initial") {
+            pdb1 = initial_pdb;
         }
         representation = JSON.parse(ctx.representation.value)
         representation.forEach(element => {
@@ -161,8 +161,9 @@ $("body").on("click", "#btn_upload_pdb", uploadPDBFile)
 
 function onChangeStructureToShow() {
     sel = 'input[name="structure_to_show"]:checked';
-    selectedStructure = document.querySelector(sel).value;
-    console.log(selectedStructure)
+    selectedStructureChoice = document.querySelector(sel).value;
+
+    loadNGL(selectedStructureChoice);
     // const savedOrientationStr = localStorage.getItem('savedOrientation');
     // if (savedOrientation === null) {
 	// window.alert("No saved orientation");
