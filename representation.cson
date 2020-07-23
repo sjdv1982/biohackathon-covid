@@ -1,0 +1,26 @@
+[
+    {
+        molecule: "pdb2"
+        representation: "spacefill"
+        color: "red"
+        sele: "ACTIVE_RESIDUES"
+    }
+    {
+        molecule: "pdb2"
+        representation: "ribbon"
+        color: "green"
+        sele: ":A"
+    }
+    {
+        molecule: "pdb1"
+        representation: "spacefill"
+        opacity: 0.9
+        color: "magenta"
+    }
+    {
+        molecule: "pdb2"
+        representation: "spacefill"
+        color: "blue"
+        sele: ":B"
+    }
+]
