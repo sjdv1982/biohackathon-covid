@@ -29,7 +29,7 @@ ctx.self.onsharelist = function(sharelist) {
             ctx[element].onchange = loadNGL
             return
         }
-        else if (element == "pdb1" || element == "pdb2" || element == "docked_pdb") {
+        else if (element == "initial_rna" || element == "docked_rna" || element == "protein_centered" || element == "protein") {
             //ctx[element].onchange = loadNGL
             ctx[element].onchange = function(){
                 loadNGL()
@@ -76,21 +76,23 @@ ctx.self.onsharelist = function(sharelist) {
     })
 }
 
-function loadNGL(initialOrDocked = "docked") {
+function loadNGL(structure_to_show = "docked", orientation = null) {
     stage.removeAllComponents()
     Promise.all([
-      stage.loadFile("./pdb1",{ext:"pdb"}),
-      stage.loadFile("./pdb2",{ext:"pdb"}),
-      stage.loadFile("./docked_pdb",{ext:"pdb"}),
+      stage.loadFile("./initial_rna",{ext:"pdb"}),
+      stage.loadFile("./protein",{ext:"pdb"}),
+      stage.loadFile("./protein_centered",{ext:"pdb"}),
+      stage.loadFile("./docked_rna",{ext:"pdb"}),
     ]).then(function (l) {
-        initial_pdb = l[0]
-        pdb2 = l[1]
-        docked_pdb = l[2]
-        if (initialOrDocked == "docked") {
-            pdb1 = docked_pdb;
+        initial_rna = l[0]
+        protein = l[1]
+        protein_centered = l[2]
+        docked_rna = l[3]
+        if (structure_to_show == "docked") {
+            rna = docked_rna;
         }
-        else if (initialOrDocked == "initial") {
-            pdb1 = initial_pdb;
+        else if (structure_to_show == "initial") {
+            rna = initial_rna;
         }
         representation = JSON.parse(ctx.representation.value)
         representation.forEach(element => {
@@ -101,9 +103,15 @@ function loadNGL(initialOrDocked = "docked") {
             delete params.representation
             eval(molecule).addRepresentation(representation, params)
         })
-        stage.autoView()
-        var pa = pdb2.structure.getPrincipalAxes();
-        stage.animationControls.rotate( pa.getRotationQuaternion(), 1500 );
+
+        if (orientation === null) {
+            stage.autoView();
+            var pa = protein_centered.structure.getPrincipalAxes();
+            stage.viewerControls.orient(pa.getRotationQuaternion());
+        }
+        else {
+            stage.viewerControls.orient(orientation);
+        }
     })
 }
 // loadNGL()
@@ -112,7 +120,7 @@ $(document).ready(function(){
 })
 
 function onResetOrientation() {
-    var pa = pdb2.structure.getPrincipalAxes();
+    var pa = protein_centered.structure.getPrincipalAxes();
     stage.animationControls.rotate( pa.getRotationQuaternion(), 1500 );
 }
 $("body").on("click", "#btn_reset_orientation", onResetOrientation)
@@ -123,6 +131,11 @@ function onSaveOrientation() {
         function (k, v) {
           return v.toFixed ? Number(v.toFixed(2)) : v
 	});
+
+    sel = 'input[name="structure_to_show"]:checked';
+    selectedStructureChoice = document.querySelector(sel).value;
+    console.log(JSON.stringify(selectedStructureChoice))
+    ctx.structure_to_show.set(JSON.stringify(selectedStructureChoice))
     ctx.camera_view.set(orientationStr);
     // localStorage.setItem('savedOrientation', orientationStr);
 }
@@ -130,7 +143,13 @@ $("body").on("click", "#btn_save_orientation", onSaveOrientation)
 
 function onLoadSavedOrientation() {
     const savedOrientation = JSON.parse(ctx.camera_view.value);
+    selectedStructureChoice = JSON.parse(ctx.structure_to_show.value);
+
     stage.viewerControls.orient(savedOrientation);
+    loadNGL(selectedStructureChoice, savedOrientation);
+
+    $('input[name="structure_to_show"][value=' + selectedStructureChoice + ']').prop("checked", true)
+
     // const savedOrientationStr = localStorage.getItem('savedOrientation');
     // if (savedOrientation === null) {
 	// window.alert("No saved orientation");
@@ -163,13 +182,8 @@ function onChangeStructureToShow() {
     sel = 'input[name="structure_to_show"]:checked';
     selectedStructureChoice = document.querySelector(sel).value;
 
-    loadNGL(selectedStructureChoice);
-    // const savedOrientationStr = localStorage.getItem('savedOrientation');
-    // if (savedOrientation === null) {
-	// window.alert("No saved orientation");
-    // } else {
-	// stage.viewerControls.orient(JSON.parse(savedOrientation));
-    // }
+    const currentOrientation = stage.viewerControls.getOrientation().toArray();
+    loadNGL(selectedStructureChoice, currentOrientation);
 }
 
 $("body").on("click change", 'input[name="structure_to_show"]', onChangeStructureToShow);
