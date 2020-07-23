@@ -1,3 +1,10 @@
+# An interactive workflow to build 3D models of COVID-19 proteins in interaction with RNA
+
+![alt_text](images/image1.gif "image_tooltip")
+
+
+A crucial function of coronaviruses is their interaction with RNA. Computational methods can build 3D models of this interaction. But they are static workflows that require all relevant scientific data to be specified up-front. For COVID-19, however, new scientific results come in every day. This requires a new kind of workflow: one that can be modified with new scientific data, and where new computations and visualizations can be added and adapted, interactively.
+
 # Project description
 
 [//]: # (Press: Ctrl-Shift-V to compile)
@@ -20,6 +27,6 @@
 ### Current Status
 ![alt text](https://github.com/sjdv1982/biohackathon-covid/blob/master/Current_Status.png?raw=true)
 
-### Suggestion 
+### Suggestion
 - it can be useful (or will it be useful?), to have a brief description of each cell on the status graph
 - it will be useful to have a screenshot of a status graph after each session
