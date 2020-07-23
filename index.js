@@ -158,3 +158,17 @@ function uploadPDBFile() {
     })
 }
 $("body").on("click", "#btn_upload_pdb", uploadPDBFile)
+
+function onChangeStructureToShow() {
+    sel = 'input[name="structure_to_show"]:checked';
+    selectedStructure = document.querySelector(sel).value;
+    console.log(selectedStructure)
+    // const savedOrientationStr = localStorage.getItem('savedOrientation');
+    // if (savedOrientation === null) {
+	// window.alert("No saved orientation");
+    // } else {
+	// stage.viewerControls.orient(JSON.parse(savedOrientation));
+    // }
+}
+
+$("body").on("click change", 'input[name="structure_to_show"]', onChangeStructureToShow);

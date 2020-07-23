@@ -68,6 +68,14 @@ label {
 <p> - of the initial position: <label id="scored"></label> </p>
 <p> - of the pose after the docking: <label id="docked_score"></label> </p>
 
+<form>
+  Show structure:
+  <input type="radio" id="rad_initial" name="structure_to_show" value="initial">
+  <label for="initial">initial</label>
+  <input type="radio" id="rad_docked" name="structure_to_show" value="docked">
+  <label for="docked">docked</label><br>
+</form>
+
 <div id="viewport" style="width:1200px; height:500px;"></div>
 
 <button type="button" id="btn_reset_orientation">Reset orientation</button>
