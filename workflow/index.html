@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/arose/ngl/v2.0.0-dev.32/dist/ngl.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="seamless-client.js"></script>
+<style>
+
+/* tetx style  */
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+/* The slider itself */
+.slidecontainer {
+    font-size: large;
+    font-weight: bold;
+}
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 62%; /* Full-width */
+  height: 10px; /* Specified height */
+  border-radius: 5px;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0020C2;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+  <h2> RNA offset </h2>
+<table width="100%">
+<tr>
+<td>
+<div class="slidecontainer">
+    <p>X</p>
+    <input type="range" min="-200" max="200" class="slider" name="trinucl_offset_x">
+    <label id="trinucl_offset_x_label"></label>
+    <p>Y</p>
+    <input type="range" min="-200" max="200" class="slider" name="trinucl_offset_y">
+    <label id="trinucl_offset_y_label"></label>
+    <p>Z</p>
+    <input type="range" min="-200" max="200" class="slider" name="trinucl_offset_z">
+    <label id="trinucl_offset_z_label"></label>
+
+</div>
+</td>
+</tr>
+</table>
+
+<label id="score_title"> <h3>Score</h3> </label>
+
+<p> - of the initial position: <label id="scored"></label> </p>
+<p> - of the pose after the docking: <label id="docked_score"></label> </p>
+
+<form>
+  Show structure:
+  <input type="radio" id="rad_initial" name="structure_to_show" value="initial">
+  <label for="initial">initial</label>
+  <input type="radio" id="rad_docked" name="structure_to_show" value="docked" checked>
+  <label for="docked">docked</label><br>
+</form>
+
+<div id="viewport" style="width:1200px; height:500px;"></div>
+
+<button type="button" id="btn_reset_orientation">Reset orientation</button>
+<button type="button" id="btn_save_orientation">Save orientation</button>
+<button type="button" id="btn_load_saved_orientation">Load saved orientation</button>
+
+<p>
+<form>
+  <label for="selection">Active residue selection:</label><br>
+  <input type="text" id="inp_selection" name="selection">
+  <button type="button" id="btn_submit">Show</button>
+</form>
+
+<p>
+<form>
+  <input type="file" id="inp_upload_pdb" name="inp_upload_pdb">
+  <button type="button" id="btn_upload_pdb">Upload PDB file</button>
+</form>
+
+<script src="index.js"></script>
+
+</body>
+</html>

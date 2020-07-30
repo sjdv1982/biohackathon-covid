@@ -1,0 +1,209 @@
+{
+  "connections": [
+    {
+      "source": [
+        "status_"
+      ],
+      "target": [
+        "status_data"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "graph"
+      ],
+      "target": [
+        "gen_vis_status",
+        "graph"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "status_"
+      ],
+      "target": [
+        "gen_vis_status",
+        "status_"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "gen_vis_status"
+      ],
+      "target": [
+        "vis_status"
+      ],
+      "type": "connection"
+    }
+  ],
+  "lib": [],
+  "nodes": [
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "9177b93f17b21f2ab861b9aee3a915c7edb1f8374a9b94c691a298ce7bf36067"
+      },
+      "datatype": "mixed",
+      "mimetype": "text/css",
+      "path": [
+        "css"
+      ],
+      "share": {
+        "path": "status-visualization.css",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "671fcdd4400b42d7dbf97bf4aa6e7be7f6c55081077584d20a248c913713785d",
+        "input": "1012d5d6cafe905cfd85783e906d7bd6c5cc4a21b8b45f79944d0fee9b55ba6a",
+        "input_buffer": "1012d5d6cafe905cfd85783e906d7bd6c5cc4a21b8b45f79944d0fee9b55ba6a",
+        "result": "935ecf19aa8ea34e3f4f82cdca642dc933fb0b07c54c5ecc5eacb49c2bb55e55"
+      },
+      "compiled": false,
+      "debug": false,
+      "language": "python",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "gen_vis_status.py",
+          "persistent": true
+        }
+      },
+      "path": [
+        "gen_vis_status"
+      ],
+      "pins": {
+        "graph": {
+          "celltype": "mixed"
+        },
+        "status_": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "plain",
+      "checksum": {
+        "value": "820cd4f8a59721aa1c7347857c1b8f9ac9a011df2bf43d290251eff98cf502a9"
+      },
+      "datatype": "mixed",
+      "path": [
+        "graph"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "0593c63ebea295cbce6daece5c48ea0ae46f663b7e521e913bf2aa9da1634cb8"
+      },
+      "datatype": "mixed",
+      "mimetype": "text/html",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "status-visualization.html",
+        "persistent": true
+      },
+      "path": [
+        "html"
+      ],
+      "share": {
+        "path": "index.html",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "995d2dcde2b415235a8f9c42a6bb0f4c3199c6513108c8963eec753f9b84e48a"
+      },
+      "datatype": "mixed",
+      "mimetype": "text/javascript",
+      "path": [
+        "js"
+      ],
+      "share": {
+        "path": "seamless-client.js",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "1e790011125092fd8a88549f887ffe625f9fc53e8a286c869c5c2e661841f4bd"
+      },
+      "datatype": "mixed",
+      "mimetype": "text/javascript",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "status-visualization.js",
+        "persistent": true
+      },
+      "path": [
+        "js2"
+      ],
+      "share": {
+        "path": "status-visualization.js",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "auth": "5a063a87b289a91a440c329fe19f54c094eb3190f27e4f13ab2ab5b408163a8f",
+        "buffer": "5a063a87b289a91a440c329fe19f54c094eb3190f27e4f13ab2ab5b408163a8f",
+        "value": "5a063a87b289a91a440c329fe19f54c094eb3190f27e4f13ab2ab5b408163a8f"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "status_"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "plain",
+      "checksum": {
+        "value": "5a063a87b289a91a440c329fe19f54c094eb3190f27e4f13ab2ab5b408163a8f"
+      },
+      "datatype": "mixed",
+      "path": [
+        "status_data"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "plain",
+      "checksum": {
+        "value": "935ecf19aa8ea34e3f4f82cdca642dc933fb0b07c54c5ecc5eacb49c2bb55e55"
+      },
+      "datatype": "mixed",
+      "path": [
+        "vis_status"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    }
+  ],
+  "params": {
+    "share_namespace": "status"
+  }
+}

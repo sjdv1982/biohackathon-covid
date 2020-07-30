@@ -1,0 +1,197 @@
+{
+  "connections": [
+    {
+      "source": [
+        "trinucleotide"
+      ],
+      "target": [
+        "center_trinucleotide",
+        "trinucleotide.pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "center_trinucleotide"
+      ],
+      "target": [
+        "trinucleotide_centered"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered"
+      ],
+      "target": [
+        "trinucleotide_centered2"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "center_trinucleotide"
+      ],
+      "target": [
+        "tri_centered"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered"
+      ],
+      "target": [
+        "aareduce_nucleotide",
+        "protein.pdb"
+      ],
+      "type": "connection"
+    }
+  ],
+  "lib": [],
+  "nodes": [
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "3bd432f26ec3b2e7d7b3855e867454411363a1fc04c60a406f32b00ad181a259",
+        "input": "9d0377fc5fddd56ce105b72916d22b4383ceb305c990a1124ad8bb177cbb10aa",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "9d0377fc5fddd56ce105b72916d22b4383ceb305c990a1124ad8bb177cbb10aa"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "aareduce.bash",
+          "persistent": true
+        }
+      },
+      "path": [
+        "aareduce_nucleotide"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "protein.pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "7dbc5bb6c6ba43cbf246dea3ec3b6700cc36d418a7b0ac44c39495c315d72fd5",
+        "input": "aab0de910afc99673f5e182ff9a9359949ff45dc5556224ffed4fd78ee38e5e9",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "aab0de910afc99673f5e182ff9a9359949ff45dc5556224ffed4fd78ee38e5e9",
+        "result": "f4d95333ea6e1765bd7637ff8ae5737fbf2816c7eac7670ca6b8b011444ef690"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "path": [
+        "center_trinucleotide"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "trinucleotide.pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "f8c8cf12cebffe540da0d3d35dcc0260d77aaec41f804f73ae096a56afbbcc9e"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "6W4B.pdb",
+        "persistent": true
+      },
+      "path": [
+        "protein"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "buffer": "f4d95333ea6e1765bd7637ff8ae5737fbf2816c7eac7670ca6b8b011444ef690",
+        "value": "f4d95333ea6e1765bd7637ff8ae5737fbf2816c7eac7670ca6b8b011444ef690"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "tri_centered"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "32926bdb7b8db325505a6a987a5af0b58dc10bf42fdc12ff4f4d4500d52e5a6d"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "trinucleotide.pdb",
+        "persistent": true
+      },
+      "path": [
+        "trinucleotide"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "b88f59daca48190b43acec61619256beb0a8e5c567ba935bbd419c8b9f4eb25e"
+      },
+      "datatype": "mixed",
+      "path": [
+        "trinucleotide_centered"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "buffer": "bfc6316afdb4efc901217198566d07da23d17669fdac67ad00b44b0a89790570",
+        "value": "bfc6316afdb4efc901217198566d07da23d17669fdac67ad00b44b0a89790570"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "trinucleotide_centered2"
+      ],
+      "type": "cell"
+    }
+  ],
+  "params": {
+    "share_namespace": "ctx"
+  }
+}

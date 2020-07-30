@@ -1,0 +1,25 @@
+[
+    {
+        molecule: "protein_centered"
+        representation: "spacefill"
+        color: "red"
+        sele: "ACTIVE_RESIDUES"
+    }
+    {
+        molecule: "protein_centered"
+        representation: "ribbon"
+        color: "green"
+        sele: ":A"
+    }
+    {
+        molecule: "rna"
+        representation: "spacefill"
+        opacity: 0.2
+    }
+    {
+        molecule: "protein_centered"
+        representation: "spacefill"
+        color: "blue"
+        sele: ":B"
+    }
+]

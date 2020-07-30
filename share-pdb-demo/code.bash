@@ -1,1 +1,0 @@
-tail -10 filtered_pdb > RESULT
