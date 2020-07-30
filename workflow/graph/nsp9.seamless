@@ -437,28 +437,6 @@
     },
     {
       "source": [
-        "code",
-        "collect"
-      ],
-      "target": [
-        "collect",
-        "code"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "code",
-        "collect"
-      ],
-      "target": [
-        "collect_initial",
-        "code"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
         "starting_structures"
       ],
       "target": [
@@ -687,39 +665,28 @@
       "type": "context"
     },
     {
-      "celltype": "text",
-      "checksum": {
-        "value": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d"
-      },
-      "datatype": "mixed",
-      "mount": {
-        "authority": "file",
-        "mode": "rw",
-        "path": "code/collect.bash",
-        "persistent": true
-      },
-      "path": [
-        "code",
-        "collect"
-      ],
-      "type": "cell"
-    },
-    {
       "INPUT": "inp",
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "12e0749f01e4404a771d2d28715bdf8ecdd32226b9d5809e70691240382ed1d8",
+        "code": "bfbbdd7db0d4efcc06b66ee957f652cf07e42a51730c3f2c34b16363503a22e3",
+        "input": "a427cc50e28549c0d141d24fedacd9b2413e69652d4d2a5b65cce77df7a82279",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "12e0749f01e4404a771d2d28715bdf8ecdd32226b9d5809e70691240382ed1d8",
-        "result": "38a334f5685213f7596568318ebde6fa36b67a3a356a38f2c377d1ac8c5fd538"
+        "input_buffer": "a427cc50e28549c0d141d24fedacd9b2413e69652d4d2a5b65cce77df7a82279",
+        "result": "6a451344f19736c68b48715a44e712701e7b4636f1c6cb3569d4f003c43eee4a"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "docker",
-      "mount": {},
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/collect.bash",
+          "persistent": true
+        }
+      },
       "path": [
         "collect"
       ],
@@ -745,15 +712,23 @@
       "SCHEMA": null,
       "checksum": {
         "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "af9f837015754e648b0d79e636c575080569a5dab48ea53ad728b4cd23e84614",
+        "input": "f73f924a71f82db3c79814cb4d0f541097b24dacf0d72e30a02eab77d6d7faa6",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "af9f837015754e648b0d79e636c575080569a5dab48ea53ad728b4cd23e84614",
-        "result": "6a4d22b544344f487711649bd613007fcf9e9d0a4bea069b04fdbd04d4168b79"
+        "input_buffer": "f73f924a71f82db3c79814cb4d0f541097b24dacf0d72e30a02eab77d6d7faa6",
+        "result": "64af01eff3bf8123bb9f8b052e10559f360f016d05a95f3a981006db272fc9e9"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/collect-initial.bash",
+          "persistent": true
+        }
+      },
       "path": [
         "collect_initial"
       ],
@@ -828,10 +803,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "2afc2d3542020b0409f90517dc03e2e5de1846b217f43efe35f7fbb206223373",
-        "input": "727fdd581052e3f2bb590b58691fe0babe552191ff0548aab2dc33dc442ae5b6",
+        "input": "bf3e15634ccce4f2e2b61f24b9bd4b0a423e34d46d156685bcf8faccf7b6a596",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "727fdd581052e3f2bb590b58691fe0babe552191ff0548aab2dc33dc442ae5b6",
-        "result": "313e4ce32ffd6721394de75d8f66a4165a8c4658593468004cae331a6a2b166f"
+        "input_buffer": "bf3e15634ccce4f2e2b61f24b9bd4b0a423e34d46d156685bcf8faccf7b6a596",
+        "result": "3a47179292e5530f35a71c021cdcf829dbccb8af29cc1a9803bf2d98b235ddb9"
       },
       "compiled": false,
       "debug": false,
@@ -873,7 +848,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "7a2340534aafc5610cd0c3d0265a5febc31f02414b268f7dc4cf89a1097c7361"
+        "value": "69dd4f8dc56593b17072a3bccfe46f82adc94c1161be48ba8156a601c2256633"
       },
       "datatype": "mixed",
       "mount": {
@@ -894,7 +869,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "b37cb5501d51f0ce090c5d268d343e7f880e81c853f0bab37dfb3d69c882bdb2"
+        "value": "87a5d3ba3ecccd3802f2222302bcf346c6fb1c6d37545117e295b0797adb90c0"
       },
       "datatype": "mixed",
       "mount": {
@@ -915,7 +890,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "c011394aa1dd607aed29853d0a8289650e824b9f895975eb5979192e99f4a25e"
+        "value": "d9cb29c8105c0262420bac23e671f4ef08c44a0124baa3a2784ffec1386c6de8"
       },
       "datatype": "mixed",
       "path": [
@@ -986,10 +961,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "d0bb8cd605045f219a9701acd40cbb4d0c192298d84acee64663e425c79133df",
-        "input": "b4da9aafdcee9c325fa90d17b3426470b980887fbd28d69a7edae7b742e94528",
-        "input_buffer": "b4da9aafdcee9c325fa90d17b3426470b980887fbd28d69a7edae7b742e94528",
-        "result": "9876e37276242f2f5f5a1f2007d15f6ab750f8a3110824deddd6914198f7feb6"
+        "code": "5e2226aaa8430402707e8d603c3225374c48e421e7428f8723118bdad0c7732e",
+        "input": "3c5909bfc1ab5f9b2fdb01c6df41236fb862dba044ba97167c3e371615e55399",
+        "input_auth": "188b0f46ce8044d725495faa08f195bcd0dc6d3a8d2c5a9549f4362771df50d5",
+        "input_buffer": "3c5909bfc1ab5f9b2fdb01c6df41236fb862dba044ba97167c3e371615e55399",
+        "result": "68648e28d4b2e23a3a13873724d1daf4d80733a88a5e85bc0d131745738925f6"
       },
       "compiled": false,
       "debug": false,
@@ -1006,8 +982,14 @@
         "gen_starting_structures"
       ],
       "pins": {
+        "nstruc": {
+          "celltype": "mixed"
+        },
         "offset": {
           "celltype": "plain"
+        },
+        "seed": {
+          "celltype": "mixed"
         }
       },
       "type": "transformer"
@@ -1017,16 +999,24 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "ef89d5b7c6113f396093cf83da2a49c2cf8f7a63a9b60a6ff138554680ababda",
-        "input": "171dd0c0d1d515a685fc9857b5f8c676bdba9b19f53846a068d65bb8bd94b37b",
+        "code": "8480f4aeefb74ea0340e28aabcf2bf5145d9eb3fd73a7b215877310756d56d01",
+        "input": "8b32f0d7f433b8da03b2fd99587ed346a01399f4cc43fc6f7e6ae2a0699e4741",
         "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
-        "input_buffer": "171dd0c0d1d515a685fc9857b5f8c676bdba9b19f53846a068d65bb8bd94b37b",
-        "result": "c011394aa1dd607aed29853d0a8289650e824b9f895975eb5979192e99f4a25e"
+        "input_buffer": "8b32f0d7f433b8da03b2fd99587ed346a01399f4cc43fc6f7e6ae2a0699e4741",
+        "result": "d9cb29c8105c0262420bac23e671f4ef08c44a0124baa3a2784ffec1386c6de8"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "bash",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/get_docked_score.sh",
+          "persistent": true
+        }
+      },
       "path": [
         "get_docked_score"
       ],
@@ -1040,7 +1030,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "c02fe71a60951378793396e5333ba32527644aaaee7b30611948330c5ec41d8f"
+        "value": "aebdcc56d45fb19b195876514d2cb5c19d242a5debc7bbc5387a1b6a42da5f89"
       },
       "datatype": "mixed",
       "path": [
@@ -1320,7 +1310,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "e355fdb3726ddf0f007cec40f5d77b5dd39c596986137a067dcedb73afdb6de3"
+        "value": "609c4a83218a8cc40c347ff356688b792643c038b1d039f277bce4f15d4972e9"
       },
       "datatype": "mixed",
       "mount": {
