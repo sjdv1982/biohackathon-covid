@@ -4,6 +4,12 @@
 - Hrishi has progress on question 4 (biohackathon-covid/documentation/Question_4_fromReadme.md): several article with the mutation on the viral protein
 - Hrishi has progress on question 2: he looked for some servers to predict flexible regions within the protein, did not submit any tasks yet
 - Maxim has progress on question 2: he looked at the B-factor. PyMol sessions with obtained info are to be submitted
+- Sjoerd tidy up the repository 
+##### During the session:
+- worked on the generation of the 10 starting structures (it was only 1 before) with random starting angles (file /workflow/intermediate/starting_structures.dat)
+- now the lowest score of all 10 docked structures is displayed 
+##### Tasks:
+- look at the info Hrishi found for the question 4 (in documentation folder)
 
 ### Session 8
 ##### Progress:
