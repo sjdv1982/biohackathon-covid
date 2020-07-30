@@ -134,7 +134,7 @@ Here is a list of the current achievement:
 
 1. Scientific:
 *   Continued study of conserved residues;
-*   Search for the examples of mutations, which increase the binding between protein and ssRNA: currently, most of the mutations we found a decrease in the binding affinity.
+*   Search for examples of mutations that increase the binding between protein and ssRNA: currently, most of the mutations we found decrease the binding affinity.
 2. Pipeline:
 *   with the help of the [Cloudless](https://github.com/sjdv1982/cloudless), add the possibility to launch independent instances of the pipeline and share these instances with remote users.
 3. Web interface:
