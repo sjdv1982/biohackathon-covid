@@ -1,6 +1,12 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
 ### Session 8
 ##### Progress:
+- Hrishi has progress on question 4 (biohackathon-covid/documentation/Question_4_fromReadme.md): several article with the mutation on the viral protein
+- Hrishi has progress on question 2: he looked for some servers to predict flexible regions within the protein, did not submit any tasks yet
+- Maxim has progress on question 2: he looked at the B-factor. PyMol sessions with obtained info are to be submitted
+
+### Session 8
+##### Progress:
 - Max added option to switch from initial to the docked structure.
 ##### During the session:
 - Work on the .js and displaying dock and undocked structures
