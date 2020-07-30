@@ -3,8 +3,7 @@
 ## The latest task everyone
 
 
-Get acquainted with new information, presented by Hrishi here:
-biohackathon-covid/documentation/Question_4_fromReadme.md
+Get acquainted with new information, presented by Hrishi [here](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/Question_4_fromReadme.md)
 
 ## Scientific tasks
 
@@ -42,7 +41,7 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 
 
 
-*   survey and analyse of biblio (all nsp9 proteins) => (Hrishi, Antoine & Anna P)
+*   survey and analyse of biblio (all nsp9 proteins) => (Hrishi, Antoine & Anna P) ([progress](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/Question_4_fromReadme.md), session9)
 *   look for servers that predict the RNA sequence-binding preference of a protein
 *   test those servers on known complexes with ssRNA
 
