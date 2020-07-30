@@ -26,7 +26,7 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 *   look at B-fact (make color figure) => Maxim
 *   servers to predict flexible regions => (Hrishi)
 *   sidechains repacking (SCWRL?) => (Hrishi)
-*   MD ? => Julie? (ask Luba)
+*   MD => Julie
 
 
 **Question 3: what do RNA interface prediction programs predict as the binding site on the protein? How does this relate to conservation, positive charge, aromatics?** (Isaure)
