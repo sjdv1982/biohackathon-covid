@@ -23,8 +23,8 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 
 
 *   from superposition of nsp9: identify flexible regions: what conformational variability for a given nsp9 protein? => dom & Camille
-*   look at B-fact (make color figure) => Maxim
-*   servers to predict flexible regions => (Hrishi)
+*   look at B-fact (make color figure) => Maxim (progress, session9)
+*   servers to predict flexible regions => (Hrishi) (progress, session9)
 *   sidechains repacking (SCWRL?) => (Hrishi)
 *   MD => Julie
 
@@ -34,7 +34,7 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 
 
 *   visualise the conserved residues identified in bibliography : check if the conserved residues form a patch on the protein surface?  => dom
-*   check in bibliography which servers for prediction of RNA-binding residues/patches are suitable for ssRNA (look at training set)
+*   check in bibliography which servers for prediction of RNA-binding residues/patches are suitable for ssRNA (look at training set) (progress, session9)
 *   test webserver on known ssRNA-protein structures
 *   run few servers  (ex: iPNHOT, 2020), create consensus prediction
 
