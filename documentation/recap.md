@@ -1,13 +1,20 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
+### Session 10
+##### During the session:
+- Flexible regions of the unbound viral protein were shown (the helix unfold according to it) using [PDBFlex](http://pdbflex.org/cluster.html#!/6w4bB/38239/6w4bA)
+- A field with the status (errors if any) of the pipeline was added to the webform
+##### Tasks:
+- Prepare 3ee7 for docking in reference with 6w4b (harmonization?)
+
 ### Session 9
 ##### Progress:
 - Hrishi has progress on question 4 (biohackathon-covid/documentation/Question_4_fromReadme.md): several article with the mutation on the viral protein
 - Hrishi has progress on question 2: he looked for some servers to predict flexible regions within the protein, did not submit any tasks yet
 - Maxim has progress on question 2: he looked at the B-factor. PyMol sessions with obtained info are to be submitted
-- Sjoerd tidy up the repository 
+- Sjoerd tidy up the repository
 ##### During the session:
 - worked on the generation of the 10 starting structures (it was only 1 before) with random starting angles (file /workflow/intermediate/starting_structures.dat)
-- now the lowest score of all 10 docked structures is displayed 
+- now the lowest score of all 10 docked structures is displayed
 ##### Tasks:
 - look at the info Hrishi found for the question 4 (in documentation folder)
 

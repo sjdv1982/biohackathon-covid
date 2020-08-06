@@ -67,3 +67,11 @@ https://seamless.rpbs.univ-paris-diderot.fr/cloudless/index.html => Nsp9 with st
 #1
            0           0           0           0           0           0
            0           0           0           0           0           0
+
+
+
+http://localhost:5813/status/vis_status
+http://localhost:5813/status/status
+http://localhost:5813/status/status/gen_starting_structures.status
+
+http://www.attract.ph.tum.de/services/ATTRACT-devel/standard.html
