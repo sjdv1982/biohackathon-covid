@@ -1,4 +1,11 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
+### Session 10
+##### During the session:
+- Flexible regions of the unbound viral protein were shown (the helix unfold according to it) using [PDBFlex](http://pdbflex.org/cluster.html#!/6w4bB/38239/6w4bA)
+- A field with the status (errors if any) of the pipeline was added to the webform
+##### Tasks:
+- Prepare 3ee7 for docking in reference with 6w4b (harmonization?)
+
 ### Session 9
 ##### Progress:
 - Hrishi has progress on question 4 (biohackathon-covid/documentation/Question_4_fromReadme.md): several article with the mutation on the viral protein
