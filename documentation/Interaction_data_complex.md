@@ -5,6 +5,9 @@
 ## Primary question: What are the key residues on the protein side?
 ## Sub-questions
 1. Is there direct experimental data on the ssRNA-binding residues?
+
+At the current time, there isn't any crystal structure of nsp9 crystalized with ssRNA.
+
 2. What are the functional sites on the protein? On which of them is the ssRNA expected to bind?
 3. What is the predicted RNA interface?
 3.a. What are the positively charged patches?
@@ -31,6 +34,19 @@ On the nsp9 protein PDB 5HIZ, homologue of the nsp9 of cov19 (PDB 6W4B)
 
 
 => TODO: look if same residues in SARS-cov2 sequence
+
+5HIZ > 6W4B:
+
+K10 > R11
+
+R68 >  C74
+
+K69 > R75
+
+Y82 > Y88
+
+R106 > R112
+
 => look if makes sense in the 5HIZ structure
 
 
