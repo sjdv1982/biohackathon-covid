@@ -54,9 +54,20 @@ Get acquainted with new information, presented by Hrishi [here](https://github.c
 *   _list of web servers_
 *   _find test cases RNA structures, test some of the web servers (if not enough tests described in the webserver paper)_
 
+**NEW**
+
+
+
+*   Verify the acceptance/rejection of the hypothesis: the mutation of the protein destabilize it (thus the residues in contact appear on the completely different side of the protein and this is the reason for no binding) (cellular biology person) more information can be found in the Interaction_data_complex.md
+*   (6W4B) Y88A mutation: does it make an impact on the residue 50? "Does such mutation kick sandwiched loop out of the way?" (MD person)
+*   Find a way to see the difference between the dimerization binding mode (rather than differences in monomer conformation) of the SARS and COVID (more on it next week).
+
+
 
 ## Technical tasks
 
-*   Add an option to the web form, which will allow switching between initial complex structure and the one that was obtained by the docking => Maxim
 *   Add a brief description of each cell on the status graph => Anna K + others
 
+# Completed technical tasks (but not 100 % sure)
+
+*   Add an option to the web form, which will allow switching between initial complex structure and the one that was obtained by the docking => Maxim (surprised that it works)
