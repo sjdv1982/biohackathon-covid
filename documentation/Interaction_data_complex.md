@@ -5,6 +5,9 @@
 ## Primary question: What are the key residues on the protein side?
 ## Sub-questions
 1. Is there direct experimental data on the ssRNA-binding residues?
+
+At the current time, there isn't any crystal structure of nsp9 crystalized with ssRNA.
+
 2. What are the functional sites on the protein? On which of them is the ssRNA expected to bind?
 3. What is the predicted RNA interface?
 3.a. What are the positively charged patches?
