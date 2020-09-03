@@ -23,9 +23,14 @@ On the nsp9 protein PDB 5HIZ, homologue of the nsp9 of cov19 (PDB 6W4B)
 
 5HIZ > 6W4B:
 
-K10 > R11;
-R68 >  C74;
-K69 > R75;
+K10 > R11
+
+R68 >  C74
+
+K69 > R75
+
+Y82 > Y88
+
 R106 > R112
 
 => look if makes sense in the 5HIZ structure
