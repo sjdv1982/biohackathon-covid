@@ -1,4 +1,9 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
+### Session 12
+#### During the session:
+- Camille presented the structural alignment of all NSP9 from SARS
+- Isaure presented the work on question 3. Results from the interface prediction servers.
+
 ### Session 11
 ##### During the session:
 - Discussed and visualized the harmonized structures
