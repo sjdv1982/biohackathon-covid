@@ -5,6 +5,9 @@
 ## Primary question: What are the key residues on the protein side?
 ## Sub-questions
 1. Is there direct experimental data on the ssRNA-binding residues?
+
+At the current time, there isn't any crystal structure of nsp9 crystalized with ssRNA.
+
 2. What are the functional sites on the protein? On which of them is the ssRNA expected to bind?
 3. What is the predicted RNA interface?
 3.a. What are the positively charged patches?
@@ -19,8 +22,37 @@ On the nsp9 protein PDB 5HIZ, homologue of the nsp9 of cov19 (PDB 6W4B)
 &quot;the nsp9-K10A and nsp9-R106A mutants have 1.3- and 2.7-fold reductions in ssDNA binding affinity compared to the wild-type protein, respectively, whereas the nsp9-K10A/R68A/K69A/R106A mutant shows much weaker binding affinity, with a 7.2-fold reduction, and nsp9-Y82A shows much stronger binding affinity, with an 8.0-fold increase&quot;
 [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/)
 
+
+#### Mapping of mutated residues between 5HIZ & 6W4B:
+1. K10 --> R11 (Beginning of first B-sheet; very rigid region)
+2. RK68 --> CR74  (Strand 1 of a pair of beta strands; very rigid region)
+3. Y82 --> Y88.
+   Strand 2 of a pair of beta strands; very rigid region.
+   Even the side chain seems to be very rigid, but little opportunity to make stacking interaction.
+   The side chain seems to be well-"sandwiched" between surrounding side chains
+4. Not in the structure of 5HIZ --> R112 (Caps the helix in 6W4B)
+
+
 => TODO: look if same residues in SARS-cov2 sequence
+
+5HIZ > 6W4B:
+
+K10 > R11
+
+R68 >  C74
+
+K69 > R75
+
+Y82 > Y88
+
+R106 > R112
+
 => look if makes sense in the 5HIZ structure
+
+
+#### Experimental details
+```To determine whether this surface contributes to the ssDNA binding activity of PEDV nsp9, we introduced individual substitutions of positively charged residues, and their effects on ssDNA binding were assessed by EMSA and MST assays. In this study, residues Lys10, Arg68, Lys69, and Arg106 were mutated to alanine because of their highly positively charged potential and their exposure on the surface of the nsp9 structure. One aromatic amino acid, Tyr82, was also mutated```
+
 
 nsp9 displays the same features that OB-fold proteins use to bind nucleic acids: a network of positively charged amino acids defines a positive track suitable for binding the phosphate backbone to the protein surface, whereas exposed aromatic residues might provide stacking interactions with nucleobases. These residues are conserved in all CoV nsp9 sequences (Arg-10, Lys-52, Trp-53, Arg-55, Arg-74, Phe-75, Lys-86, Tyr-87, Phe-90, Lys-92, Arg-99, and Arg-111), further suggesting that nsp9 is a nucleic acid-binding protein. In addition, two extended loops L23 and L45 display weak electron density associated with high _B_ factor values, indicating that they are flexible and/or mobile. They line the positively charged track, and they may clamp nucleic acids on the nsp9 surface after conformational change, as observed in other OB-fold proteins ([32](https://www.pnas.org/content/101/11/3792#ref-32)).
 [https://www.pnas.org/content/101/11/3792](https://www.pnas.org/content/101/11/3792)

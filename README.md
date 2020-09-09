@@ -4,12 +4,12 @@
 ![alt_text](images/image1.gif "image_tooltip")
 
 
-**A crucial function of coronaviruses is their interaction with RNA**. **Computational methods can be used to build 3D models of this interaction. But they are static workflows that require all relevant scientific data to be specified up-front. For COVID-19, however, new scientific results come in every day. This requires a new kind of workflow: one that can be modified on the fly with new scientific data, and where new computations and visualizations can be added and adapted, interactively.**
+**A crucial function of coronavirus proteins is their interaction with RNA**. **Computational methods can be used to build 3D models of this interaction. But they are static workflows that require all relevant scientific data to be specified up-front. For COVID-19, however, new scientific results come in every day. This requires a new kind of workflow: one that can be modified on the fly with new scientific data, and where new computations and visualizations can be added and adapted, interactively.**
 
 
 ## Scientific background
 
-SARS-CoV-2 and related coronaviruses are RNA viruses, and interacting with RNA is crucial to their function. In particular, the Nsp9 protein is involved in viral genomic RNA reproduction and interacts with single-stranded RNA. Understanding the details of this interaction may help us to understand how SARS-CoV-2 works, helping in the fight against COVID-19.
+SARS-CoV-2 and related coronaviruses are RNA viruses, and proteins interacting with RNA is crucial to their function. In particular, the Nsp9 protein is involved in viral genomic RNA reproduction and interacts with single-stranded RNA. Understanding the details of this interaction may help us to understand how SARS-CoV-2 works and to design inhibitors of its reproduction, helping in the fight against COVID-19.
 
 It is difficult to obtain the 3D coordinates of a protein-RNA molecular complex by experiment. However, a 3D model can be predicted computationally from protein and RNA separately, which is called **molecular docking**. In molecular docking, it is possible to incorporate scientific data on the interaction (**data-driven docking**) into the predictions. ATTRACT is an engine for molecular docking that includes support for protein-RNA complexes and data-driven docking. It includes many parameters that can be optimized to obtain the best possible docking result. ATTRACT’s web interface generates a static pipeline for docking two molecules, essentially a shell script, that has to be run by the user on a machine with an installed ATTRACT docking engine. Currently, ATTRACT pipelines are rigid: modifications of the pipeline cannot be made without first interrupting its work, often with loss of results. Consequently, the occurrence of new information requires the replacement of the current pipeline, which is time-consuming and inconvenient.
 
@@ -20,7 +20,7 @@ With the current pandemic, COVID-19 is a very active topic of scientific researc
 
 The project aims to create such a workflow. More specifically:
 
-1. **Scientific aspect**. To collect the current scientific information (literature, predictions) regarding the Nsp9-RNA interaction.
+1. **Scientific aspect**. To collect the current scientific information (literature, predictions) regarding the Nsp9-RNA interaction, and create 3D models of this interaction.
 
 2. **Workflow aspect**. To design and implement a data-driven docking workflow that optimally takes into account this information. The static pipelines, created by the ATTRACT’s web-interface are taken as a baseline, which will be further adapted.
 

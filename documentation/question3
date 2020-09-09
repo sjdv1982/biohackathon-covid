@@ -1,0 +1,11 @@
+# Question 3: What do RNA interface prediction programs predict as the binding site on the protein? How does this relate to conservation, positive charge, aromatics? 
+
+
+
+## visualise the conserved residues identified in bibliography : check if the conserved residues form a patch on the protein surface?  => dom
+
+## check in bibliography which servers for prediction of RNA-binding residues/patches are suitable for ssRNA (look at training set)  (Isaure)
+
+## test webserver on known ssRNA-protein structures (Isaure)
+
+## run few servers  (ex: iPNHOT, 2020), create consensus prediction (Isaure)
