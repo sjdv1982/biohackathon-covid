@@ -1,4 +1,16 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
+### Session 13
+#### During the session
+- Was a scientific session and not a coding session
+- Looked at structures (6w4b, 6wc1, 6wxd, 6w9q, 3ee7 and 5c94)
+- On crystal contacts 6w9q is very different, because it has a N-ter part much longer
+- It seems that monomer are rigid, but dimer are much more flexible
+- We had a look at 5c94, because they said in the paper that residues 73, 95, 98 are important for the dimer formation. As the residu 73 is a phenylalanine, we put the hypothesis that the interaction is a stacking interaction. And we found a phenylalanine in the 6w9q sequence on the N-ter part.
+- Hrishi found one presentation at ECCB which talked about binding site prediction : http://bioinformatics.csu.edu.cn/PROBselect/home/index
+- monthly meeting, try to find a date : https://framadate.org/hGClICmJ5k2p6Zbt
+- Pay attention to add the paper on GitHub !!!
+
+
 ### Session 12
 #### During the session:
 - Camille presented the structural alignment of all NSP9 from SARS

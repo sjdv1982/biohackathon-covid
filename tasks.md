@@ -54,6 +54,8 @@ Get acquainted with new information, presented by Hrishi [here](https://github.c
 *   _list of web servers_
 *   _find test cases RNA structures, test some of the web servers (if not enough tests described in the webserver paper)_
 
+
+
 **NEW**
 
 
@@ -62,7 +64,9 @@ Get acquainted with new information, presented by Hrishi [here](https://github.c
 *   (6W4B) Y88A mutation: does it make an impact on the residue 50? "Does such mutation kick sandwiched loop out of the way?" (MD person)
 *   Find a way to see the difference between the dimerization binding mode (rather than differences in monomer conformation) of the SARS and COVID (more on it next week).
 
+*   Have a look of the 6W9Q sequence, to understand which part of the sequence is coming from the COVID. And also pay attention to the Phenylalanine at the N-ter part, because it could be important for the dymerisation.
 
+*   From Part 1 : People must read this paper (https://www.sciencedirect.com/science/article/pii/S2589004220304442?via%3Dihub) to know if you keep the 6W9Q structure or if we do not pay attention to this one.
 
 ## Technical tasks
 
