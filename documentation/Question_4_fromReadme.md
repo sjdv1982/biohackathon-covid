@@ -1,9 +1,21 @@
+Question 4 : What RNA binding experiments have been performed with Nsp9, and what RNA sequences were being used? How long were they, and what was the composition?
+
 1. [The nsp9 Replicase Protein of SARS-Coronavirus, Structure and Functional Insights](https://dx.doi.org/10.1016%2Fj.str.2004.01.016) 
---> RNA seq (A 20-mer oligoribonucleotide (CGACUCAUGGACCUUGGCAG)) <-- Electrophoretic Mobility Shift Assays <-- Low resolution expt
+--> RNA seq (A 20-mer oligoribonucleotide (CGACUCAUGGACCUUGGCAG) binds to Sars-Cov1 nsp9)
+<-- Electrophoretic Mobility Shift Assays
+<-- Low resolution expt
 
 2. [Formation of stable homodimer via the C-terminal α-helical domain of coronavirus nonstructural protein 9 is critical for its function in viral replication](https://doi.org/10.1016/j.virol.2008.10.032) 
 --> substitution mutation of a conserved Gly (G98) residue in the C-terminal α-helix domain with an Asp greatly destabilized the IBV nsp9 homodimer and abolished its RNA-binding activity.
 --> The structural characteristics of nsp9 suggested that its nucleic acid-binding activity is not strictly sequence-specific --> need to mine properly (Total 9 point mutations)
+
+K10A and K90A => 10% RNA-binding activity
+K51A => 35% / 55%  binding activity to +RNA/-RNA
+Y31A and I95N => 80-100% binding activity
+
+
+TODO: find correspondant residues ID in Sars-Cov2 nsp9
+
 
 3. [Variable Oligomerization Modes in Coronavirus Non-structural Protein 9](https://doi.org/10.1016/j.jmb.2008.07.071) --> wild-type HCoV-229E Nsp9 and the Cys69Ala mutant have been deposited with the RCSB Protein Data Bank, with accession code 2J97 and 2J98, respectively. 
 --> gel mobility-shift assays and surface plasmon resonance (SPR) measurements indicate that only the wild-type HCoV-229E Nsp9, not the Cys69Ala mutant, binds strongly to single-stranded RNA and single-stranded DNA. In order to assess a possible direct role of Cys69 in nucleic acid binding, this residue was also replaced by serine. Again, the mutant showed little or no affinity to single-stranded DNA (ssDNA).
