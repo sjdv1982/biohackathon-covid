@@ -9,9 +9,9 @@ Question 4 : What RNA binding experiments have been performed with Nsp9, and wha
 --> substitution mutation of a conserved Gly (G98) residue in the C-terminal α-helix domain with an Asp greatly destabilized the IBV nsp9 homodimer and abolished its RNA-binding activity.
 --> The structural characteristics of nsp9 suggested that its nucleic acid-binding activity is not strictly sequence-specific --> need to mine properly (Total 9 point mutations)
 
-K10A and K90A => 10% RNA-binding activity
-K51A => 35% / 55%  binding activity to +RNA/-RNA
-Y31A and I95N => 80-100% binding activity
+K10A and K90A => 10% RNA-binding activity  
+K51A => 35% / 55%  binding activity to +RNA/-RNA  
+Y31A and I95N => 80-100% binding activity  
 
 
 TODO: find correspondant residues ID in Sars-Cov2 nsp9
