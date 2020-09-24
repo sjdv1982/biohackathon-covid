@@ -20,7 +20,6 @@ TODO: find correspondant residues ID in Sars-Cov2 nsp9
 
 3. [Variable Oligomerization Modes in Coronavirus Non-structural Protein 9](https://doi.org/10.1016/j.jmb.2008.07.071) --> wild-type HCoV-229E Nsp9 and the Cys69Ala mutant have been deposited with the RCSB Protein Data Bank, with accession code 2J97 and 2J98, respectively. 
 --> gel mobility-shift assays and surface plasmon resonance (SPR) measurements indicate that only the wild-type HCoV-229E Nsp9, not the Cys69Ala mutant, binds strongly to single-stranded RNA and single-stranded DNA. In order to assess a possible direct role of Cys69 in nucleic acid binding, this residue was also replaced by serine. Again, the mutant showed little or no affinity to single-stranded DNA (ssDNA).
-The same mutation in Human SARS-CoV has no effect on RNA binding.
 
 4. [Functional and Genetic Studies of the Substrate Specificity of Coronavirus Infectious Bronchitis Virus 3C-Like Proteinase](https://jvi.asm.org/content/84/14/7325) 
 --> Replacement of P1-Gln with Asn at the nsp4-5, nsp5-6, nsp7-8, nsp8-9, and nsp9-10 sites, Glu at the nsp8-9 site, and His at the nsp15-16 site of IBV allowed the recovery of the corresponding infectious mutant virus and the 3CLpro-mediated cleavage of these mutant substrates, suggesting that IBV 3CLpro is able to accept Asn, Glu, and His instead of the conserved Gln residue at the P1 position of several cleavage sites.
