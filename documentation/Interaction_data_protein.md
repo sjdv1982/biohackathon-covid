@@ -41,6 +41,8 @@ K10A [R11] and K90A [K93] => 10% RNA-binding activity
 K51A [K53] => 35% / 55%  binding activity to +RNA/-RNA  
 Y31A [Y33] and I95N [L98] => 80-100% binding activity  
 
+!! that structure has an additional peptide in N-ter, that forms an artificial beta-strand.
+
 
 ### Experimental details
 ```To determine whether this surface contributes to the ssDNA binding activity of PEDV nsp9, we introduced individual substitutions of positively charged residues, and their effects on ssDNA binding were assessed by EMSA and MST assays. In this study, residues Lys10, Arg68, Lys69, and Arg106 were mutated to alanine because of their highly positively charged potential and their exposure on the surface of the nsp9 structure. One aromatic amino acid, Tyr82, was also mutated```
