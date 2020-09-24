@@ -1,9 +1,10 @@
 Question 4 : What RNA binding experiments have been performed with Nsp9, and what RNA sequences were being used? How long were they, and what was the composition?
 
 1. [The nsp9 Replicase Protein of SARS-Coronavirus, Structure and Functional Insights](https://dx.doi.org/10.1016%2Fj.str.2004.01.016) 
---> RNA seq (A 20-mer oligoribonucleotide (CGACUCAUGGACCUUGGCAG) binds to Sars-Cov1 nsp9)
-<-- Electrophoretic Mobility Shift Assays
-<-- Low resolution expt
+--> RNA seq (A 20-mer oligoribonucleotide (CGACUCAUGGACCUUGGCAG) binds to Sars-Cov1 nsp9) <-- Electrophoretic Mobility Shift Assays <-- Low resolution expt
+- Two structurally different dimers are observed in both of the two different crystal forms we have analyzed.
+--> In one of the dimers, the interface is principally formed by the parallel association of the C-terminal alpha helices.
+--> The second dimer observed in the crystals is formed by an interaction between beta strand 5 (residues 63–68) from both subunits zippering the two beta-barrels together.
 
 2. [Formation of stable homodimer via the C-terminal α-helical domain of coronavirus nonstructural protein 9 is critical for its function in viral replication](https://doi.org/10.1016/j.virol.2008.10.032) 
 --> substitution mutation of a conserved Gly (G98) residue in the C-terminal α-helix domain with an Asp greatly destabilized the IBV nsp9 homodimer and abolished its RNA-binding activity.
