@@ -18,19 +18,16 @@ No [23/10/2020]
 
 ## 2. Is there direct experimental data on the contacts / interfaces?
 
-### On the nsp9 protein PDB 5HIZ, homologue of the nsp9 of cov19 (PDB 6W4B):
+### On the nsp9 protein PDB 5HIZ [numbering in SarsCov-2, pdb 6W4B):
 K10A [R11] or R106A [R112] : 1.3-fold and 2.7-fold reductions in ssDNA binding affinity  
 K10A/R68A/K69A/R106A [R11/C74/R75/R112] mutant : 7.2-fold reduction  
 Y82A [Y88] : 8.0-fold increase;  
 [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/)
 
-#### Mapping of mutated residues between 5HIZ & 6W4B:
-1. K10 --> R11 (Beginning of first B-sheet; very rigid region)
-2. RK68 --> CR74  (Strand 1 of a pair of beta strands; very rigid region)
-3. Y82 --> Y88.
-   Strand 2 of a pair of beta strands; very rigid region.
-   Even the side chain seems to be very rigid, but little opportunity to make stacking interaction.
-   The side chain seems to be well-"sandwiched" between surrounding side chains
+#### Location of those residues in 6W4B:
+1. R11 (Beginning of first B-sheet; very rigid region)
+2. CR74  (Strand 1 of a pair of beta strands; very rigid region)
+3. Y88. Strand 2 of a pair of beta strands; very rigid region. Even the side chain seems to be very rigid, but little opportunity to make stacking interaction. The side chain seems to be well-"sandwiched" between surrounding side chains
 4.  R106 [Not in the structure of 5HIZ] --> R112 (Caps the helix in 6W4B)
 
 => look if makes sense in the 5HIZ structure
@@ -43,6 +40,12 @@ Y31A [Y33] and I95N [L98] => 80-100% binding activity
 
 !! that structure has an additional peptide in N-ter, that forms an artificial beta-strand.
 
+DOI:  10.1002/pro.3150
+F73G => less binding. Impairs dimerisation?
+
+
+### nsp9 of HCoV-229E 
+C69A => dimerisation, but no RNA binding
 
 ### Experimental details
 ```To determine whether this surface contributes to the ssDNA binding activity of PEDV nsp9, we introduced individual substitutions of positively charged residues, and their effects on ssDNA binding were assessed by EMSA and MST assays. In this study, residues Lys10, Arg68, Lys69, and Arg106 were mutated to alanine because of their highly positively charged potential and their exposure on the surface of the nsp9 structure. One aromatic amino acid, Tyr82, was also mutated```
