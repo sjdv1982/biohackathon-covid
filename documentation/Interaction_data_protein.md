@@ -19,9 +19,9 @@ No [23/10/2020]
 ## 2. Is there direct experimental data on the contacts / interfaces?
 
 ### On the nsp9 protein PDB 5HIZ, homologue of the nsp9 of cov19 (PDB 6W4B):
-K10A or R106A : 1.3-fold and 2.7-fold reductions in ssDNA binding affinity  
-K10A/R68A/K69A/R106A mutant : 7.2-fold reduction  
-Y82A : 8.0-fold increase;  
+K10A [R11] or R106A [R112] : 1.3-fold and 2.7-fold reductions in ssDNA binding affinity  
+K10A/R68A/K69A/R106A [R11/C74/R75/R112] mutant : 7.2-fold reduction  
+Y82A [Y88] : 8.0-fold increase;  
 [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/)
 
 #### Mapping of mutated residues between 5HIZ & 6W4B:
@@ -34,6 +34,12 @@ Y82A : 8.0-fold increase;
 4.  R106 [Not in the structure of 5HIZ] --> R112 (Caps the helix in 6W4B)
 
 => look if makes sense in the 5HIZ structure
+
+### nsp9 protein PDB 5C94 (Infectious bronchitis virus)
+https://doi.org/10.1016/j.virol.2008.10.032
+K10A [R11] and K90A [K93] => 10% RNA-binding activity  
+K51A [K53] => 35% / 55%  binding activity to +RNA/-RNA  
+Y31A [Y33] and I95N [L98] => 80-100% binding activity  
 
 
 ### Experimental details
