@@ -2,8 +2,16 @@
 
 ## The latest task everyone
 
+### Q1
+*   compare dimerisation modes:
+    * among nsp9 structures
+    * between RNA-bound and RNA-unbound in another homo-dimérique protein as an exemple
 
-Get acquainted with new information, presented by Hrishi [here](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/Question_4_fromReadme.md)
+### Q3
+*   Test how reliable a docking is when using as much interface data from mutagenesis. Use another RNA-prot structure of similar size as a test-case. Can be on same exemple as for Q1 above or Q5 below.
+
+### Q5
+* find exemples of 2 RNA-bound structures of same protein w. different sequences => How similar are the RNA conformations ?
 
 ## Scientific tasks
 
@@ -16,6 +24,9 @@ Get acquainted with new information, presented by Hrishi [here](https://github.c
 *   survey of biblio (Camille + AnnaP)
 *   superimpose and compare nsp9 structures of all viruses (Fatcat / pymol ...) => dom & Camille
 *   compare structures of our virus’ nsp9 => Camille & Dom
+*   compare dimerisation modes:
+    * among nsp9 structures
+    * between RNA-bound and RNA-unbound in another homo-dimérique protein as an exemple
 
 **Question 2: Protein: What regions are flexible (prediction or experiment)? What are their allowed conformations?** (Hrishi)
 
@@ -53,11 +64,10 @@ Get acquainted with new information, presented by Hrishi [here](https://github.c
 *   bibliography survey : e.g. chemical probes => Antoine
 *   _list of web servers_
 *   _find test cases RNA structures, test some of the web servers (if not enough tests described in the webserver paper)_
-
+* find exemples of 2 RNA-bound structures of same protein w. different sequences => How similar are the RNA conformations ?
 
 
 **NEW**
-
 
 
 *   Verify the acceptance/rejection of the hypothesis: the mutation of the protein destabilize it (thus the residues in contact appear on the completely different side of the protein and this is the reason for no binding) (cellular biology person) more information can be found in the Interaction_data_complex.md
