@@ -40,6 +40,7 @@ Y82A [Y88] : 8.0-fold increase;
 
 ### nsp9 protein PDB 5C94 (Infectious bronchitis virus)
 https://doi.org/10.1016/j.virol.2008.10.032
+
 K10A [R11] and K90A [K93] => 10% RNA-binding activity  
 K51A [K53] => 35% / 55%  binding activity to +RNA/-RNA  
 Y31A [Y33] and I95N [L98] => 80-100% binding activity  
