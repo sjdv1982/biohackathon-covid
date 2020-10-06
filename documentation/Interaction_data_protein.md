@@ -13,16 +13,16 @@
 
 At the current time, there isn't any crystal structure of a nsp9 crystalized with ssRNA.
 
-Is there a protein-ssRNA complex, homologous to Nsp9, that we can use directly?
+* Is there a protein-ssRNA complex, homologous to Nsp9, that we can use directly?
 No [23/10/2020]
 
 ## 2. Is there direct experimental data on the contacts / interfaces?
 
 Binding residues:
 
-(+++) R11 ; K93 ; C74 ; R75 ; R112
-(++) K53
-(+) Y33 ; L98
+(+++) R11 ; K93 ; C74 ; R75 ; R112  
+(++) K53  
+(+) Y33 ; L98  
 
 ### On the nsp9 protein PDB 5HIZ [numbering in SarsCov-2, pdb 6W4B):
 K10A [R11] or R106A [R112] : 1.3-fold and 2.7-fold reductions in ssDNA binding affinity  
@@ -39,16 +39,15 @@ Y82A [Y88] : 8.0-fold increase;
 => look if makes sense in the 5HIZ structure
 
 ### nsp9 protein PDB 5C94 (Infectious bronchitis virus)
-https://doi.org/10.1016/j.virol.2008.10.032
-
+[https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3150](https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3150)
 K10A [R11] and K90A [K93] => 10% RNA-binding activity  
 K51A [K53] => 35% / 55%  binding activity to +RNA/-RNA  
 Y31A [Y33] and I95N [L98] => 80-100% binding activity  
 
+F73G => less binding. Impairs dimerisation?
+
 !! that structure has an additional peptide in N-ter, that forms an artificial beta-strand.
 
-DOI:  10.1002/pro.3150
-F73G => less binding. Impairs dimerisation?
 
 
 ### nsp9 of HCoV-229E 
@@ -65,6 +64,13 @@ Surface plasmon resonance was used to demonstrate the function of nsp9 as a nucl
 3. Is there other experimental data (e.g. SAXS) on the whole complex?
 
 ## Bibliography
-[1] …
+[1] [Formation of stable homodimer via the C-terminal α-helical domain of coronavirus nonstructural protein 9 is critical for its function in viral replication](https://doi.org/10.1016/j.virol.2008.10.032) 
+--> substitution mutation of a conserved Gly (G98) residue in the C-terminal α-helix domain with an Asp greatly destabilized the IBV nsp9 homodimer and abolished its RNA-binding activity.
+--> The structural characteristics of nsp9 suggested that its nucleic acid-binding activity is not strictly sequence-specific --> need to mine properly (Total 9 point mutations)
+K10A and K90A => 10% RNA-binding activity  
+K51A => 35% / 55%  binding activity to +RNA/-RNA  
+Y31A and I95N => 80-100% binding activity  
+
+
 [2] [https://www.pnas.org/content/101/11/3792](https://www.pnas.org/content/101/11/3792)
 []
