@@ -18,19 +18,20 @@ No [23/10/2020]
 
 ## 2. Is there direct experimental data on the contacts / interfaces?
 
-Binding residues:
+Summary on binding residues:
 
 (+++) R11 ; K93 ; C74 ; R75 ; R112  
 (++) K53  
 (+) Y33 ; L98  
 
-### On the nsp9 protein PDB 5HIZ [numbering in SarsCov-2, pdb 6W4B):
+#### On nsp9 protein PDB 5HIZ:
+[numbering in 6W4B]  
 K10A [R11] or R106A [R112] : 1.3-fold and 2.7-fold reductions in ssDNA binding affinity  
 K10A/R68A/K69A/R106A [R11/C74/R75/R112] mutant : 7.2-fold reduction  
 Y82A [Y88] : 8.0-fold increase;  
 [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096807/)
 
-#### Location of those residues in 6W4B:
+##### Location of those residues in 6W4B:
 1. R11 (Beginning of first B-sheet; very rigid region)
 2. CR74  (Strand 1 of a pair of beta strands; very rigid region)
 3. Y88. Strand 2 of a pair of beta strands; very rigid region. Even the side chain seems to be very rigid, but little opportunity to make stacking interaction. The side chain seems to be well-"sandwiched" between surrounding side chains
@@ -38,8 +39,11 @@ Y82A [Y88] : 8.0-fold increase;
 
 => look if makes sense in the 5HIZ structure
 
-### nsp9 protein PDB 5C94 (Infectious bronchitis virus)
-[https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3150](https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3150)
+#### On nsp9 protein PDB 5C94 (Infectious bronchitis virus)
+[Formation of stable homodimer via the C-terminal α-helical domain of coronavirus nonstructural protein 9 is critical for its function in viral replication](https://doi.org/10.1016/j.virol.2008.10.032) 
+--> substitution mutation of a conserved Gly (G98) residue in the C-terminal α-helix domain with an Asp greatly destabilized the IBV nsp9 homodimer and abolished its RNA-binding activity.
+--> The structural characteristics of nsp9 suggested that its nucleic acid-binding activity is not strictly sequence-specific --> need to mine properly (Total 9 point mutations)
+
 K10A [R11] and K90A [K93] => 10% RNA-binding activity  
 K51A [K53] => 35% / 55%  binding activity to +RNA/-RNA  
 Y31A [Y33] and I95N [L98] => 80-100% binding activity  
@@ -50,10 +54,11 @@ F73G => less binding. Impairs dimerisation?
 
 
 
-### nsp9 of HCoV-229E 
+#### On nsp9 of HCoV-229E 
 C69A => dimerisation, but no RNA binding
 
 ### Experimental details
+
 ```To determine whether this surface contributes to the ssDNA binding activity of PEDV nsp9, we introduced individual substitutions of positively charged residues, and their effects on ssDNA binding were assessed by EMSA and MST assays. In this study, residues Lys10, Arg68, Lys69, and Arg106 were mutated to alanine because of their highly positively charged potential and their exposure on the surface of the nsp9 structure. One aromatic amino acid, Tyr82, was also mutated```
 
 nsp9 displays the same features that OB-fold proteins use to bind nucleic acids: a network of positively charged amino acids defines a positive track suitable for binding the phosphate backbone to the protein surface, whereas exposed aromatic residues might provide stacking interactions with nucleobases. These residues are conserved in all CoV nsp9 sequences (Arg-10, Lys-52, Trp-53, Arg-55, Arg-74, Phe-75, Lys-86, Tyr-87, Phe-90, Lys-92, Arg-99, and Arg-111), further suggesting that nsp9 is a nucleic acid-binding protein. In addition, two extended loops L23 and L45 display weak electron density associated with high _B_ factor values, indicating that they are flexible and/or mobile. They line the positively charged track, and they may clamp nucleic acids on the nsp9 surface after conformational change, as observed in other OB-fold proteins ([32](https://www.pnas.org/content/101/11/3792#ref-32)).
@@ -64,12 +69,7 @@ Surface plasmon resonance was used to demonstrate the function of nsp9 as a nucl
 3. Is there other experimental data (e.g. SAXS) on the whole complex?
 
 ## Bibliography
-[1] [Formation of stable homodimer via the C-terminal α-helical domain of coronavirus nonstructural protein 9 is critical for its function in viral replication](https://doi.org/10.1016/j.virol.2008.10.032) 
---> substitution mutation of a conserved Gly (G98) residue in the C-terminal α-helix domain with an Asp greatly destabilized the IBV nsp9 homodimer and abolished its RNA-binding activity.
---> The structural characteristics of nsp9 suggested that its nucleic acid-binding activity is not strictly sequence-specific --> need to mine properly (Total 9 point mutations)
-K10A and K90A => 10% RNA-binding activity  
-K51A => 35% / 55%  binding activity to +RNA/-RNA  
-Y31A and I95N => 80-100% binding activity  
+
 
 
 [2] [https://www.pnas.org/content/101/11/3792](https://www.pnas.org/content/101/11/3792)
