@@ -18,6 +18,12 @@ No [23/10/2020]
 
 ## 2. Is there direct experimental data on the contacts / interfaces?
 
+Binding residues:
+
+(+++) R11 ; K93 ; C74 ; R75 ; R112
+(++) K53
+(+) Y33 ; L98
+
 ### On the nsp9 protein PDB 5HIZ [numbering in SarsCov-2, pdb 6W4B):
 K10A [R11] or R106A [R112] : 1.3-fold and 2.7-fold reductions in ssDNA binding affinity  
 K10A/R68A/K69A/R106A [R11/C74/R75/R112] mutant : 7.2-fold reduction  
@@ -28,7 +34,7 @@ Y82A [Y88] : 8.0-fold increase;
 1. R11 (Beginning of first B-sheet; very rigid region)
 2. CR74  (Strand 1 of a pair of beta strands; very rigid region)
 3. Y88. Strand 2 of a pair of beta strands; very rigid region. Even the side chain seems to be very rigid, but little opportunity to make stacking interaction. The side chain seems to be well-"sandwiched" between surrounding side chains
-4.  R106 [Not in the structure of 5HIZ] --> R112 (Caps the helix in 6W4B)
+4.  R112 [Not in the structure of 5HIZ] Caps the helix in 6W4B
 
 => look if makes sense in the 5HIZ structure
 
