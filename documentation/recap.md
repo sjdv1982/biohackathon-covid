@@ -1,4 +1,24 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
+
+### Monthly meeting #2
+#### Now it's possible to either:
+1. Dock multiple sequences and the protein
+2. Dock arbitrary taken sequence and the protein => homopolymer to save time, and not only sample but do the full docking to have an idea about the binding site //
+3. Dock experimentally obtained sequence (slide 8 of Anna's presentation (is on the GitHub btw?)
+
+ // the question is which conformation RNA's fragment(s) can take? It is possible to:
+=> search for the non-specific conformations or use Antoine's library (is it?);
+=> make a complicated literature search with a lot of constraints and it probably will not give much of a result;
+=> check Hrishi's (RRM-RNA) and Dom's (protein-DNA) databases/benchmarks for the crystallized complexes, of the protein and 2 or more different ligands (same binding site) to see if these ligands have a different structure (with sequence non-specific binding?) 
+
+Now we have enough experimental data on the protein and it's mutants to define the binding pocket, so we will move to some kind of data-driven docking.
+
+(here is a part of missing info from Cami, Dom and Hrishi and about the 'binding to the dimer is essential") 
+http://212.87.3.12/CABSflex2/job/ef40c5166d54350/
+
+Next several coding sessions will be devoted to the development of the more realistic pipeline.
+It will take more time to run, it will dock more RNA structures (now it's only one frag, which is fast and not quite realistic) starting from random points (so no choice for the initial RNA position).
+
 ### Session 13
 #### During the session
 - Was a scientific session and not a coding session
