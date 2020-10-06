@@ -2,9 +2,16 @@
 
 ## The latest task everyone
 
+### Q1
+*   compare dimerisation modes:
+    * among nsp9 structures
+    * between RNA-bound and RNA-unbound in another homo-dimérique protein as an exemple
 
-Get acquainted with new information, presented by Hrishi here:
-biohackathon-covid/documentation/Question_4_fromReadme.md
+### Q3
+*   Test how reliable a docking is when using as much interface data from mutagenesis. Use another RNA-prot structure of similar size as a test-case. Can be on same exemple as for Q1 above or Q5 below.
+
+### Q5
+* find exemples of 2 RNA-bound structures of same protein w. different sequences => How similar are the RNA conformations ?
 
 ## Scientific tasks
 
@@ -17,6 +24,9 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 *   survey of biblio (Camille + AnnaP)
 *   superimpose and compare nsp9 structures of all viruses (Fatcat / pymol ...) => dom & Camille
 *   compare structures of our virus’ nsp9 => Camille & Dom
+*   compare dimerisation modes:
+    * among nsp9 structures
+    * between RNA-bound and RNA-unbound in another homo-dimérique protein as an exemple
 
 **Question 2: Protein: What regions are flexible (prediction or experiment)? What are their allowed conformations?** (Hrishi)
 
@@ -42,7 +52,7 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 
 
 
-*   survey and analyse of biblio (all nsp9 proteins) => (Hrishi, Antoine & Anna P)
+*   survey and analyse of biblio (all nsp9 proteins) => (Hrishi, Antoine & Anna P) ([progress](https://github.com/sjdv1982/biohackathon-covid/blob/master/documentation/Question_4_fromReadme.md), session9)
 *   look for servers that predict the RNA sequence-binding preference of a protein
 *   test those servers on known complexes with ssRNA
 
@@ -54,10 +64,24 @@ biohackathon-covid/documentation/Question_4_fromReadme.md
 *   bibliography survey : e.g. chemical probes => Antoine
 *   _list of web servers_
 *   _find test cases RNA structures, test some of the web servers (if not enough tests described in the webserver paper)_
+* find exemples of 2 RNA-bound structures of same protein w. different sequences => How similar are the RNA conformations ?
 
+
+**NEW**
+
+
+*   Verify the acceptance/rejection of the hypothesis: the mutation of the protein destabilize it (thus the residues in contact appear on the completely different side of the protein and this is the reason for no binding) (cellular biology person) more information can be found in the Interaction_data_complex.md
+*   (6W4B) Y88A mutation: does it make an impact on the residue 50? "Does such mutation kick sandwiched loop out of the way?" (MD person)
+*   Find a way to see the difference between the dimerization binding mode (rather than differences in monomer conformation) of the SARS and COVID (more on it next week).
+
+*   Have a look of the 6W9Q sequence, to understand which part of the sequence is coming from the COVID. And also pay attention to the Phenylalanine at the N-ter part, because it could be important for the dymerisation.
+
+*   From Part 1 : People must read this paper (https://www.sciencedirect.com/science/article/pii/S2589004220304442?via%3Dihub) to know if you keep the 6W9Q structure or if we do not pay attention to this one.
 
 ## Technical tasks
 
-*   Add an option to the web form, which will allow switching between initial complex structure and the one that was obtained by the docking => Maxim
 *   Add a brief description of each cell on the status graph => Anna K + others
 
+# Completed technical tasks (but not 100 % sure)
+
+*   Add an option to the web form, which will allow switching between initial complex structure and the one that was obtained by the docking => Maxim (surprised that it works)

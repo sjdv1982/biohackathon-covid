@@ -1,7 +1,13 @@
 [
     {
         molecule: "protein_centered"
-        representation: "spacefill"
+        representation: "hyperball"
+        color: "red"
+        sele: "ACTIVE_RESIDUES"
+    }
+    {
+        molecule: "protein_centered"
+        representation: "cartoon"
         color: "red"
         sele: "ACTIVE_RESIDUES"
     }
@@ -13,12 +19,11 @@
     }
     {
         molecule: "rna"
-        representation: "spacefill"
-        opacity: 0.2
+        representation: "hyperball"
     }
     {
         molecule: "protein_centered"
-        representation: "spacefill"
+        representation: "ribbon"
         color: "blue"
         sele: ":B"
     }

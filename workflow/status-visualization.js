@@ -5,9 +5,9 @@
 //let width = parseFloat($("#graph").attr("width"));
 //let height = parseFloat($("#graph").attr("height"));
 let width = 1800;
-let height = 1000; 
+let height = 1000;
 
-const svg = d3.select('body') 
+const svg = d3.select('body')
   .select('svg')
   .on('contextmenu', () => { d3.event.preventDefault(); })
   .attr('width', width)
@@ -36,7 +36,7 @@ const force = d3.forceSimulation()
 
 // init D3 drag support
 const drag = d3.drag()
-  // Mac Firefox doesn't distinguish between left/right click when Ctrl is held... 
+  // Mac Firefox doesn't distinguish between left/right click when Ctrl is held...
   .filter(() => 1)
   .on('start', (d) => {
     if (!d3.event.active) force.alphaTarget(0.3).restart();
@@ -92,12 +92,12 @@ let selectedLink = null;
 // update force layout (called automatically each iteration)
 function tick() {
   circle.attr('cx', (d) => {
-    return d.x = Math.max(radius, Math.min(width - radius, d.x)); 
+    return d.x = Math.max(radius, Math.min(width - radius, d.x));
   })
   .attr('cy', (d) => {
-    return d.y = Math.max(radius, Math.min(height - radius, d.y)); 
+    return d.y = Math.max(radius, Math.min(height - radius, d.y));
   });
-  
+
   // draw directed edges with proper padding from node centers
   path.attr('d', (d) => {
     const deltaX = d.target.x - d.source.x;
@@ -159,7 +159,7 @@ function restart() {
 
   function style_circle(d) {
     d
-    //.style('fill', (d) => (d === selectedNode) ? d3.rgb(colors(d.id)).brighter().toString() : colors(d.id))    
+    //.style('fill', (d) => (d === selectedNode) ? d3.rgb(colors(d.id)).brighter().toString() : colors(d.id))
     .style('fill', (d) => d.color)
     .style('stroke', "black")
     .style('stroke-width', (d) => (d === selectedNode) ? 2.5 : 1.5)
@@ -171,16 +171,16 @@ function restart() {
 
   // update existing nodes (selected visual states)
   circle.selectAll('circle')
-    .call(style_circle)    
+    .call(style_circle)
 
   // remove old nodes
   circle.exit().remove();
 
   // add new nodes
   const g = circle.enter().append('svg:g');
-  
+
   g.append('svg:circle')
-    .attr('class', 'node')    
+    .attr('class', 'node')
     .call(style_circle)
     .on('mouseover', function (d) {
       // enlarge target node
@@ -193,7 +193,7 @@ function restart() {
     })
     .on('mousedown', (d) => {
 
-      // select node      
+      // select node
       selectedNode = (d === selectedNode) ? null : d;
       selectNode(d)
       selectedLink = null;
@@ -238,12 +238,12 @@ function keydown() {
 
   switch (d3.event.keyCode) {
       //...
-  }  
+  }
 }
 
 // app starts here
-d3.select(window)
-  .on('keydown', keydown)
+// d3.select(window)
+//  .on('keydown', keydown)
 restart();
 // END OF Directed Graph Editor
 
@@ -251,7 +251,7 @@ restart();
 // The code below may be replaced if the ports and graph namespaces are different
 
 SEAMLESS_UPDATE_PORT=null  //5138, but will be 80 or 8080 if the page is served under that port
-SEAMLESS_REST_PORT=null    //the same as where the page will be served under 
+SEAMLESS_REST_PORT=null    //the same as where the page will be served under
 SEAMLESS_SHARE_NAMESPACE="status"
 // END of config block
 
@@ -275,7 +275,7 @@ ctx.self.onsharelist = function(sharelist) {
           break
         }
       }
-      newNode = matchingNode      
+      newNode = matchingNode
       if (newNode === null) {
         newNode = {
           name: shareNode.name,
@@ -295,11 +295,11 @@ ctx.self.onsharelist = function(sharelist) {
       newLink = {
         source: nodeMapping[shareLink.source],
         target: nodeMapping[shareLink.target],
-        right: true, 
+        right: true,
       }
       newLink.left = (shareLink.type == "link")
       newLinks.push(newLink)
-    }) 
+    })
     newSelectedNode = null
     if (selectedNode) {
       for (i=0; i < newNodes.length; i++){
@@ -315,14 +315,13 @@ ctx.self.onsharelist = function(sharelist) {
     selectedNode = null
     selectedLink = null
     restart()
-    
+
     nodes = newNodes
     links = newLinks
     selectedNode = newSelectedNode
     if (selectedNode) {
-      selectNode(selectedNode)      
+      selectNode(selectedNode)
     }
-    restart()  
+    restart()
   }
 }
- 

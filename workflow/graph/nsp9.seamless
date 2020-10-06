@@ -437,28 +437,6 @@
     },
     {
       "source": [
-        "code",
-        "collect"
-      ],
-      "target": [
-        "collect",
-        "code"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
-        "code",
-        "collect"
-      ],
-      "target": [
-        "collect_initial",
-        "code"
-      ],
-      "type": "connection"
-    },
-    {
-      "source": [
         "starting_structures"
       ],
       "target": [
@@ -573,9 +551,9 @@
       "SCHEMA": null,
       "checksum": {
         "code": "994f463ec5bf56780f2e9c29d4740f5a6014f142d29a2a6455d50669f165e508",
-        "input": "c88a02766b4a60698b251c2386a904be78082e453631b6b7a3759bdd7d188f30",
-        "input_buffer": "c88a02766b4a60698b251c2386a904be78082e453631b6b7a3759bdd7d188f30",
-        "result": "be857d37400401b7d45aa67a7559ade7dc0c0bdf5686d1b60d517ca8bd706581"
+        "input": "67c02467b0bac9b43688f0ccd70d47a076659d23c879e92275d7e31c5e831180",
+        "input_buffer": "67c02467b0bac9b43688f0ccd70d47a076659d23c879e92275d7e31c5e831180",
+        "result": "e82aca90bc8793ad888969d641d5194e1372ac7354aeb727dbdce568a1cc90ba"
       },
       "compiled": false,
       "debug": false,
@@ -687,39 +665,28 @@
       "type": "context"
     },
     {
-      "celltype": "text",
-      "checksum": {
-        "value": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d"
-      },
-      "datatype": "mixed",
-      "mount": {
-        "authority": "file",
-        "mode": "rw",
-        "path": "code/collect.bash",
-        "persistent": true
-      },
-      "path": [
-        "code",
-        "collect"
-      ],
-      "type": "cell"
-    },
-    {
       "INPUT": "inp",
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "12e0749f01e4404a771d2d28715bdf8ecdd32226b9d5809e70691240382ed1d8",
+        "code": "bfbbdd7db0d4efcc06b66ee957f652cf07e42a51730c3f2c34b16363503a22e3",
+        "input": "e2aed680625d00ea1fb8a74e5c52f6ce87435f53dd50d8edda1f54f2957e720e",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "12e0749f01e4404a771d2d28715bdf8ecdd32226b9d5809e70691240382ed1d8",
-        "result": "38a334f5685213f7596568318ebde6fa36b67a3a356a38f2c377d1ac8c5fd538"
+        "input_buffer": "e2aed680625d00ea1fb8a74e5c52f6ce87435f53dd50d8edda1f54f2957e720e",
+        "result": "d4fcab03297c61e6839470fe77601386ff44389ff1ebf2bea4f0771e04902917"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "docker",
-      "mount": {},
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/collect.bash",
+          "persistent": true
+        }
+      },
       "path": [
         "collect"
       ],
@@ -745,15 +712,23 @@
       "SCHEMA": null,
       "checksum": {
         "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
-        "input": "af9f837015754e648b0d79e636c575080569a5dab48ea53ad728b4cd23e84614",
+        "input": "0492877c770af760e0d441d93708c69079680af27ce3d50d6efcd9011f4a11b6",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "af9f837015754e648b0d79e636c575080569a5dab48ea53ad728b4cd23e84614",
-        "result": "6a4d22b544344f487711649bd613007fcf9e9d0a4bea069b04fdbd04d4168b79"
+        "input_buffer": "0492877c770af760e0d441d93708c69079680af27ce3d50d6efcd9011f4a11b6",
+        "result": "f5941f549e670a6962547f314e12f7e8f14ef8b80cf4f0c4e7e7dba5ea7ed848"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/collect-initial.bash",
+          "persistent": true
+        }
+      },
       "path": [
         "collect_initial"
       ],
@@ -828,10 +803,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "2afc2d3542020b0409f90517dc03e2e5de1846b217f43efe35f7fbb206223373",
-        "input": "727fdd581052e3f2bb590b58691fe0babe552191ff0548aab2dc33dc442ae5b6",
+        "input": "7b911db890f82a83419a65f3c47ca9f8019e2615749925c995630a432febd3be",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "727fdd581052e3f2bb590b58691fe0babe552191ff0548aab2dc33dc442ae5b6",
-        "result": "313e4ce32ffd6721394de75d8f66a4165a8c4658593468004cae331a6a2b166f"
+        "input_buffer": "7b911db890f82a83419a65f3c47ca9f8019e2615749925c995630a432febd3be",
+        "result": "c3226119699ec8c4f8b02199395cffb2fa8cd8fd7aec56b4e6e66c340c7b2410"
       },
       "compiled": false,
       "debug": false,
@@ -873,7 +848,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "7a2340534aafc5610cd0c3d0265a5febc31f02414b268f7dc4cf89a1097c7361"
+        "value": "cb9a12eaa534907fcbf3e54b99837e1e73ef63e8a8efc93fe42d213721431177"
       },
       "datatype": "mixed",
       "mount": {
@@ -894,7 +869,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "b37cb5501d51f0ce090c5d268d343e7f880e81c853f0bab37dfb3d69c882bdb2"
+        "value": "aaaa7f2e4fef7d26d794989103c2759f9b83752ddaa242a2c517b068e5805d18"
       },
       "datatype": "mixed",
       "mount": {
@@ -915,7 +890,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "c011394aa1dd607aed29853d0a8289650e824b9f895975eb5979192e99f4a25e"
+        "value": "bf5f48a8a5733fb467bdf5cd217227e64211e8b685a9e95d88f37d36196d050f"
       },
       "datatype": "mixed",
       "path": [
@@ -933,10 +908,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "cde3af6bedc89e18883b7ecb323fa69e5bdf7e261b320dc3af375e0bb0718020",
-        "input": "249596e661818c392608b0c98c02b59dc454016fdf846653d96bf274647d5ea2",
+        "input": "342c4833d74dc5fca49fecc05133d1d22fc5c2b7c33a9814f79647561c3cca42",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "249596e661818c392608b0c98c02b59dc454016fdf846653d96bf274647d5ea2",
-        "result": "f69aaa24e5b142ee1e7c745d652410ef58f9fa78354a65967e349785510d68c4"
+        "input_buffer": "342c4833d74dc5fca49fecc05133d1d22fc5c2b7c33a9814f79647561c3cca42",
+        "result": "cfc6c77939767391f529e0139b21a26c362f9f4a499995f96ded905e5b373036"
       },
       "compiled": false,
       "debug": false,
@@ -986,10 +961,11 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "d0bb8cd605045f219a9701acd40cbb4d0c192298d84acee64663e425c79133df",
-        "input": "b4da9aafdcee9c325fa90d17b3426470b980887fbd28d69a7edae7b742e94528",
-        "input_buffer": "b4da9aafdcee9c325fa90d17b3426470b980887fbd28d69a7edae7b742e94528",
-        "result": "9876e37276242f2f5f5a1f2007d15f6ab750f8a3110824deddd6914198f7feb6"
+        "code": "5e2226aaa8430402707e8d603c3225374c48e421e7428f8723118bdad0c7732e",
+        "input": "4051cdb9a064f2257f75eb3925e45353017bf76b3d762f009add858046d71a3d",
+        "input_auth": "188b0f46ce8044d725495faa08f195bcd0dc6d3a8d2c5a9549f4362771df50d5",
+        "input_buffer": "4051cdb9a064f2257f75eb3925e45353017bf76b3d762f009add858046d71a3d",
+        "result": "56a00ee445e1920e4bab6b22e07d906284788667af532b2712f17265dd4b8570"
       },
       "compiled": false,
       "debug": false,
@@ -1006,8 +982,14 @@
         "gen_starting_structures"
       ],
       "pins": {
+        "nstruc": {
+          "celltype": "mixed"
+        },
         "offset": {
           "celltype": "plain"
+        },
+        "seed": {
+          "celltype": "mixed"
         }
       },
       "type": "transformer"
@@ -1017,16 +999,24 @@
       "RESULT": "result",
       "SCHEMA": null,
       "checksum": {
-        "code": "ef89d5b7c6113f396093cf83da2a49c2cf8f7a63a9b60a6ff138554680ababda",
-        "input": "171dd0c0d1d515a685fc9857b5f8c676bdba9b19f53846a068d65bb8bd94b37b",
+        "code": "8480f4aeefb74ea0340e28aabcf2bf5145d9eb3fd73a7b215877310756d56d01",
+        "input": "98986c77fd39e7ff7e1285265bf2f114bd6c7449f5b8ada8b30888cf05a1253e",
         "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
-        "input_buffer": "171dd0c0d1d515a685fc9857b5f8c676bdba9b19f53846a068d65bb8bd94b37b",
-        "result": "c011394aa1dd607aed29853d0a8289650e824b9f895975eb5979192e99f4a25e"
+        "input_buffer": "98986c77fd39e7ff7e1285265bf2f114bd6c7449f5b8ada8b30888cf05a1253e",
+        "result": "bf5f48a8a5733fb467bdf5cd217227e64211e8b685a9e95d88f37d36196d050f"
       },
       "compiled": false,
       "debug": false,
       "file_extension": "sh",
       "language": "bash",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/get_docked_score.sh",
+          "persistent": true
+        }
+      },
       "path": [
         "get_docked_score"
       ],
@@ -1040,7 +1030,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "c02fe71a60951378793396e5333ba32527644aaaee7b30611948330c5ec41d8f"
+        "value": "bcf190116525450585d1762a71001b234941242478cad56823bfb63884cd2f98"
       },
       "datatype": "mixed",
       "path": [
@@ -1089,7 +1079,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "68d0def8595ecb5ca5e814431e243ae6f8234e46d9d04b447c8b33aed335d8de"
+        "value": "75194d030a5fd00c9b6b4c6b1bb0f8d70b5189fed0dd4eda37849b0a87ea4212"
       },
       "datatype": "mixed",
       "mount": {
@@ -1211,7 +1201,7 @@
     {
       "celltype": "plain",
       "checksum": {
-        "value": "be857d37400401b7d45aa67a7559ade7dc0c0bdf5686d1b60d517ca8bd706581"
+        "value": "e82aca90bc8793ad888969d641d5194e1372ac7354aeb727dbdce568a1cc90ba"
       },
       "datatype": "mixed",
       "path": [
@@ -1226,7 +1216,7 @@
     {
       "celltype": "cson",
       "checksum": {
-        "value": "c765766f6090290e46df3e2ba4fbfc248d4f9fc24b66f1d9cbeda46b573dc157"
+        "value": "a2a0cdbb9f8fe1f7e3a6430191463075a4cafdc8a512bddf1b9123f4c17fe6c3"
       },
       "datatype": "mixed",
       "mount": {
@@ -1243,7 +1233,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "a3729853a2434a7cef35e49983c5973d8f31cf9a5fb51fd823a82bed40d7a01c"
+        "value": "5d86f4bd74a71d740cfec9dbe0003cf3a1431a734530f8deb87582da1200b163"
       },
       "datatype": "mixed",
       "mount": {
@@ -1263,10 +1253,10 @@
       "SCHEMA": null,
       "checksum": {
         "code": "6d866a9acb6afd62f11764e6b78847844662bfd6fe59760dac3df2785c419ca6",
-        "input": "7436c0079e168d52ad1aad7fe33b43200dab59f3d57ccaf531afd625be9a5649",
+        "input": "0834ab118f27b29415f565e77cd14be17387c276426a11280ae422ce91bccb30",
         "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
-        "input_buffer": "7436c0079e168d52ad1aad7fe33b43200dab59f3d57ccaf531afd625be9a5649",
-        "result": "baa8e497e8f08a170c873827f8c8e5ba82a209e15bc0d90c2be2970b8eae9154"
+        "input_buffer": "0834ab118f27b29415f565e77cd14be17387c276426a11280ae422ce91bccb30",
+        "result": "27833916dc4859d7f6de8a8d56ec17f5d0399eeb4d9b60005574005aa30f56a8"
       },
       "compiled": false,
       "debug": false,
@@ -1305,7 +1295,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "baa8e497e8f08a170c873827f8c8e5ba82a209e15bc0d90c2be2970b8eae9154"
+        "value": "27833916dc4859d7f6de8a8d56ec17f5d0399eeb4d9b60005574005aa30f56a8"
       },
       "datatype": "mixed",
       "path": [
@@ -1320,7 +1310,7 @@
     {
       "celltype": "text",
       "checksum": {
-        "value": "e355fdb3726ddf0f007cec40f5d77b5dd39c596986137a067dcedb73afdb6de3"
+        "value": "55a7f0357e794175fe55f35f61c74df0cee70f2e494db5295ecbcd7d01ba8fd2"
       },
       "datatype": "mixed",
       "mount": {
@@ -1352,8 +1342,8 @@
     {
       "celltype": "structured",
       "checksum": {
-        "buffer": "e4df251feeb0d7148707fabdab50ebab0005a4c8a65db844bce9ee758b6b047f",
-        "value": "e4df251feeb0d7148707fabdab50ebab0005a4c8a65db844bce9ee758b6b047f"
+        "buffer": "7e9f50ad929107348bb5efa7b7c40b41f0b64819851a1f704a4daf1ec6f66f46",
+        "value": "7e9f50ad929107348bb5efa7b7c40b41f0b64819851a1f704a4daf1ec6f66f46"
       },
       "datatype": "mixed",
       "hash_pattern": null,
@@ -1365,7 +1355,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "5d5a3c73da8e376d31a96613e450d0cad333ebcf496acbc0eb9fa6c1ab8c42fa"
+        "value": "6e13b667324513cbea8efbdec3139052d179c7e8926f96748052defb2f95ef41"
       },
       "datatype": "mixed",
       "mount": {
@@ -1407,7 +1397,7 @@
     {
       "celltype": "float",
       "checksum": {
-        "value": "383522100b74b41862312f5866c9bd5ba8aabd67bd48e1c3ba4147fe403b9951"
+        "value": "3ed585a15813305ae3d0fbc715adba59f15bc2308e6cf64782a5c10fb623aa87"
       },
       "datatype": "mixed",
       "mount": {

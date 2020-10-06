@@ -1,0 +1,1580 @@
+{
+  "connections": [
+    {
+      "source": [
+        "trinucleotide"
+      ],
+      "target": [
+        "center_trinucleotide",
+        "trinucleotide.pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "center_trinucleotide"
+      ],
+      "target": [
+        "trinucleotide_centered"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered"
+      ],
+      "target": [
+        "aareduce_nucleotide",
+        "rna.pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "aareduce_nucleotide"
+      ],
+      "target": [
+        "trinucleotide_centered_aa"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered_aa"
+      ],
+      "target": [
+        "reduce_trinucleotide",
+        "pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "reduce_trinucleotide"
+      ],
+      "target": [
+        "trinucleotide_centered_reduced"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein"
+      ],
+      "target": [
+        "center_protein",
+        "pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "aareduce_protein"
+      ],
+      "target": [
+        "protein_aa"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_aa"
+      ],
+      "target": [
+        "reduce_protein",
+        "pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "reduce_protein"
+      ],
+      "target": [
+        "protein_reduced"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "score"
+      ],
+      "target": [
+        "scored"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucl_offset_x"
+      ],
+      "target": [
+        "trinucl_offset",
+        "x"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucl_offset_y"
+      ],
+      "target": [
+        "trinucl_offset",
+        "y"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucl_offset_z"
+      ],
+      "target": [
+        "trinucl_offset",
+        "z"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_reduced"
+      ],
+      "target": [
+        "dock",
+        "protein"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein"
+      ],
+      "target": [
+        "create_protein_mapping",
+        "protein"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "create_protein_mapping"
+      ],
+      "target": [
+        "protein_mapping"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide"
+      ],
+      "target": [
+        "create_trinucleotide__mapping",
+        "trinucleotide"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "create_trinucleotide__mapping"
+      ],
+      "target": [
+        "trinucleotide_mapping"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_mapping"
+      ],
+      "target": [
+        "gen_restraints",
+        "protein_mapping"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_mapping"
+      ],
+      "target": [
+        "gen_restraints",
+        "trinucleotide_mapping"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_active_residues"
+      ],
+      "target": [
+        "gen_restraints",
+        "protein_active_residues"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_reduced"
+      ],
+      "target": [
+        "gen_restraints",
+        "protein"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_passive_residues"
+      ],
+      "target": [
+        "gen_restraints",
+        "trinucleotide_passive_residues"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "restraints"
+      ],
+      "target": [
+        "score",
+        "restraints"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "restraints"
+      ],
+      "target": [
+        "dock",
+        "restraints"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_reduced"
+      ],
+      "target": [
+        "score",
+        "protein"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "gen_restraints"
+      ],
+      "target": [
+        "restraints"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "docked"
+      ],
+      "target": [
+        "get_docked_score",
+        "datfile"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "get_docked_score"
+      ],
+      "target": [
+        "docked_score"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "representation_cson"
+      ],
+      "target": [
+        "build_representation",
+        "representation"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_active_residues"
+      ],
+      "target": [
+        "build_representation",
+        "active_residues"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "build_representation"
+      ],
+      "target": [
+        "representation"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "collect"
+      ],
+      "target": [
+        "docked_rna"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucl_offset"
+      ],
+      "target": [
+        "gen_starting_structures",
+        "offset"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "gen_starting_structures"
+      ],
+      "target": [
+        "starting_structures"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "starting_structures"
+      ],
+      "target": [
+        "dock",
+        "starting_structures"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered_reduced"
+      ],
+      "target": [
+        "dock",
+        "rna"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered_reduced"
+      ],
+      "target": [
+        "score",
+        "rna"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "docked"
+      ],
+      "target": [
+        "collect",
+        "datfile"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered"
+      ],
+      "target": [
+        "collect",
+        "ligand"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "dock"
+      ],
+      "target": [
+        "docked"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered_reduced"
+      ],
+      "target": [
+        "gen_restraints",
+        "trinucleotide"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "center_protein"
+      ],
+      "target": [
+        "protein_centered"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "protein_centered"
+      ],
+      "target": [
+        "aareduce_protein",
+        "pdb"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "starting_structures"
+      ],
+      "target": [
+        "collect_initial",
+        "datfile"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "trinucleotide_centered"
+      ],
+      "target": [
+        "collect_initial",
+        "ligand"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "collect_initial"
+      ],
+      "target": [
+        "initial_rna"
+      ],
+      "type": "connection"
+    }
+  ],
+  "lib": [],
+  "nodes": [
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "3bd432f26ec3b2e7d7b3855e867454411363a1fc04c60a406f32b00ad181a259",
+        "input": "fb36cf99de47e28f4c4a638c8995eaa6dcdccf8da090b6a6299f92bc70bb797d",
+        "input_auth": "4a789dc25b7167b5b61d7f81423d657acad29fdfcc98cf52fca0b4a4a5d035b6",
+        "input_buffer": "fb36cf99de47e28f4c4a638c8995eaa6dcdccf8da090b6a6299f92bc70bb797d",
+        "result": "d5033a1ff540bf3732c81154e1c13a2133b66cee9e1d0583fb970bd370bede24"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/aareduce.bash",
+          "persistent": true
+        }
+      },
+      "path": [
+        "aareduce_nucleotide"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "rna.pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "d570a7843c1aa776f11e54e6c8486fcd7989b575b83c7f8332b14f50422dc37d",
+        "input": "fc8499b4d287500c3993b1507f5f467d98df2750e3a2f72f595e0623d30ff9a7",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "fc8499b4d287500c3993b1507f5f467d98df2750e3a2f72f595e0623d30ff9a7",
+        "result": "b92bdfb1538827ed6761f18b5384bc9721abb2a3373b49cf1ee3487e23cd1f59"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/aareduce-protein.bash",
+          "persistent": true
+        }
+      },
+      "path": [
+        "aareduce_protein"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "994f463ec5bf56780f2e9c29d4740f5a6014f142d29a2a6455d50669f165e508",
+        "input": "c88a02766b4a60698b251c2386a904be78082e453631b6b7a3759bdd7d188f30",
+        "input_buffer": "c88a02766b4a60698b251c2386a904be78082e453631b6b7a3759bdd7d188f30",
+        "result": "be857d37400401b7d45aa67a7559ade7dc0c0bdf5686d1b60d517ca8bd706581"
+      },
+      "compiled": false,
+      "debug": false,
+      "language": "python",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/build-representation.py",
+          "persistent": true
+        }
+      },
+      "path": [
+        "build_representation"
+      ],
+      "pins": {
+        "active_residues": {
+          "celltype": "mixed"
+        },
+        "representation": {
+          "celltype": "plain"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "plain",
+      "checksum": {
+        "value": "3aab6785247adff0839689ff455ea3d35cbb1d74745c12c2864603e3addf1718"
+      },
+      "datatype": "mixed",
+      "file_extension": "text",
+      "mimetype": "text/plain",
+      "path": [
+        "camera_view"
+      ],
+      "share": {
+        "path": null,
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "26007bab82a3efca6c2139ba8bb20e60d8b7300dbddd3c49eb955c0f980299f1",
+        "input": "a202ca48f7dbc682234d785dd2b24f34cce3fc9e1cab18f348225b474be1aaff",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "a202ca48f7dbc682234d785dd2b24f34cce3fc9e1cab18f348225b474be1aaff",
+        "result": "0d6a9125a70aacb0ada1b6fef83c822a00af33aab96b0f3f9a0bf297ad2654b8"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "path": [
+        "center_protein"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "7dbc5bb6c6ba43cbf246dea3ec3b6700cc36d418a7b0ac44c39495c315d72fd5",
+        "input": "f066950c5bf04ce23b89e77b635f92bd033faaafb6dedfd7b7ee89275d10e606",
+        "input_auth": "4a789dc25b7167b5b61d7f81423d657acad29fdfcc98cf52fca0b4a4a5d035b6",
+        "input_buffer": "f066950c5bf04ce23b89e77b635f92bd033faaafb6dedfd7b7ee89275d10e606",
+        "result": "f4d95333ea6e1765bd7637ff8ae5737fbf2816c7eac7670ca6b8b011444ef690"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "path": [
+        "center_trinucleotide"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "trinucleotide.pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "path": [
+        "code"
+      ],
+      "type": "context"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "bfbbdd7db0d4efcc06b66ee957f652cf07e42a51730c3f2c34b16363503a22e3",
+        "input": "a427cc50e28549c0d141d24fedacd9b2413e69652d4d2a5b65cce77df7a82279",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "a427cc50e28549c0d141d24fedacd9b2413e69652d4d2a5b65cce77df7a82279",
+        "result": "6a451344f19736c68b48715a44e712701e7b4636f1c6cb3569d4f003c43eee4a"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/collect.bash",
+          "persistent": true
+        }
+      },
+      "path": [
+        "collect"
+      ],
+      "pins": {
+        "datfile": {
+          "celltype": "mixed"
+        },
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "ligand": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "0af7735d3e5691138be3c8187107d07f149330dab5c0650f987a211b6d9f777d",
+        "input": "f73f924a71f82db3c79814cb4d0f541097b24dacf0d72e30a02eab77d6d7faa6",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "f73f924a71f82db3c79814cb4d0f541097b24dacf0d72e30a02eab77d6d7faa6",
+        "result": "64af01eff3bf8123bb9f8b052e10559f360f016d05a95f3a981006db272fc9e9"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/collect-initial.bash",
+          "persistent": true
+        }
+      },
+      "path": [
+        "collect_initial"
+      ],
+      "pins": {
+        "datfile": {
+          "celltype": "mixed"
+        },
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "ligand": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "f83ffdb302666090eae4f65cb6b074ffe7351b014e64d7585b240539f9456462",
+        "input": "fea6887a7fc02bbee2731e7c093ae42fe0127e8c9b865a37ad5e2704a60b8a7d",
+        "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
+        "input_buffer": "fea6887a7fc02bbee2731e7c093ae42fe0127e8c9b865a37ad5e2704a60b8a7d",
+        "result": "4f0ef4a4b37a91b4ff833795aea017770f23dacddc2bd276de93e3d4cc7d9d7c"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "bash",
+      "path": [
+        "create_protein_mapping"
+      ],
+      "pins": {
+        "protein": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "98f1fa850e2c4955f8b8ab7ed71c060824b983c242e847feee8560dd68138cda",
+        "input": "609f280e229643845dd9a3a9254199532fdc234f751d06c490680363dc63156e",
+        "input_buffer": "609f280e229643845dd9a3a9254199532fdc234f751d06c490680363dc63156e",
+        "result": "50471f3a8924da21492870edb51b94135e898b1bb8c7d90083533fad8e4efd76"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "bash",
+      "path": [
+        "create_trinucleotide__mapping"
+      ],
+      "pins": {
+        "trinucleotide": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "2afc2d3542020b0409f90517dc03e2e5de1846b217f43efe35f7fbb206223373",
+        "input": "bf3e15634ccce4f2e2b61f24b9bd4b0a423e34d46d156685bcf8faccf7b6a596",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "bf3e15634ccce4f2e2b61f24b9bd4b0a423e34d46d156685bcf8faccf7b6a596",
+        "result": "3a47179292e5530f35a71c021cdcf829dbccb8af29cc1a9803bf2d98b235ddb9"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/dock.sh",
+          "persistent": true
+        }
+      },
+      "path": [
+        "dock"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "protein": {
+          "celltype": "mixed"
+        },
+        "restraints": {
+          "celltype": "mixed"
+        },
+        "rna": {
+          "celltype": "mixed"
+        },
+        "starting_structures": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "69dd4f8dc56593b17072a3bccfe46f82adc94c1161be48ba8156a601c2256633"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "w",
+        "path": "results/docked.dat",
+        "persistent": true
+      },
+      "path": [
+        "docked"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "87a5d3ba3ecccd3802f2222302bcf346c6fb1c6d37545117e295b0797adb90c0"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "w",
+        "path": "results/docked_rna.pdb",
+        "persistent": true
+      },
+      "path": [
+        "docked_rna"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "float",
+      "checksum": {
+        "value": "d9cb29c8105c0262420bac23e671f4ef08c44a0124baa3a2784ffec1386c6de8"
+      },
+      "datatype": "mixed",
+      "path": [
+        "docked_score"
+      ],
+      "share": {
+        "path": "docked_score",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "cde3af6bedc89e18883b7ecb323fa69e5bdf7e261b320dc3af375e0bb0718020",
+        "input": "249596e661818c392608b0c98c02b59dc454016fdf846653d96bf274647d5ea2",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "249596e661818c392608b0c98c02b59dc454016fdf846653d96bf274647d5ea2",
+        "result": "f69aaa24e5b142ee1e7c745d652410ef58f9fa78354a65967e349785510d68c4"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "cell",
+          "mode": "rw",
+          "path": "code/gen-restraints.sh",
+          "persistent": true
+        }
+      },
+      "path": [
+        "gen_restraints"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "protein": {
+          "celltype": "mixed"
+        },
+        "protein_active_residues": {
+          "celltype": "mixed"
+        },
+        "protein_mapping": {
+          "celltype": "mixed"
+        },
+        "trinucleotide": {
+          "celltype": "mixed"
+        },
+        "trinucleotide_mapping": {
+          "celltype": "mixed"
+        },
+        "trinucleotide_passive_residues": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "5e2226aaa8430402707e8d603c3225374c48e421e7428f8723118bdad0c7732e",
+        "input": "3c5909bfc1ab5f9b2fdb01c6df41236fb862dba044ba97167c3e371615e55399",
+        "input_auth": "188b0f46ce8044d725495faa08f195bcd0dc6d3a8d2c5a9549f4362771df50d5",
+        "input_buffer": "3c5909bfc1ab5f9b2fdb01c6df41236fb862dba044ba97167c3e371615e55399",
+        "result": "68648e28d4b2e23a3a13873724d1daf4d80733a88a5e85bc0d131745738925f6"
+      },
+      "compiled": false,
+      "debug": false,
+      "language": "python",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/gen_starting_structures.py",
+          "persistent": true
+        }
+      },
+      "path": [
+        "gen_starting_structures"
+      ],
+      "pins": {
+        "nstruc": {
+          "celltype": "mixed"
+        },
+        "offset": {
+          "celltype": "plain"
+        },
+        "seed": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "8480f4aeefb74ea0340e28aabcf2bf5145d9eb3fd73a7b215877310756d56d01",
+        "input": "8b32f0d7f433b8da03b2fd99587ed346a01399f4cc43fc6f7e6ae2a0699e4741",
+        "input_auth": "d0a1b2af1705c1b8495b00145082ef7470384e62ac1c4d9b9cdbbe0476c28f8c",
+        "input_buffer": "8b32f0d7f433b8da03b2fd99587ed346a01399f4cc43fc6f7e6ae2a0699e4741",
+        "result": "d9cb29c8105c0262420bac23e671f4ef08c44a0124baa3a2784ffec1386c6de8"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "bash",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/get_docked_score.sh",
+          "persistent": true
+        }
+      },
+      "path": [
+        "get_docked_score"
+      ],
+      "pins": {
+        "datfile": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "aebdcc56d45fb19b195876514d2cb5c19d242a5debc7bbc5387a1b6a42da5f89"
+      },
+      "datatype": "mixed",
+      "path": [
+        "initial_rna"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "c59d1cb2427a0c1a1ad91dcff10e7d30e5ebee743226212e4c26dd3bd8dcfe2f"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "input/protein.pdb",
+        "persistent": true
+      },
+      "path": [
+        "protein"
+      ],
+      "share": {
+        "path": "protein",
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "buffer": "b92bdfb1538827ed6761f18b5384bc9721abb2a3373b49cf1ee3487e23cd1f59",
+        "value": "b92bdfb1538827ed6761f18b5384bc9721abb2a3373b49cf1ee3487e23cd1f59"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "protein_aa"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "68d0def8595ecb5ca5e814431e243ae6f8234e46d9d04b447c8b33aed335d8de"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "input/protein-active-residues.list",
+        "persistent": true
+      },
+      "path": [
+        "protein_active_residues"
+      ],
+      "share": {
+        "path": null,
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "5bc85f5779143bf38a55e9872f0342208088f4633a9868c961ef22978f43cf2f"
+      },
+      "datatype": "mixed",
+      "path": [
+        "protein_centered"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "9494d00f86972f88dcaa6be18f218e4862981eefb4547c24a49864d4fc1b2c16"
+      },
+      "datatype": "mixed",
+      "path": [
+        "protein_mapping"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "buffer": "419064bdebcea9210391d17be864863f648876e587d2ffe913d9487b6ca46b02",
+        "value": "419064bdebcea9210391d17be864863f648876e587d2ffe913d9487b6ca46b02"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "protein_reduced"
+      ],
+      "type": "cell"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "6c611cc7159c9b3a650fc442807e5150c2de161000fe129ca07f98513465789c",
+        "input": "981d63c0adaf5087e91f007413c5d588fceb28dc2daa304bf55a574dc84565f4",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "981d63c0adaf5087e91f007413c5d588fceb28dc2daa304bf55a574dc84565f4",
+        "result": "419064bdebcea9210391d17be864863f648876e587d2ffe913d9487b6ca46b02"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "path": [
+        "reduce_protein"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "6c611cc7159c9b3a650fc442807e5150c2de161000fe129ca07f98513465789c",
+        "input": "e121cd751904186fee1e972bc79c5e55368f78545c68a85c91d2b2d78bebe382",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "e121cd751904186fee1e972bc79c5e55368f78545c68a85c91d2b2d78bebe382",
+        "result": "78b634e65f1ae5744570b452a4aa103aa759ff7374437790490c5acf15354126"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "path": [
+        "reduce_trinucleotide"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "pdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "plain",
+      "checksum": {
+        "value": "be857d37400401b7d45aa67a7559ade7dc0c0bdf5686d1b60d517ca8bd706581"
+      },
+      "datatype": "mixed",
+      "path": [
+        "representation"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "cson",
+      "checksum": {
+        "value": "c765766f6090290e46df3e2ba4fbfc248d4f9fc24b66f1d9cbeda46b573dc157"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "input/representation.cson",
+        "persistent": true
+      },
+      "path": [
+        "representation_cson"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "a3729853a2434a7cef35e49983c5973d8f31cf9a5fb51fd823a82bed40d7a01c"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "w",
+        "path": "input/restraints.rest",
+        "persistent": true
+      },
+      "path": [
+        "restraints"
+      ],
+      "type": "cell"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "6d866a9acb6afd62f11764e6b78847844662bfd6fe59760dac3df2785c419ca6",
+        "input": "7436c0079e168d52ad1aad7fe33b43200dab59f3d57ccaf531afd625be9a5649",
+        "input_auth": "caa54a33ef05f913c0005e5f6c723606234f6ecdac7af4a9959f896805216fd6",
+        "input_buffer": "7436c0079e168d52ad1aad7fe33b43200dab59f3d57ccaf531afd625be9a5649",
+        "result": "baa8e497e8f08a170c873827f8c8e5ba82a209e15bc0d90c2be2970b8eae9154"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "language": "docker",
+      "mount": {
+        "code": {
+          "authority": "file",
+          "mode": "rw",
+          "path": "code/score.sh",
+          "persistent": true
+        }
+      },
+      "path": [
+        "score"
+      ],
+      "pins": {
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "protein": {
+          "celltype": "mixed"
+        },
+        "restraints": {
+          "celltype": "mixed"
+        },
+        "rna": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "celltype": "float",
+      "checksum": {
+        "value": "baa8e497e8f08a170c873827f8c8e5ba82a209e15bc0d90c2be2970b8eae9154"
+      },
+      "datatype": "mixed",
+      "path": [
+        "scored"
+      ],
+      "share": {
+        "path": null,
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "609c4a83218a8cc40c347ff356688b792643c038b1d039f277bce4f15d4972e9"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "w",
+        "path": "intermediate/starting_structures.dat",
+        "persistent": true
+      },
+      "path": [
+        "starting_structures"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "str",
+      "checksum": {
+        "value": "4e70772930b99e85e390977199f0c7b9372ab31fcf66313d2313dc2479eb3e9c"
+      },
+      "datatype": "mixed",
+      "path": [
+        "structure_to_show"
+      ],
+      "share": {
+        "path": null,
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "buffer": "e4df251feeb0d7148707fabdab50ebab0005a4c8a65db844bce9ee758b6b047f",
+        "value": "e4df251feeb0d7148707fabdab50ebab0005a4c8a65db844bce9ee758b6b047f"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "trinucl_offset"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "float",
+      "checksum": {
+        "value": "5d5a3c73da8e376d31a96613e450d0cad333ebcf496acbc0eb9fa6c1ab8c42fa"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "input/trinucl-offset-x",
+        "persistent": true
+      },
+      "path": [
+        "trinucl_offset_x"
+      ],
+      "share": {
+        "path": null,
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "float",
+      "checksum": {
+        "value": "5be318a9d3b90b5e6c25ce1fb1229e82b21eeecc50aa05e2f41eb126355f1267"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "input/trinucl-offset-y",
+        "persistent": true
+      },
+      "path": [
+        "trinucl_offset_y"
+      ],
+      "share": {
+        "path": null,
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "float",
+      "checksum": {
+        "value": "383522100b74b41862312f5866c9bd5ba8aabd67bd48e1c3ba4147fe403b9951"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "input/trinucl-offset-z",
+        "persistent": true
+      },
+      "path": [
+        "trinucl_offset_z"
+      ],
+      "share": {
+        "path": null,
+        "readonly": false
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "32926bdb7b8db325505a6a987a5af0b58dc10bf42fdc12ff4f4d4500d52e5a6d"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "input/trinucleotide.pdb",
+        "persistent": true
+      },
+      "path": [
+        "trinucleotide"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "b88f59daca48190b43acec61619256beb0a8e5c567ba935bbd419c8b9f4eb25e"
+      },
+      "datatype": "mixed",
+      "path": [
+        "trinucleotide_centered"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "f84d848cab132baee2b10c8c42f0c307e57a293a2b1835f50b30db57dc9868dd"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "w",
+        "path": "intermediate/trinucleotide-centered-aa.pdb",
+        "persistent": true
+      },
+      "path": [
+        "trinucleotide_centered_aa"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "structured",
+      "checksum": {
+        "buffer": "78b634e65f1ae5744570b452a4aa103aa759ff7374437790490c5acf15354126",
+        "value": "78b634e65f1ae5744570b452a4aa103aa759ff7374437790490c5acf15354126"
+      },
+      "datatype": "mixed",
+      "hash_pattern": null,
+      "path": [
+        "trinucleotide_centered_reduced"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "2ee6747358f23d05738e8ab19c696419c146138c6acb2afc1b1336e63270a903"
+      },
+      "datatype": "mixed",
+      "path": [
+        "trinucleotide_mapping"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "5c62b28da94b9294935f3a4a384cb0d9f5171219b16cf6ab89ae793d2ae065f3"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "cell",
+        "mode": "rw",
+        "path": "input/trinucleotide-passive-residues.list",
+        "persistent": true
+      },
+      "path": [
+        "trinucleotide_passive_residues"
+      ],
+      "type": "cell"
+    },
+    {
+      "path": [
+        "web"
+      ],
+      "type": "context"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "6214ef34c34896bc9d953ca69c64aee8d17090db00d5cb5e0b7098684419f9b5"
+      },
+      "datatype": "mixed",
+      "file_extension": "html",
+      "mimetype": "text/html",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "index.html",
+        "persistent": true
+      },
+      "path": [
+        "web",
+        "index"
+      ],
+      "share": {
+        "path": "index.html",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "a90ccf9a57fc094e4696d7b674da1c500aff5b8518b1893bea38d0e0873748e4"
+      },
+      "datatype": "mixed",
+      "file_extension": "js",
+      "mimetype": "application/javascript",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "index.js",
+        "persistent": true
+      },
+      "path": [
+        "web",
+        "index_js"
+      ],
+      "share": {
+        "path": "index.js",
+        "readonly": true
+      },
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "f0abdac1afdb6b57312984a526441c769d257a88fbc91ef53b0b66ab9ff79bd4"
+      },
+      "datatype": "mixed",
+      "file_extension": "js",
+      "mimetype": "application/javascript",
+      "path": [
+        "web",
+        "seamless_js"
+      ],
+      "share": {
+        "path": "seamless-client.js",
+        "readonly": true
+      },
+      "type": "cell"
+    }
+  ],
+  "params": {
+    "share_namespace": "ctx"
+  }
+}
