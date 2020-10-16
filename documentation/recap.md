@@ -1,5 +1,10 @@
 [//]: # (this file is here to track work done during sessions (to try at least))
 
+### Session 14
+#### During the session
+We were trying to run the docking of multiple conformers + with active residues.
+The script to track docking progress was added to the main dir. 
+
 ### Monthly meeting #2
 #### Now it's possible to either:
 1. Dock multiple sequences and the protein
