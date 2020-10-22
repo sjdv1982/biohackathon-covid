@@ -75,3 +75,8 @@ http://localhost:5813/status/status
 http://localhost:5813/status/status/gen_starting_structures.status
 
 http://www.attract.ph.tum.de/services/ATTRACT-devel/standard.html
+
+~/.bashrc:
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'

@@ -1,0 +1,128 @@
+ 1/1: %history -g -f HISTORY
+ 1/2: from seamless.highlevel import Context
+ 1/3: %history -g -f HISTORY
+ 1/4: ctx = Context()
+ 1/5: ctx.inputs = Context()
+ 1/6: from seamless.metalevel.bind_status_graph import bind_status_graph_async
+ 1/7: import json
+ 1/8:  status_graph = json.load(open("nsp9-monitoring.seamless"))
+ 1/9:
+ctx2 = await bind_status_graph_async(
+        ctx, status_graph,
+        mounts=True,
+        shares=True,
+        zips=["nsp9-monitoring.zip"]
+)
+1/10: ctx
+1/11: ctx.translate()
+1/12: ctx2.translate(force=True)
+1/13: ctx2.graph.value
+1/14:
+ctx2 = await bind_status_graph_async(
+        ctx, status_graph,
+        mounts=True,
+        shares=True,
+        zips=["nsp9-monitoring.zip"]
+)
+1/15: ctx2.translate(force=True)
+1/16: ctx.translate(force=True)
+1/17: ctx.get_graph()
+1/18: ctx2.graph.value
+1/19: from seamless.highlevel import Cell
+1/20: ctx.inputs.protein = Cell("text")
+1/21: ctx.translate
+1/22: ctx.translate()
+1/23: %history -g -f HISTORY
+1/24: ctx.inputs.protein.mount("receptor.pdb", authority="file")
+1/25: ctx.translate()
+1/26: ctx2.status
+1/27: ctx2.get_graph()
+1/28: ctx2.graph.value
+1/29: ctx.inputs.protein.value
+1/30: print(ctx.inputs.protein.value)
+1/31: ctx.inputs.rna = Cell("text")
+1/32: ctx.inputs.protein.mount("ligand.pdb", authority="file")
+1/33: ctx.inputs.protein.mount("receptor.pdb", authority="file")
+1/34: ctx.inputs.rna.mount("ligand.pdb", authority="file")
+1/35: ctx.translate()
+1/36: ctx.code = Context()
+1/37: ctx.code.reduce = Cell("text")
+1/38: ctx.code.reduce.mount("reduce.bash", authority="file")
+1/39: ctx.code.reduce.value
+1/40: ctx.translate()
+1/41: ctx.code.reduce.value
+1/42: print(ctx.code.reduce.value)
+1/43: def reduce(partnerpdb, chain, options, options2): pass
+1/44: ctx.reduce = reduce
+1/45: ctx.reduce
+1/46: ctx.reduce.language = "docker"
+1/47: ctx.translate()
+1/48: ctx.reduce.docker_image = "rpbs/attract"
+1/49: ctx.reduce.code = ctx.code.reduce
+1/50:  ctx.translate()
+1/51: ctx.status
+1/52: del ctx.reduce
+1/53: ctx.translate()
+1/54: ctx2.graph.value
+1/55: ctx2.set_graph(status_graph)
+1/56: ctx2.translate()
+1/57: ctx2.gen_vis_status.result.value
+1/58: ctx2.gen_vis_status.inp.value
+1/59: ctx2.gen_vis_status.inp.value.keys()
+1/60: ctx2.status_.value
+1/61: ctx2.status_ = ctx.status
+1/62: ctx2.status_.value
+1/63: ctx2.translate()
+1/64: ctx2.status
+1/65: ctx2.set_graph(status_graph)
+1/66: ctx2.translate()
+1/67: ctx2.status
+1/68: ctx2.status_.value
+1/69: ctx.save_graph("pipeline.seamless")
+1/70: ctx.save_zip("pipeline.zip")
+1/71: %history -g -f HISTORY
+   1: from seamless.highlevel import Context, Cell
+   2: import json
+   3: ctx = Context()
+   4: ctx.add_zip("pipeline.zip")
+   5: ctx.set_graph(json.load("pipeline.seamless"), mounts=True, shares=True)
+   6: ctx.set_graph(json.load(open("pipeline.seamless")), mounts=True, shares=True)
+   7: ctx.translate(force=True)
+   8: ctx2 = Context()
+   9: del ctx2
+  10: status_graph = json.load(open("nsp9-monitoring.seamless"))
+  11:
+ctx2 = await bind_status_graph_async(
+        ctx, status_graph,
+        mounts=True,
+        shares=True,
+        zips=["nsp9-monitoring.zip"]
+)
+  12: from seamless.metalevel.bind_status_graph import bind_status_graph_async
+  13:
+ctx2 = await bind_status_graph_async(
+        ctx, status_graph,
+        mounts=True,
+        shares=True,
+        zips=["nsp9-monitoring.zip"]
+)
+  14: def reduce(partnerpdb, chain, options, options2): pass
+  15: ctx.reduce_protein = reduce
+  16: ctx.reduce_rna = reduce
+  17: ctx.reduce_protein.language = "docker"
+  18: ctx.reduce_rna.language = "docker"
+  19: ctx.reduce_rna.code = ctx.code.reduce
+  20: ctx.reduce_protein.code = ctx.code.reduce
+  21: ctx.translate(force=True)
+  22: ctx.reduce_protein.partnerpdb = ctx.inputs.protein
+  23:  ctx.inputs.protein._get_cell()
+  24:  ctx.inputs.protein._get_hcell()
+  25: ctx.translate()
+  26: ctx.reduce_protein.docker_image = "rpbs/attract"
+  27: ctx.reduce_rna.docker_image = "rpbs/attract"
+  28: ctx.reduce_protein.ensemble_size = 2
+  29: ctx.reduce_protein.chain = "A"
+  30: ctx.reduce_protein.options = "--pdb2pqr --heavy"
+  31: ctx.reduce_protein.options2 = ""
+  32: ctx.translate()
+  33: %history -g -f HISTORY
