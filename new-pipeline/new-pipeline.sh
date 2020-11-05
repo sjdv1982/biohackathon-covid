@@ -86,12 +86,15 @@ cp -f partner-r.pdb partner2-r.pdb
 cp -f partner-aa.pdb partner2-aa.pdb
 rm -f partner.pdb partner.mapping partner-r.pdb partner-aa.pdb
 
+seed1=123
+seed2=124
 
+
+nstruc=200000
 echo '**************************************************************'
 echo 'Generate starting structures...'
 echo '**************************************************************'
-$PYPY $ATTRACTTOOLS/randsearch.py 2 200000 --fix-receptor > randsearch.dat
-start=randsearch.dat
+$PYPY $ATTRACTTOOLS/randsearch.py 2 $nstruc --fix-receptor > randsearch0.dat
 
 echo '**************************************************************'
 echo 'ensemble search:'
@@ -101,9 +104,10 @@ echo '**************************************************************'
 echo '**************************************************************'
 echo 'random ensemble conformation in ligand 1 for each starting structure'
 echo '**************************************************************'
-$PYPY $ATTRACTTOOLS/ensemblize.py randsearch.dat 2 1 random 123 > randsearch-ens1.dat
-$PYPY $ATTRACTTOOLS/ensemblize.py randsearch-ens1.dat 2 2 random 124 > randsearch-ens12.dat
+$PYPY $ATTRACTTOOLS/ensemblize.py randsearch0.dat 2 1 random $seed1 > randsearch-ens1.dat
+$PYPY $ATTRACTTOOLS/ensemblize.py randsearch-ens1.dat 2 2 random $seed2 > randsearch.dat
 
+start=randsearch.dat
 
 echo '**************************************************************'
 echo 'deploying protein ensembles'

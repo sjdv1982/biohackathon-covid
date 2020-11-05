@@ -1,0 +1,186 @@
+{
+  "connections": [
+    {
+      "source": [
+        "code",
+        "reduce"
+      ],
+      "target": [
+        "reduce_rna",
+        "code"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "code",
+        "reduce"
+      ],
+      "target": [
+        "reduce_protein",
+        "code"
+      ],
+      "type": "connection"
+    },
+    {
+      "source": [
+        "inputs",
+        "protein"
+      ],
+      "target": [
+        "reduce_protein",
+        "partnerpdb"
+      ],
+      "type": "connection"
+    }
+  ],
+  "lib": [],
+  "nodes": [
+    {
+      "path": [
+        "code"
+      ],
+      "type": "context"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "414128a7ec539868e37069aad2de3e77f1e25216edd53f865738d7a1d3118c8f"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "reduce.bash",
+        "persistent": true
+      },
+      "path": [
+        "code",
+        "reduce"
+      ],
+      "type": "cell"
+    },
+    {
+      "path": [
+        "inputs"
+      ],
+      "type": "context"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "58abf3f96e1a0795e8caa7fa31bf872764445d5ae3e6c6f14642d274847c8efe"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "receptor.pdb",
+        "persistent": true
+      },
+      "path": [
+        "inputs",
+        "protein"
+      ],
+      "type": "cell"
+    },
+    {
+      "celltype": "text",
+      "checksum": {
+        "value": "51520ba820e6847d515c35680a557e593c3aab5ed5129d2d8dd4a6bbb43d8e1f"
+      },
+      "datatype": "mixed",
+      "mount": {
+        "authority": "file",
+        "mode": "rw",
+        "path": "ligand.pdb",
+        "persistent": true
+      },
+      "path": [
+        "inputs",
+        "rna"
+      ],
+      "type": "cell"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "414128a7ec539868e37069aad2de3e77f1e25216edd53f865738d7a1d3118c8f",
+        "input": "b06e93860a0e603764599b476d27acb0b95252c59a3d861688dc69a256be7853",
+        "input_auth": "aa84f72f9fc6f5199a0dafc894f67cd14753d1f73e476413f2eb7f66103dd995",
+        "input_buffer": "b06e93860a0e603764599b476d27acb0b95252c59a3d861688dc69a256be7853",
+        "result": "3aa75004c1860b2e176feef44700a46d8f99fc13c7dcbec3054c1afb548cf88e",
+        "schema": "44ee4665e7071e68b73c4b1c74e5574c67454d4061c827a3236339f0fd1c8821"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "hash_pattern": {
+        "*": "#"
+      },
+      "language": "docker",
+      "path": [
+        "reduce_protein"
+      ],
+      "pins": {
+        "chain": {
+          "celltype": "mixed"
+        },
+        "docker_image": {
+          "celltype": "mixed"
+        },
+        "docker_options": {
+          "celltype": "mixed"
+        },
+        "ensemble_size": {
+          "celltype": "mixed"
+        },
+        "opts": {
+          "celltype": "mixed"
+        },
+        "opts2": {
+          "celltype": "mixed"
+        },
+        "partnerpdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    },
+    {
+      "INPUT": "inp",
+      "RESULT": "result",
+      "SCHEMA": null,
+      "checksum": {
+        "code": "414128a7ec539868e37069aad2de3e77f1e25216edd53f865738d7a1d3118c8f",
+        "input": "0881cdca3be2981ac65cc7ae178a2889d3a6839bb9883c14beea38fb0417d0cb",
+        "input_auth": "0881cdca3be2981ac65cc7ae178a2889d3a6839bb9883c14beea38fb0417d0cb",
+        "input_buffer": "0881cdca3be2981ac65cc7ae178a2889d3a6839bb9883c14beea38fb0417d0cb"
+      },
+      "compiled": false,
+      "debug": false,
+      "file_extension": "sh",
+      "hash_pattern": {
+        "*": "#"
+      },
+      "language": "bash",
+      "path": [
+        "reduce_rna"
+      ],
+      "pins": {
+        "chain": {
+          "celltype": "mixed"
+        },
+        "partnerpdb": {
+          "celltype": "mixed"
+        }
+      },
+      "type": "transformer"
+    }
+  ],
+  "params": {
+    "share_namespace": "ctx"
+  }
+}
