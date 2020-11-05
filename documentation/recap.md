@@ -1,4 +1,13 @@
-[//]: # (this file is here to track work done during sessions (to try at least))
+ <!--- this file is here to track work done during sessions (to try at least)) --->
+
+### Session 16
+#### During thesession 
+It was a technical session: 
+1. Moved from the reduce partner-PDBs to deploying protein ensembles
+2. Added a function to change the number of starting structures dynamically 
+3. Added a grid to the new pipeline/workflow
+
+'+ added biohackathon-covid/documentation/Papers/ 
 
 ### Session 15
 #### During the session
